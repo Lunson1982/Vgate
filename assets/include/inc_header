@@ -93,16 +93,16 @@
       <ul class="tcCont">
         <li>
           <ol>
-            <li><a href="{$root}tw/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}tw/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}tw/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}tw/about/access.html" data-keep-lang>辦公室</a></li>
+            <li><a href="{$root}hk/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}hk/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}hk/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}hk/about/access.html" data-keep-lang>辦公室</a></li>
           </ol>
         </li>
         <li><a href="{$root}hk/about/index.html" data-keep-lang>
           <img class="forModern" src="{$root}assets/img/common/brands_nav.svg" width="" height="" alt="BRANDS">
         </a></li>
-        <li><a href="{$root}tw/news/index.html" data-keep-lang>
+        <li><a href="{$root}hk/news/index.html" data-keep-lang>
           <img class="forModern" src="{$root}assets/img/common/news_nav.svg" width="" height="" alt="NEWS">
         </a></li>
-        <li><a href="{$root}tw/contact/index.html" data-keep-lang>
+        <li><a href="{$root}hk/contact/index.html" data-keep-lang>
           <img class="forModern" src="{$root}assets/img/common/contact_nav.svg" width="" height="" alt="CONTACT">
         </a></li>
       </ul>

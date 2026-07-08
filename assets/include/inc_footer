@@ -27,7 +27,7 @@
       <li><a href="#" target="_blank" rel="noopener">Vgate 亚太</a></li>
       <li><a href="#" target="_blank" rel="noopener">Vgate 欧洲</a></li>
     </ol>
-    <ol class="groupList tcCont">
+    <ol class="groupList hkCont">
       <li><a href="#" target="_blank" rel="noopener">Vgate 控股</a></li>
       <li><a href="#" target="_blank" rel="noopener">Vgate 科技</a></li>
       <li><a href="#" target="_blank" rel="noopener">Vgate 設計實驗室</a></li>
@@ -92,20 +92,20 @@
       </section>
 
       <!-- 繁體中文 -->
-      <section class="tcCont">
+      <section class="hkCont">
         <div>
-          <h3 class="img"><a class="about btn disable" href="{$root}tw/about/index.html" data-keep-lang>關於我們<span class="cross"><span></span><span></span></span></a></h3>
+          <h3 class="img"><a class="about btn disable" href="{$root}hk/about/index.html" data-keep-lang>關於我們<span class="cross"><span></span><span></span></span></a></h3>
           <ul><ul>
-            <li><a href="{$root}tw/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}tw/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}tw/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}tw/about/access.html" data-keep-lang>辦公室</a></li>
+            <li><a href="{$root}hk/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}hk/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}hk/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}hk/about/access.html" data-keep-lang>辦公室</a></li>
           </ul></ul>
         </div>
         <div>
           <h3><a href="{$root}hk/about/index.html" data-keep-lang>品牌一覽</a></h3>
-          <h3><a href="{$root}tw/news/index.html" data-keep-lang>新聞</a></h3>
-          <h3><a href="{$root}tw/sitepolicy.html" data-keep-lang>網站政策</a></h3>
-          <h3><a href="{$root}tw/privacypolicy.html" data-keep-lang>隱私權政策</a></h3>
-          <h3><a href="{$root}tw/sitemap.html" data-keep-lang>網站地圖</a></h3>
-          <h3><a href="{$root}tw/contact/index.html" data-keep-lang>聯絡我們</a></h3>
+          <h3><a href="{$root}hk/news/index.html" data-keep-lang>新聞</a></h3>
+          <h3><a href="{$root}hk/sitepolicy.html" data-keep-lang>網站政策</a></h3>
+          <h3><a href="{$root}hk/privacypolicy.html" data-keep-lang>隱私權政策</a></h3>
+          <h3><a href="{$root}hk/sitemap.html" data-keep-lang>網站地圖</a></h3>
+          <h3><a href="{$root}hk/contact/index.html" data-keep-lang>聯絡我們</a></h3>
         </div>
       </section>
 

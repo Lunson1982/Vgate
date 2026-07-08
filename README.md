@@ -1,4 +1,4 @@
-# Vgate Group — Corporate Website
+# Vgate — Corporate Website
 
 A high-end Japanese corporate website modeled on the **mashgroup.jp** layout pattern.
 Pure static HTML/CSS/JS, deploys directly to **Cloudflare Pages**.

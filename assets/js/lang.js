@@ -5,7 +5,7 @@
   - Persists in localStorage('vgate.lang')
   - Honors ?lang=xx query param (overrides localStorage)
   - Updates <html lang> and <meta property="og:locale">
-  - Re-points any a[href^="./"] or a[href^="../"] to mirror /en/ /cn/ /tw/
+  - Re-points any a[href^="./"] or a[href^="../"] to mirror /en/ /cn/ /hk/
     so the same site root serves all 4 langs (no per-lang folder
     required at deploy time).
   - Cache-bust: 2026-06-10 (force browsers to refetch on hard refresh)
@@ -50,14 +50,14 @@
     'zh-HK': '繁體中文',
   };
 
-  // Map language code → url-path prefix used in links (en/, cn/, tw/).
+  // Map language code → url-path prefix used in links (en/, cn/, hk/).
   // ja uses root (no prefix). The header already encodes this per-language.
   // Default root is empty — actual page path is preserved by lang.js.
   var URL_PREFIX = {
     'ja':    '',
     'en':    'en/',
     'zh-CN': 'cn/',
-    'zh-HK': 'tw/',
+    'zh-HK': 'hk/',
   };
 
   // ---- current language resolution ----
