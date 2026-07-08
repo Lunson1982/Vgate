@@ -19,7 +19,7 @@
   // ─────────────────────────────────────────────────────────
   // Brand manifest. Order = display order.
   // filename : exact file in /assets/img/brands/
-  // name     : human-readable brand name (used in figcaption + alt)
+  // name     : human-readable brand name
   // url      : link target. Set to '' (empty) or '#' or leave unset
   //            to render the brand as a non-clickable logo (no link).
   //            Set to a real URL to make the card clickable.
@@ -79,13 +79,13 @@
       card.innerHTML =
         '<div class="brand-card-inner" role="img" aria-label="' + escapeAttr(name) + '">' +
           '<img src="' + escapeAttr(src) + '" alt="' + escapeAttr(name) + '" decoding="async" width="200" height="200">' +
-          '<figcaption class="brand-name">' + escapeAttr(name) + '</figcaption>' +
+          '< class="brand-name">' + escapeAttr(name) + '</>' +
         '</div>';
     } else {
       card.innerHTML =
         '<a href="' + escapeAttr(url) + '" aria-label="' + escapeAttr(name) + '" target="_blank" rel="noopener">' +
           '<img src="' + escapeAttr(src) + '" alt="' + escapeAttr(name) + '" decoding="async" width="200" height="200">' +
-          '<figcaption class="brand-name">' + escapeAttr(name) + '</figcaption>' +
+          '< class="brand-name">' + escapeAttr(name) + '</>' +
         '</a>';
     }
     // Belt-and-suspenders: if any descendant still has an href (e.g. from a
