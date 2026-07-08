@@ -20,7 +20,7 @@
         </dl>
       </dd>
       <dd>
-        <div class="openbtn" role="button" aria-label="Open menu" tabindex="0"><img src="{$root}assets/img/common/menu_right_01_pc.svg" height="14" alt="MENU" class="switch"></div>
+        <div class="openbtn" role="button" aria-label="Open menu" tabindex="0"><img src="{$root}assets/img/common/menu_right_01_pc.svg?v=2" height="14" alt="MENU" class="switch"></div>
         <div class="closebtn" role="button" aria-label="Close menu" tabindex="0">
   <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true">
     <line x1="2" y1="2" x2="14" y2="14" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round"/>
