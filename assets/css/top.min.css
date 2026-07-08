@@ -184,12 +184,13 @@
 /* ---------- News section ---------- */
 /* ---------- Lang switch: hide all 4 lang blocks by default.
    lang.js unhides the matching one on DOMContentLoaded.
-   Without this, all 4 lang navs are visible briefly before JS runs. */
-.engCont, .chnCont, .hkCont, .jpnCont { display: none; }
+   Without this, all 4 lang navs are visible briefly before JS runs.
+   !important needed because .subTitle, .inner, etc. have higher specificity. */
+.engCont, .chnCont, .hkCont, .jpnCont { display: none !important; }
 .jpnCont[data-active="true"],
 .engCont[data-active="true"],
 .chnCont[data-active="true"],
-.hkCont[data-active="true"] { display: block; }
+.hkCont[data-active="true"] { display: block !important; }
 
 /* ---------- Brand logos grid (auto-rendered by brands.js) ---------- */
 #brands-grid,
