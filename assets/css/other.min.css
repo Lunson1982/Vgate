@@ -1,0 +1,147 @@
+/*=========================================================
+  VGATE — other.min.css
+  Secondary-page styles: about page photoInner grid, policy,
+  message, business, group, history, officer, access pages
+=========================================================*/
+
+.contWrap .photoInner{
+  width:100%; padding:72px 0 0; max-width:100%;
+}
+.contWrap .photoInner ul{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:18px;
+  width:90%; max-width:1140px; margin:0 auto;
+}
+.contWrap .photoInner ul li{
+  position:relative; overflow:hidden;
+}
+.contWrap .photoInner ul li a{
+  display:block; position:relative; width:100%; height:100%;
+  transition:opacity 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.contWrap .photoInner ul li a figure{
+  position:relative; padding-top:75%; overflow:hidden; background:#e0e0e0;
+}
+.contWrap .photoInner ul li a figure img{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  height:100%; width:100%; object-fit:cover;
+  transition:transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.contWrap .photoInner ul li a h3{
+  font-size:1.2rem; padding:18px 0; text-align:center;
+  border-bottom:1px solid #1A1A1A; margin-bottom:18px;
+}
+.contWrap .photoInner ul li a:hover figure img{transform:translate(-50%,-50%) scale(1.05);transition:transform 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+.contWrap .photoInner ul li a:hover{opacity:.85}
+
+@media only screen and (max-width: 768px){
+  .contWrap .photoInner ul{grid-template-columns:repeat(2, 1fr);gap:12px}
+  .contWrap .photoInner ul li a h3{font-size:1rem;padding:12px 0}
+}
+@media only screen and (max-width: 480px){
+  .contWrap .photoInner ul{grid-template-columns:1fr;gap:18px}
+  .contWrap .photoInner ul li a h3{font-size:1.1rem;padding:18px 0}
+}
+
+/* ---------- Section heading (h2 with EN + JP line) ---------- */
+.contWrap section.trackingWrap.inner h2{
+  font-size:2rem; line-height:1.4; margin-bottom:36px; font-weight:700;
+  text-align:left;
+}
+.contWrap section.trackingWrap.inner h2 span{
+  display:block; font-size:1rem; margin-top:6px; color:#717071; font-weight:400;
+}
+@media only screen and (max-width: 768px){
+  .contWrap section.trackingWrap.inner h2{text-align:center;font-size:1.6rem}
+}
+
+/* ---------- Photo blocks (figure+caption) ---------- */
+.contWrap .photoWrap .inner dl,
+.contWrap section.photoWrap .inner dl{
+  display:flex; justify-content:space-between; align-items:center;
+  flex-wrap:wrap; align-items:flex-end; max-width:1140px; margin:0 auto; width:90%;
+}
+.contWrap .photoWrap .inner dl dt,
+.contWrap section.photoWrap .inner dl dt{width:58.666667%;max-width:440px}
+.contWrap .photoWrap .inner dl dt figure,
+.contWrap section.photoWrap .inner dl dt figure{
+  position:relative; padding-top:62.5%; overflow:hidden; background:#e0e0e0;
+}
+.contWrap .photoWrap .inner dl dt figure img,
+.contWrap section.photoWrap .inner dl dt figure img{
+  position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+  width:100%; height:100%; object-fit:cover;
+}
+.contWrap .photoWrap .inner dl dd,
+.contWrap section.photoWrap .inner dl dd{width:37.333333%;max-width:280px}
+
+@media only screen and (max-width: 768px){
+  .contWrap .photoWrap .inner dl,
+  .contWrap section.photoWrap .inner dl{display:flex;flex-direction:column}
+  .contWrap .photoWrap .inner dl dt,
+  .contWrap section.photoWrap .inner dl dt{width:100%;max-width:100%}
+  .contWrap .photoWrap .inner dl dd,
+  .contWrap section.photoWrap .inner dl dd{margin-top:18px;width:100%;max-width:100%}
+}
+
+/* ---------- President / signature line ---------- */
+.contWrap p.president{margin-top:36px;text-align:right;font-weight:500}
+
+/* ---------- Timeline (history page) ---------- */
+.contWrap .timeline{width:90%;max-width:750px;margin:0 auto;padding:0}
+.contWrap .timeline li{
+  display:grid; grid-template-columns:120px 1fr; gap:18px;
+  padding:18px 0; border-bottom:1px solid #e0e0e0; font-size:.9rem;
+  align-items:flex-start;
+}
+.contWrap .timeline li .year{font-weight:700;letter-spacing:.05em}
+.contWrap .timeline li .month{color:#717071;margin-left:6px}
+.contWrap .timeline li .event{line-height:1.6}
+@media only screen and (max-width: 480px){
+  .contWrap .timeline li{grid-template-columns:80px 1fr;gap:12px;font-size:.85rem}
+}
+
+/* ---------- Officer table ---------- */
+.contWrap table.officer{
+  width:90%; max-width:750px; margin:36px auto 0; border-collapse:collapse;
+  font-size:.9rem;
+}
+.contWrap table.officer th,
+.contWrap table.officer td{
+  border-bottom:1px solid #e0e0e0; padding:14px 8px; text-align:left; vertical-align:top;
+  font-weight:400;
+}
+.contWrap table.officer th{width:30%;font-weight:700}
+
+/* ---------- Two-column layout (col2Wrap) ---------- */
+.contWrap .col2Wrap{
+  width:100%; display:flex; flex-wrap:wrap; max-width:1140px; margin:0 auto;
+}
+.contWrap .col2Wrap section.adjust{width:50%;padding:72px 5%;box-sizing:border-box}
+.contWrap .col2Wrap section.adjust:nth-of-type(1){border-right:1px solid #e0e0e0}
+.contWrap .col2Wrap section.adjust h2{font-size:1.7rem;margin-bottom:18px}
+.contWrap .col2Wrap section.adjust h2.mutiple{font-weight:700}
+@media only screen and (max-width: 768px){
+  .contWrap .col2Wrap section.adjust{width:100%;border-right:none !important;border-bottom:1px solid #e0e0e0;padding:36px 5%}
+  .contWrap .col2Wrap section.adjust:last-of-type{border-bottom:none}
+}
+
+/* ---------- News list page ---------- */
+.contWrap #newsList{width:90%;max-width:750px;margin:0 auto;padding:144px 0}
+.contWrap #newsList .year{font-size:1.4rem;font-weight:700;margin:36px 0 12px;letter-spacing:.05em}
+.contWrap #newsList .year:first-of-type{margin-top:0}
+.contWrap #newsList ul li{
+  display:grid; grid-template-columns:120px 1fr; gap:18px;
+  padding:18px 0; border-bottom:1px solid #e0e0e0; font-size:.9rem;
+  align-items:flex-start;
+}
+.contWrap #newsList ul li time{color:#717071}
+.contWrap #newsList ul li .cat{
+  display:inline-block; margin-left:6px; padding:2px 8px;
+  border:1px solid #717071; font-size:.75rem;
+}
+.contWrap #newsList ul li .ttl{line-height:1.5}
+@media only screen and (max-width: 480px){
+  .contWrap #newsList{padding:72px 0}
+  .contWrap #newsList ul li{grid-template-columns:1fr;gap:6px;font-size:.85rem}
+  .contWrap #newsList ul li time{font-size:.8rem}
+}

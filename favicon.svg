@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 90" preserveAspectRatio="xMinYMid meet">
+  <!-- Vgate corporate logo — placeholder. Replace with final mark. -->
+  <g>
+    <!-- Mark -->
+    <rect x="0" y="0" width="90" height="90" fill="#000"/>
+    <path d="M20 25 L45 70 L70 25" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="square" stroke-linejoin="miter"/>
+    <!-- Wordmark -->
+    <text x="115" y="68" font-family="'Noto Sans', Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="2" fill="#000">VGATE</text>
+  </g>
+</svg>

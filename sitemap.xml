@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://vgate.example/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://vgate.example/about/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vgate.example/about/policy.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vgate.example/about/message.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vgate.example/about/business.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vgate.example/about/group.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vgate.example/about/history.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vgate.example/about/officer.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vgate.example/about/access.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vgate.example/commitment/sustainability.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vgate.example/news/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vgate.example/recruit/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vgate.example/contact/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://vgate.example/sitepolicy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vgate.example/privacypolicy.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://vgate.example/sitemap.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

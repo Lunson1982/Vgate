@@ -1,0 +1,12 @@
+# Cloudflare Pages redirects
+# Format: <source> <destination> [status]
+
+# Trailing-slash normalization
+/about/* /about/:splat 200
+/commitment/* /commitment/:splat 200
+/recruit/* /recruit/:splat 200
+/news/* /news/:splat 200
+/contact/* /contact/:splat 200
+
+# Old URLs that might still get traffic
+/index.html / 301

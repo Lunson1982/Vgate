@@ -1,0 +1,304 @@
+/*=========================================================
+  VGATE — top.min.css
+  Homepage sections: hero, banner carousel, commitment,
+  brands, companies, recruit, news
+=========================================================*/
+
+/* ---------- Main visual (hero) ---------- */
+#mainVisual{position:relative;top:0;width:100%;overflow:hidden}
+#mainVisual:before{content:"";display:block;padding-top:56.40625%}
+@media only screen and (max-width: 768px){#mainVisual:before{padding-top:120%}}
+@media only screen and (max-width: 480px){#mainVisual:before{padding-top:150%}}
+#mainVisual .titleWrap{
+  position:absolute; top:0; z-index:1002; width:100%; height:100%;
+  display:flex; justify-content:center; align-items:flex-start; flex-wrap:wrap;
+}
+#mainVisual .titleWrap h1{margin-top:23%;max-width:1000px;width:100%;overflow:hidden}
+#mainVisual .titleWrap h1 span.mainTitle{display:block;opacity:0}
+#mainVisual .titleWrap h1 span.subTitle{
+  display:block; color:#fff; letter-spacing:.05em;
+  font-feature-settings:"palt"; -webkit-font-feature-settings:"palt";
+  font-size:3.2rem; line-height:1.8; font-weight:300; text-align:center;
+}
+#mainVisual .titleWrap h1 span.subTitle span{line-height:1.5;display:inline-block;transform:translateY(200px)}
+#mainVisual .titleWrap h1 span.subTitle span::before{display:block;width:0;height:0;margin-top:calc((1 - 1.5) * .5em);content:""}
+#mainVisual .titleWrap h1 span.subTitle span::after{display:block;width:0;height:0;margin-bottom:calc((1 - 1.5) * .5em);content:""}
+@media only screen and (min-width: 768px) and (max-width: 1280px){
+  #mainVisual .titleWrap h1 span.subTitle{font-size:calc((40 / 1280) * 100vw)}
+}
+@media only screen and (max-width: 768px){
+  #mainVisual .titleWrap{align-items:flex-start}
+  #mainVisual .titleWrap h1{margin-top:50%}
+  #mainVisual .titleWrap h1 span.subTitle{font-size:5.5vw}
+}
+@media only screen and (max-width: 480px){
+  #mainVisual .titleWrap h1{margin-top:60%}
+  #mainVisual .titleWrap h1 span.subTitle{font-size:6.0vw}
+}
+#mainVisual .btnArea{
+  max-width:350px; width:90%; position:absolute; bottom:36px; left:50%;
+  transform:translateX(-50%); z-index:1003;
+}
+#mainVisual .btnArea a.btn{transform:translateY(150px);position:relative;border:none;background:none;width:100%;height:100%}
+#mainVisual .btnArea a.btn:before{
+  content:""; position:absolute; left:0; top:0; z-index:-1; display:block;
+  width:100%; height:100%; border:1px solid #fff; background-color:transparent;
+  transition:background-color 1s cubic-bezier(0, 0.7, 0, 1);
+}
+#mainVisual .btnArea a.btn p svg,#mainVisual .btnArea a.btn p img{width:152px;height:auto;margin:0 auto}
+#mainVisual .btnArea a.btn p svg path,#mainVisual .btnArea a.btn p img path{fill:#fff}
+#mainVisual .btnArea a.btn p span{font-size:1.2rem;letter-spacing:.1em;display:block;text-align:center;margin-top:12px;color:#fff}
+@media only screen and (min-width: 769px){
+  #mainVisual .btnArea a.btn:hover{opacity:1}
+  #mainVisual .btnArea a.btn:hover:before{background-color:#fff;transition:background-color 1s cubic-bezier(0, 0.7, 0, 1)}
+  #mainVisual .btnArea a.btn:hover p svg path{fill:#1A1A1A}
+  #mainVisual .btnArea a.btn:hover p span{color:#1A1A1A}
+}
+@media only screen and (max-width: 480px){
+  #mainVisual .btnArea a.btn p svg,#mainVisual .btnArea a.btn p img{width:120px}
+  #mainVisual .btnArea a.btn p span{font-size:1rem}
+}
+
+/* ---------- Hero slide backgrounds (placeholder gradients, no photos) ---------- */
+#mainVisual .mainSlider{position:absolute;top:0;left:0;width:100%;height:100%}
+#mainVisual .mainSlider .slide01{
+  position:absolute; top:0; left:0; width:100%; height:100%;
+  background: linear-gradient(135deg, #1A1A1A 0%, #2E2E2E 60%, #4A4A4A 100%);
+  z-index:1001;
+}
+
+/* ---------- Banner carousel (Swiper) ---------- */
+#mainVisual+.bannerWrap{margin-top:36px}
+@media only screen and (max-width: 768px){#mainVisual+.bannerWrap{margin-top:18px}}
+#mainVisual+.bannerWrap .swiper-banner{overflow:visible}
+#mainVisual+.bannerWrap .swiper-banner .swiper-slide{
+  width:auto;
+  box-shadow:0 1.5px 6px 0 rgba(0,0,0,0.15);
+  -webkit-box-shadow:0 1.5px 6px 0 rgba(0,0,0,0.15);
+}
+#mainVisual+.bannerWrap .swiper-banner .swiper-slide a img{width:auto;height:165.7px}
+@media only screen and (max-width: 768px){
+  #mainVisual+.bannerWrap .swiper-banner .swiper-slide a img{height:127.31px}
+}
+@media only screen and (max-width: 480px){
+  #mainVisual+.bannerWrap .swiper-banner .swiper-slide a img{height:106.22px}
+}
+
+/* Placeholder for banner slides (no photos) */
+#mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{
+  display:flex; align-items:center; justify-content:center; padding:0 32px;
+  background:#efefef; color:#1A1A1A; font-size:.8rem; letter-spacing:.1em;
+  height:165.7px; text-transform:uppercase; font-weight:700;
+  width:280px; box-sizing:border-box;
+}
+@media only screen and (max-width: 768px){
+  #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{height:127.31px;width:220px}
+}
+@media only screen and (max-width: 480px){
+  #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{height:106.22px;width:180px;font-size:.7rem}
+}
+
+/* ---------- Commitment section ---------- */
+#commitment.inner h2+p{width:100%}
+#commitment.inner h2+p+p{margin-bottom:36px}
+#commitment.inner p a{display:inline}
+#commitment.inner>div:not(.btnArea){
+  width:100%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
+}
+#commitment.inner>div:not(.btnArea) h3{
+  border-left:1px solid #1A1A1A; display:flex; justify-content:center; align-items:center; flex-wrap:wrap;
+}
+#commitment.inner>div:not(.btnArea) h3:nth-of-type(1){width:34.33333%;border-right:1px solid #1A1A1A}
+#commitment.inner>div:not(.btnArea) h3:nth-of-type(2){width:28%}
+#commitment.inner>div:not(.btnArea) h3:nth-of-type(3){width:37.66666%;border-right:1px solid #1A1A1A}
+#commitment.inner>div:not(.btnArea) h3 a{
+  padding:6px 0; width:100%; overflow:hidden; display:block;
+  display:flex; justify-content:center; align-items:center; flex-wrap:wrap;
+}
+#commitment.inner>div:not(.btnArea) h3 a img{width:auto;height:27px;transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+#commitment.inner>div:not(.btnArea) h3 a span{
+  margin-top:12px; width:100%; display:block; text-align:center;
+  font-size:1.2rem; line-height:1; transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#commitment.inner>div:not(.btnArea) h3 a:hover img{opacity:0.3;transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+#commitment.inner>div:not(.btnarea) h3 a:hover span,
+#commitment.inner>div:not(.btnArea) h3 a:hover span{opacity:0.3;transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+#commitment.inner div.btnArea{max-width:350px;width:90%}
+#commitment.inner div.btnArea a.btn p{line-height:1}
+#commitment.inner div.btnArea a.btn:hover{opacity:1}
+#commitment.inner div.btnArea svg{width:auto;height:27px}
+
+@media only screen and (max-width: 768px){
+  #commitment.inner h2+p{padding-bottom:0;border-bottom:none}
+  #commitment.inner>div:not(.btnArea){padding-top:0;border-top:none;display:flex;flex-direction:column}
+  #commitment.inner>div:not(.btnArea) h3{border-left:none;border-top:1px solid #1A1A1A}
+  #commitment.inner>div:not(.btnArea) h3:nth-of-type(1){width:100%}
+  #commitment.inner>div:not(.btnArea) h3:nth-of-type(2){width:100%}
+  #commitment.inner>div:not(.btnArea) h3:nth-of-type(3){width:100%}
+  #commitment.inner>div:not(.btnArea) h3 a{padding:36px 0}
+  #commitment.inner>div:not(.btnArea) h3 a img{width:80%;max-width:356px;height:auto}
+  #commitment.inner>div:not(.btnArea) h3:last-of-type{border-right:none;border-bottom:1px solid #1A1A1A}
+  #commitment.inner div.btnArea svg{width:100%;max-width:356px;height:auto}
+}
+
+/* ---------- Brand/Companies/Recruit — 2-col pattern (image 58.66% + text 37.33%) ---------- */
+#brand{background:#F5F4F2}
+#brand .inner dl,
+#companies .inner dl,
+#recruit .inner dl{
+  width:100%; display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap;
+}
+#brand .inner dl dt,
+#companies .inner dl dt,
+#recruit .inner dl dt{width:58.666667%;max-width:440px}
+#brand .inner dl dt figure,
+#companies .inner dl dt figure,
+#recruit .inner dl dt figure{
+  position:relative; height:0; width:100%; padding-top:62.5%; overflow:hidden;
+  background:#e0e0e0;
+}
+#brand .inner dl dt figure img,
+#companies .inner dl dt figure img,
+#recruit .inner dl dt figure img{
+  position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+  height:100%; width:100%; object-fit:cover;
+}
+#brand .inner dl dd,
+#companies .inner dl dd,
+#recruit .inner dl dd{width:37.333333%;max-width:280px}
+
+#recruit{background:#F5F4F2}
+
+@media only screen and (max-width: 768px){
+  #brand .inner dl,
+  #companies .inner dl,
+  #recruit .inner dl{display:flex;flex-direction:column}
+  #brand .inner dl dt,
+  #companies .inner dl dt,
+  #recruit .inner dl dt{width:100%;max-width:100%}
+  #brand .inner dl dd,
+  #companies .inner dl dd,
+  #recruit .inner dl dd{margin-top:18px;width:100%;max-width:100%}
+}
+
+/* ---------- News section ---------- */
+/* ---------- Lang switch: hide all 4 lang blocks by default.
+   lang.js unhides the matching one on DOMContentLoaded.
+   Without this, all 4 lang navs are visible briefly before JS runs. */
+.engCont, .chnCont, .tcCont, .jpnCont { display: none; }
+.jpnCont[data-active="true"],
+.engCont[data-active="true"],
+.chnCont[data-active="true"],
+.tcCont[data-active="true"] { display: block; }
+
+/* ---------- Brand logos grid (auto-rendered by brands.js) ---------- */
+#brands-grid,
+.brands-grid{
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(160px, 1fr));
+  gap:18px;
+  margin-top:36px;
+}
+@media only screen and (max-width: 768px){
+  #brands-grid, .brands-grid{grid-template-columns:repeat(auto-fill, minmax(120px, 1fr));gap:12px}
+}
+@media only screen and (max-width: 480px){
+  #brands-grid, .brands-grid{grid-template-columns:repeat(2, 1fr);gap:18px}
+}
+#brands-grid .brand-card,
+.brands-grid .brand-card{
+  background:#fff;
+  border:1px solid #e0e0e0;
+  padding:18px;
+  display:flex; align-items:center; justify-content:center;
+  aspect-ratio:1/1;
+  transition:border-color 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  opacity:0; transform:translateY(8px);
+  animation:brandIn .6s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+@keyframes brandIn{to{opacity:1;transform:translateY(0)}}
+#brands-grid .brand-card:hover,
+.brands-grid .brand-card:hover{
+  border-color:#1A1A1A;
+  transform:translateY(-2px);
+  transition:border-color 1s cubic-bezier(0.215, 0.61, 0.355, 1), transform 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#brands-grid .brand-card a,
+#brands-grid .brand-card .brand-card-inner,
+.brands-grid .brand-card a,
+.brands-grid .brand-card .brand-card-inner{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:100%; height:100%; text-decoration:none; color:#1A1A1A; padding:6px;
+  cursor: pointer;
+}
+#brands-grid .brand-card--no-link .brand-card-inner,
+.brands-grid .brand-card--no-link .brand-card-inner{
+  cursor: default;
+}
+#brands-grid .brand-card img,
+.brands-grid .brand-card img{
+  display:block;
+  width:auto; height:auto;
+  max-width:100%; max-height:64px;
+  flex-shrink:0;
+  margin-bottom:8px;
+}
+#brands-grid .brand-card .brand-name,
+.brands-grid .brand-card .brand-name{
+  font-size:.7rem; letter-spacing:.05em; color:#717071; text-transform:uppercase;
+}
+#brands-grid + .brands-empty,
+.brands-grid + .brands-empty{
+  width:100%;
+  margin-top:36px;
+  padding:36px;
+  background:#fff;
+  border:1px dashed #c0c0c0;
+  text-align:center;
+  color:#717071;
+}
+#brands-grid + .brands-empty .brands-empty-title,
+.brands-grid + .brands-empty .brands-empty-title{
+  font-size:1rem; color:#1A1A1A; margin-bottom:12px; font-weight:500;
+}
+#brands-grid + .brands-empty .brands-empty-hint,
+.brands-grid + .brands-empty .brands-empty-hint{
+  font-size:.85rem; line-height:1.6;
+}
+#brands-grid + .brands-empty code,
+.brands-grid + .brands-empty code{
+  font-family:ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size:.8em;
+  background:#efefef;
+  padding:2px 6px;
+  border-radius:2px;
+}
+.brands-empty{
+  width:100%;
+  margin-top:36px;
+  padding:36px;
+  background:#fff;
+  border:1px dashed #c0c0c0;
+  text-align:center;
+  color:#717071;
+}
+.brands-empty .brands-empty-title{font-size:1rem;color:#1A1A1A;margin-bottom:12px;font-weight:500}
+.brands-empty .brands-empty-hint{font-size:.85rem;line-height:1.6}
+.brands-empty code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8em;background:#efefef;padding:2px 6px;border-radius:2px}
+
+#news .inner>div{width:100%}
+#news .inner>div article{margin-top:36px}
+#news .inner>div article:first-of-type{margin-top:0}
+#news .inner>div article a dl dt.category{
+  display:flex; align-items:center; flex-wrap:wrap;
+  font-size:0.8rem; line-height:1; color:#717071; margin-bottom:12px;
+}
+#news .inner>div article a dl dt.category span{
+  margin:0 0 0 12px; padding:3px 0 3px; width:100px; text-align:center;
+  border:1px solid #717071; background:#fff;
+}
+#news .inner>div article a dl dd p{
+  line-height:1.5; text-align:initial;
+  font-feature-settings:"palt"; -webkit-font-feature-settings:"palt";
+}

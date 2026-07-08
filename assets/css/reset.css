@@ -1,0 +1,54 @@
+/*
+VGATE RESET CSS
+Based on ONZE reset — used by Vgate corporate site
+Author: Vgate
+Version: 1.0
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  font: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+article, aside, dialog, figure, footer, header, main, nav, section {display:block;}
+img, picture, audio, canvas, video, svg {
+  display: inline-block;
+  width: 100%;
+}
+img {
+  vertical-align: middle;
+}
+a {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {overflow-wrap:break-word;}
+
+br,
+hr {display:block;}
+
+ol,
+ul {list-style:none;}
+
+blockquote, q {quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after {content:none;}
+
+input,
+select {vertical-align:middle;}
+
+table {border-collapse:collapse; border-spacing:0; empty-cells:show;}

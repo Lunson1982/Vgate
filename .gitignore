@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Build artifacts
+node_modules/
+dist/
+.cache/
+
+# Logs
+*.log
+
+# Local env
+.env
+.env.local
+
+# Workerd / Wrangler
+.wrangler/
