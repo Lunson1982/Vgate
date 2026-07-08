@@ -142,6 +142,27 @@
 }
 
 /* ---------- Brand/Companies/Recruit — 2-col pattern (image 58.66% + text 37.33%) ---------- */
+
+/* Section title: English line + native text */
+.section-title-en {
+  display: block;
+  font-size: 1.7rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-family: "Noto Sans","Noto Sans JP","Hiragino Sans",sans-serif;
+}
+.section-title-ja {
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 18px;
+  color: #1A1A1A;
+  font-weight: 400;
+}
+@media only screen and (max-width: 768px) {
+  .section-title-en { text-align: center; font-size: 1.3rem; }
+  .section-title-ja { text-align: center; font-size: 1.1rem; }
+}
+
 #brand{background:#F5F4F2}
 #brand .inner dl,
 #companies .inner dl,

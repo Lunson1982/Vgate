@@ -5,8 +5,8 @@
   Only color tokens differ (Vgate palette).
 =========================================================*/
 
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap";
 
 /* ---------- Breakpoint helpers ---------- */
 .pcOnly{display:block}.pcTabOnly{display:block}.tabSpOnly{display:none}.tabOnly{display:none}.spOnly{display:none}
