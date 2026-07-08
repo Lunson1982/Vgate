@@ -185,11 +185,11 @@
 /* ---------- Lang switch: hide all 4 lang blocks by default.
    lang.js unhides the matching one on DOMContentLoaded.
    Without this, all 4 lang navs are visible briefly before JS runs. */
-.engCont, .chnCont, .tcCont, .jpnCont { display: none; }
+.engCont, .chnCont, .hkCont, .jpnCont { display: none; }
 .jpnCont[data-active="true"],
 .engCont[data-active="true"],
 .chnCont[data-active="true"],
-.tcCont[data-active="true"] { display: block; }
+.hkCont[data-active="true"] { display: block; }
 
 /* ---------- Brand logos grid (auto-rendered by brands.js) ---------- */
 #brands-grid,

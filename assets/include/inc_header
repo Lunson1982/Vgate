@@ -15,7 +15,7 @@
             <a class="lang-opt" data-lang="ja" href="#"><span>日本語</span></a>
             <a class="lang-opt" data-lang="en" href="#"><span>English</span></a>
             <a class="lang-opt" data-lang="zh-CN" href="#"><span>简体中文</span></a>
-            <a class="lang-opt current" data-lang="zh-TW" href="#"><span>繁體中文</span></a>
+            <a class="lang-opt current" data-lang="zh-HK" href="#"><span>繁體中文</span></a>
           </dd>
         </dl>
       </dd>
@@ -108,7 +108,7 @@
         </a></li>
       </ul>
 
-      <!-- 繁體中文 (zh-TW) — DEFAULT -->
+      <!-- 繁體中文 (zh-HK) — DEFAULT -->
       <ul class="tcCont">
         <li>
           <p class="toggleBtn"><a class="btn disable" href="{$root}tw/about/index.html" data-keep-lang><img class="forModern" src="{$root}assets/img/common/about_nav.svg" width="" height="" alt="ABOUT US"><span class="cross"><span></span><span></span></span></a></p>

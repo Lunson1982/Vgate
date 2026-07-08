@@ -1,7 +1,7 @@
 /*==========================================================
   lang.js — Vgate language switcher
-  - 4 languages: zh-TW (default), ja, en, zh-CN
-  - Toggles .jpnCont / .engCont / .chnCont / .tcCont blocks
+  - 4 languages: zh-HK (default), ja, en, zh-CN
+  - Toggles .jpnCont / .engCont / .chnCont / .hkCont blocks
   - Persists in localStorage('vgate.lang')
   - Honors ?lang=xx query param (overrides localStorage)
   - Updates <html lang> and <meta property="og:locale">
@@ -14,8 +14,8 @@
 (function () {
   'use strict';
 
-  var LANGS = ['ja', 'en', 'zh-CN', 'zh-TW'];
-  var DEFAULT_LANG = 'zh-TW';
+  var LANGS = ['ja', 'en', 'zh-CN', 'zh-HK'];
+  var DEFAULT_LANG = 'zh-HK';
   var STORAGE_KEY = 'vgate.lang';
 
   // Map language code → visible block class
@@ -23,7 +23,7 @@
     'ja':    'jpnCont',
     'en':    'engCont',
     'zh-CN': 'chnCont',
-    'zh-TW': 'tcCont',
+    'zh-HK': 'hkCont',
   };
 
   // Map language code → <html lang> value
@@ -31,7 +31,7 @@
     'ja':    'ja',
     'en':    'en',
     'zh-CN': 'zh-CN',
-    'zh-TW': 'zh-TW',
+    'zh-HK': 'zh-HK',
   };
 
   // Map language code → og:locale
@@ -39,7 +39,7 @@
     'ja':    'ja_JP',
     'en':    'en_US',
     'zh-CN': 'zh_CN',
-    'zh-TW': 'zh_TW',
+    'zh-HK': 'zh_HK',
   };
 
   // Map language code → visible label (shown in accordion dt)
@@ -47,7 +47,7 @@
     'ja':    '日本語',
     'en':    'English',
     'zh-CN': '简体中文',
-    'zh-TW': '繁體中文',
+    'zh-HK': '繁體中文',
   };
 
   // Map language code → url-path prefix used in links (en/, cn/, tw/).
@@ -57,7 +57,7 @@
     'ja':    '',
     'en':    'en/',
     'zh-CN': 'cn/',
-    'zh-TW': 'tw/',
+    'zh-HK': 'tw/',
   };
 
   // ---- current language resolution ----

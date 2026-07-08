@@ -141,7 +141,7 @@
 
   /* ------------------------------------------------------------------
    * 5. Language accordion — handled by assets/js/lang.js (4-lang support:
-   *    ja, en, zh-CN, zh-TW with localStorage persistence).
+   *    ja, en, zh-CN, zh-HK with localStorage persistence).
    * ------------------------------------------------------------------ */
 
   /* ------------------------------------------------------------------

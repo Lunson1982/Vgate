@@ -106,7 +106,7 @@ header .inner>dl>dd.language dl.accordion dd a.lang-opt{display:block;font-size:
 header .inner>dl>dd.language dl.accordion dd a.lang-opt:not(:first-child){border-top:1px solid #333}
 header .inner>dl>dd.language dl.accordion dd a.lang-opt.current{background:#767676;color:#fff}
 header .inner>dl>dd.language dl.accordion dd a.lang-opt[data-lang="zh-CN"],
-header .inner>dl>dd.language dl.accordion dd a.lang-opt[data-lang="zh-TW"]{font-family:"Noto Sans SC","Noto Sans TC","Noto Sans JP","Noto Sans",sans-serif}
+header .inner>dl>dd.language dl.accordion dd a.lang-opt[data-lang="zh-HK"]{font-family:"Noto Sans SC","Noto Sans TC","Noto Sans JP","Noto Sans",sans-serif}
 header .inner>dl>dd.language dl.accordion dd{display:none;position:absolute;top:1.5rem;left:0;width:100%;background:#fff;border:1px solid #333;border-top:none}
 header .inner>dl>dd.language dl.accordion dd a{display:block;font-size:.84615rem;text-align:center;padding:6px 0}
 header .inner>dl>dd.language dl.accordion dd a:not(:first-child){border-top:1px solid #333}
