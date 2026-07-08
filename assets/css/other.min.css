@@ -150,3 +150,11 @@
   .contWrap #newsList ul li{grid-template-columns:1fr;gap:6px;font-size:.85rem}
   .contWrap #newsList ul li time{font-size:.8rem}
 }
+
+/* About page language blocks */
+.trackingWrap .hkCont,
+.trackingWrap .engCont,
+.trackingWrap .jpnCont,
+.trackingWrap .chnCont {
+  width: 100%;
+}

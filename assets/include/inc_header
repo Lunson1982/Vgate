@@ -1,10 +1,10 @@
 <header>
   <div class="inner">
     <div class="logo"><a href="{$root}" data-keep-lang>
-      <img class="forModern" src="{$root}assets/img/companies/group_logo.svg" width="" height="" alt="VGATE GROUP">
+      <img class="forModern" src="{$root}assets/img/companies/group_logo.svg" width="" height="" alt="Vgate">
     </a></div>
     <dl>
-      <dt><div class="author"><a href="{$root}" data-keep-lang><img src="{$root}assets/img/common/menu_left_pc.svg" width="" height="" alt="VGATE GROUP" class="switch"></a></div></dt>
+      <dt><div class="author"><a href="{$root}" data-keep-lang><img src="{$root}assets/img/common/menu_left_pc.svg?v=2" width="" height="" alt="Vgate" class="switch"></a></div></dt>
       <dd class="language">
         <dl class="accordion">
           <dt aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
