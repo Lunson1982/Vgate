@@ -41,19 +41,12 @@
       <section class="jpnCont">
         <div>
           <h3 class="img"><a class="about btn disable" href="{$root}about/index.html" data-keep-lang>Vgateについて<span class="cross"><span></span><span></span></span></a></h3>
-          <ul>
-            <li><a href="{$root}about/index.html" data-keep-lang>Vgateについて</a></li>
-            <li><a href="{$root}about/policy.html" data-keep-lang>企業理念</a></li>
-            <li><a href="{$root}about/message.html" data-keep-lang>代表挨拶</a></li>
-            <li><a href="{$root}about/business.html" data-keep-lang>事業紹介</a></li>
-            <li><a href="{$root}about/group.html" data-keep-lang>グループ一覧</a></li>
-            <li><a href="{$root}about/history.html" data-keep-lang>沿革</a></li>
-            <li><a href="{$root}about/officer.html" data-keep-lang>役員一覧</a></li>
-            <li><a href="{$root}about/access.html" data-keep-lang>オフィス</a></li>
-          </ul>
+          <ul><ul>
+            <li><a href="{$root}about/index.html" data-keep-lang>Vgateについて</a></li><li><a href="{$root}about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}about/business.html" data-keep-lang>事業紹介</a></li><li><a href="{$root}about/access.html" data-keep-lang>オフィス</a></li>
+          </ul></ul>
         </div>
         <div>
-          <h3><a href="{$root}about/business-development.html" data-keep-lang>ブランド一覧</a></h3>
+          <h3><a href="{$root}about/index.html" data-keep-lang>ブランド一覧</a></h3>
           <h3><a href="{$root}news/index.html" data-keep-lang>ニュース</a></h3>
           <h3><a href="{$root}sitepolicy.html" data-keep-lang>サイトポリシー</a></h3>
           <h3><a href="{$root}privacypolicy.html" data-keep-lang>プライバシーポリシー</a></h3>
@@ -66,19 +59,12 @@
       <section class="engCont">
         <div>
           <h3 class="img"><a class="about btn disable" href="{$root}en/about/index.html" data-keep-lang>ABOUT US<span class="cross"><span></span><span></span></span></a></h3>
-          <ul>
-            <li><a href="{$root}en/about/index.html" data-keep-lang>About Vgate</a></li>
-            <li><a href="{$root}en/about/policy.html" data-keep-lang>Philosophy</a></li>
-            <li><a href="{$root}en/about/message.html" data-keep-lang>CEO Message</a></li>
-            <li><a href="{$root}en/about/business.html" data-keep-lang>Business</a></li>
-            <li><a href="{$root}en/about/group.html" data-keep-lang>Group Companies</a></li>
-            <li><a href="{$root}en/about/history.html" data-keep-lang>History</a></li>
-            <li><a href="{$root}en/about/officer.html" data-keep-lang>Officers</a></li>
-            <li><a href="{$root}en/about/access.html" data-keep-lang>Offices</a></li>
-          </ul>
+          <ul><ul>
+            <li><a href="{$root}en/about/index.html" data-keep-lang>About Vgate</a></li><li><a href="{$root}en/about/policy.html" data-keep-lang>Philosophy</a></li><li><a href="{$root}en/about/business.html" data-keep-lang>Business</a></li><li><a href="{$root}en/about/access.html" data-keep-lang>Offices</a></li>
+          </ul></ul>
         </div>
         <div>
-          <h3><a href="{$root}en/about/business-development.html" data-keep-lang>Brands</a></h3>
+          <h3><a href="{$root}en/about/index.html" data-keep-lang>Brands</a></h3>
           <h3><a href="{$root}en/news/index.html" data-keep-lang>News</a></h3>
           <h3><a href="{$root}en/sitepolicy.html" data-keep-lang>Site Policy</a></h3>
           <h3><a href="{$root}en/privacypolicy.html" data-keep-lang>Privacy Policy</a></h3>
@@ -91,19 +77,12 @@
       <section class="chnCont">
         <div>
           <h3 class="img"><a class="about btn disable" href="{$root}cn/about/index.html" data-keep-lang>关于我们<span class="cross"><span></span><span></span></span></a></h3>
-          <ul>
-            <li><a href="{$root}cn/about/index.html" data-keep-lang>关于Vgate</a></li>
-            <li><a href="{$root}cn/about/policy.html" data-keep-lang>企业理念</a></li>
-            <li><a href="{$root}cn/about/message.html" data-keep-lang>代表致辞</a></li>
-            <li><a href="{$root}cn/about/business.html" data-keep-lang>事业介绍</a></li>
-            <li><a href="{$root}cn/about/group.html" data-keep-lang>集团一览</a></li>
-            <li><a href="{$root}cn/about/history.html" data-keep-lang>沿革</a></li>
-            <li><a href="{$root}cn/about/officer.html" data-keep-lang>董事一览</a></li>
-            <li><a href="{$root}cn/about/access.html" data-keep-lang>办公室</a></li>
-          </ul>
+          <ul><ul>
+            <li><a href="{$root}cn/about/index.html" data-keep-lang>关于Vgate</a></li><li><a href="{$root}cn/about/policy.html" data-keep-lang>企业理念</a></li><li><a href="{$root}cn/about/business.html" data-keep-lang>事业介绍</a></li><li><a href="{$root}cn/about/access.html" data-keep-lang>办公室</a></li>
+          </ul></ul>
         </div>
         <div>
-          <h3><a href="{$root}cn/about/business-development.html" data-keep-lang>品牌一览</a></h3>
+          <h3><a href="{$root}cn/about/index.html" data-keep-lang>品牌一览</a></h3>
           <h3><a href="{$root}cn/news/index.html" data-keep-lang>新闻</a></h3>
           <h3><a href="{$root}cn/sitepolicy.html" data-keep-lang>网站政策</a></h3>
           <h3><a href="{$root}cn/privacypolicy.html" data-keep-lang>隐私政策</a></h3>
@@ -116,19 +95,12 @@
       <section class="tcCont">
         <div>
           <h3 class="img"><a class="about btn disable" href="{$root}tw/about/index.html" data-keep-lang>關於我們<span class="cross"><span></span><span></span></span></a></h3>
-          <ul>
-            <li><a href="{$root}tw/about/index.html" data-keep-lang>關於Vgate</a></li>
-            <li><a href="{$root}tw/about/policy.html" data-keep-lang>企業理念</a></li>
-            <li><a href="{$root}tw/about/message.html" data-keep-lang>代表致詞</a></li>
-            <li><a href="{$root}tw/about/business.html" data-keep-lang>事業介紹</a></li>
-            <li><a href="{$root}tw/about/group.html" data-keep-lang>集團一覽</a></li>
-            <li><a href="{$root}tw/about/history.html" data-keep-lang>沿革</a></li>
-            <li><a href="{$root}tw/about/officer.html" data-keep-lang>董事一覽</a></li>
-            <li><a href="{$root}tw/about/access.html" data-keep-lang>辦公室</a></li>
-          </ul>
+          <ul><ul>
+            <li><a href="{$root}tw/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}tw/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}tw/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}tw/about/access.html" data-keep-lang>辦公室</a></li>
+          </ul></ul>
         </div>
         <div>
-          <h3><a href="{$root}tw/about/business-development.html" data-keep-lang>品牌一覽</a></h3>
+          <h3><a href="{$root}hk/about/index.html" data-keep-lang>品牌一覽</a></h3>
           <h3><a href="{$root}tw/news/index.html" data-keep-lang>新聞</a></h3>
           <h3><a href="{$root}tw/sitepolicy.html" data-keep-lang>網站政策</a></h3>
           <h3><a href="{$root}tw/privacypolicy.html" data-keep-lang>隱私權政策</a></h3>
