@@ -87,15 +87,15 @@ header .inner>dl{
 }
 header .inner>dl>dt{width:152px;height:auto}
 header .inner>dl>dt img{height:14px;width:auto}
-header .inner>dl>dd:nth-of-type(2){width:80px;flex-shrink:0}
-header .inner>dl>dd div.openbtn{overflow:hidden;display:flex;gap:2px;align-items:center;justify-content:flex-end}
-header .inner>dl>dd div.openbtn span{display:inline-block;width:auto;height:14px;flex-shrink:0}
+header .inner>dl>dd:nth-of-type(2){width:52px;flex-shrink:0}
+header .inner>dl>dd div.openbtn{overflow:hidden;display:flex;align-items:center;justify-content:flex-end}
+header .inner>dl>dd div.openbtn span{display:inline-block;width:auto;height:13px;flex-shrink:0}
 header .inner>dl>dd div.openbtn span img{height:100%;width:auto}
 header .inner>dl>dd div.openbtn:hover span{animation:linkhover2 .3s cubic-bezier(0.645, 0.045, 0.355, 1)}
 header .inner>dl>dd div.openbtn:hover span:nth-of-type(2){animation-delay:.1s}
 header .inner>dl>dd div.openbtn:hover span:nth-of-type(3){animation-delay:.2s}
 header .inner>dl>dd div.openbtn:hover span:nth-of-type(4){animation-delay:.3s}
-header .inner>dl>dd.language{width:calc(100% - 202px);font-size:1rem;padding-right:30px;display:flex;justify-content:flex-end}
+header .inner>dl>dd.language{width:calc(100% - 210px);font-size:1rem;padding-right:30px;display:flex;justify-content:flex-end}
 @media only screen and (max-width: 768px){header .inner>dl>dd.language{padding-right:12px}}
 header .inner>dl>dd.language dl.accordion{position:relative}
 header .inner>dl>dd.language dl.accordion dt{padding:0 6px;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
