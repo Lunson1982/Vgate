@@ -23,10 +23,10 @@ async function loadInclude(targetEl, url) {
 
 function header(rootDir) {
   const el = document.getElementById('vgate-header');
-  if (el) loadInclude(el, rootDir + 'assets/include/inc_header.html');
+  if (el) loadInclude(el, rootDir + 'assets/include/inc_header');
 }
 
 function footer(rootDir) {
   const el = document.getElementById('vgate-footer');
-  if (el) loadInclude(el, rootDir + 'assets/include/inc_footer.html');
+  if (el) loadInclude(el, rootDir + 'assets/include/inc_footer');
 }

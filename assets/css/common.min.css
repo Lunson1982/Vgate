@@ -87,10 +87,9 @@ header .inner>dl{
 }
 header .inner>dl>dt{width:152px;height:auto}
 header .inner>dl>dt img{height:14px;width:auto}
-header .inner>dl>dd:nth-of-type(2){width:47px}
-header .inner>dl>dd div.openbtn{overflow:hidden}
-header .inner>dl>dd div.openbtn span{display:inline-block;width:auto;height:15px}
-@media only screen and (max-width: 768px){header .inner>dl>dd div.openbtn span{height:14px}}
+header .inner>dl>dd:nth-of-type(2){width:80px;flex-shrink:0}
+header .inner>dl>dd div.openbtn{overflow:hidden;display:flex;gap:2px;align-items:center;justify-content:flex-end}
+header .inner>dl>dd div.openbtn span{display:inline-block;width:auto;height:14px;flex-shrink:0}
 header .inner>dl>dd div.openbtn span img{height:100%;width:auto}
 header .inner>dl>dd div.openbtn:hover span{animation:linkhover2 .3s cubic-bezier(0.645, 0.045, 0.355, 1)}
 header .inner>dl>dd div.openbtn:hover span:nth-of-type(2){animation-delay:.1s}
