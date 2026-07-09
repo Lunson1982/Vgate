@@ -287,7 +287,12 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 @media only screen and (max-width: 480px){
   .contWrap footer .inner .groupList li:nth-of-type(3),.contWrap footer .inner .groupList li:nth-of-type(7){border-right:1px solid #767676}
   .contWrap footer .inner .groupList li:nth-of-type(n+3){margin-top:6px}
-  .contWrap footer .inner nav section div{width:100%}
+  .contWrap footer .inner nav section{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px}
+footer .inner nav section div{flex:0 0 auto;min-width:120px;padding-right:24px}
+footer .inner nav section div:nth-child(1){flex:0 0 160px}  /* ABOUT US logo */
+footer .inner nav section div:last-of-type{margin-top:0}  /* Contact */
+footer .inner nav section div h3.img a{height:54px}
+footer .inner nav section div h3.img a.about{width:120px}
   .contWrap footer .inner nav section div h3.img a{height:54px}
   .contWrap footer .inner nav section div h3.img a.about,.contWrap footer .inner nav section div h3.img a.commitment,.contWrap footer .inner nav section div h3.img a.recruit{width:100%}
   .contWrap footer .inner nav section div h3.img a.btn{position:relative}
