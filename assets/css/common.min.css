@@ -342,3 +342,13 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;scroll-behavior:auto !important}
 }
+
+/* ---------- Lang switch: hide all 4 lang blocks by default.
+   lang.js unhides the matching one on DOMContentLoaded.
+   Without this, all 4 lang navs are visible briefly before JS runs.
+   !important needed because .subTitle, .inner, etc. have higher specificity. */
+.engCont, .chnCont, .hkCont, .jpnCont { display: none !important; }
+.jpnCont[data-active="true"],
+.engCont[data-active="true"],
+.chnCont[data-active="true"],
+.hkCont[data-active="true"] { display: block !important; }
