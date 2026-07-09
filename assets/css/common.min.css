@@ -247,7 +247,8 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner address{margin-top:18px;font-size:1rem}
 
 .contWrap footer .inner nav{border-top:1px solid #1A1A1A;margin:18px auto 0;padding:18px 0 36px;width:100%}
-.contWrap footer .inner nav section{margin:0 auto;max-width:750px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;gap:12px}
+.contWrap footer .inner nav section{margin:0 auto;max-width:750px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;gap:24px}
+.contWrap footer .inner nav section div{flex:0 0 auto;min-width:120px;padding-right:24px}
 .contWrap footer .inner nav section div h3{margin-bottom:12px;font-size:.9rem;letter-spacing:0}
 .contWrap footer .inner nav section div h3.img a{text-indent:100%;white-space:nowrap;overflow:hidden;height:18px}
 .contWrap footer .inner nav section div h3.img a.about{width:102px;background:url(../img/common/footer-about_nav.svg) no-repeat left center;background-size:102px 18px}
@@ -255,7 +256,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner nav section div h3.img a.recruit{width:77px;background:url(../img/common/footer-recruit_nav.svg) no-repeat left center;background-size:77px 18px}
 .contWrap footer .inner nav section div h3:last-of-type{margin-bottom:0}
 .contWrap footer .inner nav section div h3+ul{margin-top:18px}
-.contWrap footer .inner nav section div ul li{font-size:.8rem;margin-bottom:10px;letter-spacing:0}
+.contWrap footer .inner nav section div ul li{font-size:.8rem;margin-bottom:16px;letter-spacing:0}
 .contWrap footer .inner nav section div ul li:last-of-type{margin-bottom:0}
 .contWrap footer .inner nav section.graduateCont{display:none}
 .contWrap footer .inner nav ul.otherCont{display:none}
@@ -273,7 +274,6 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 
 @media only screen and (max-width: 480px){
   .contWrap footer .inner nav section{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px}
-.contWrap footer .inner nav section div{flex:0 0 auto;min-width:120px;padding-right:24px}
 .contWrap footer .inner nav section div:nth-child(1){flex:0 0 160px}  /* ABOUT US logo */
 .contWrap footer .inner nav section div:last-of-type{margin-top:0}  /* Contact */
 footer .inner nav section div h3.img a{height:54px}
