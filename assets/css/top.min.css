@@ -249,13 +249,22 @@
 .brands-grid .brand-card--no-link .brand-card-inner{
   cursor: default;
 }
-#brands-grid .brand-card img,
-.brands-grid .brand-card img{
+#brands-grid .brand-card-inner,
+.brands-grid .brand-card-inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+#brands-grid .brand-card-inner img,
+.brands-grid .brand-card-inner img{
   display:block;
-  width:auto; height:auto;
-  max-width:100%; max-height:64px;
+  width:100%;
+  height:100%;
+  object-fit:contain;
   flex-shrink:0;
-  margin-bottom:8px;
 }
 #brands-grid .brand-card .brand-name,
 .brands-grid .brand-card .brand-name{
