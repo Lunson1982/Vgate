@@ -85,11 +85,6 @@
     if (anchorLink) {
       closeDrawer();
     }
-    /* Clicking the overlay closes the drawer */
-    const overlay = e.target.closest('header .overlay');
-    if (overlay && overlay.classList.contains('open')) {
-      closeDrawer();
-    }
   });
 
   function closeDrawer() {
