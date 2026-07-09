@@ -25,7 +25,7 @@
   }
 
   // Also animate when user switches language
-  document.addEventListener('langChanged', animateHero);
+  document.addEventListener('vgate:lang-changed', animateHero);
   window.addEventListener('load', function () {
     setTimeout(animateHero, 200);
   });
