@@ -83,18 +83,27 @@
     /* Anchor links inside the drawer close it */
     const anchorLink = e.target.closest('a.anchorLink');
     if (anchorLink) {
-      const closeEl = document.querySelector('.closebtn');
-      const navEl = document.getElementById('g-nav');
-      const overlay = document.querySelector('header .overlay');
-      const contWrap = document.querySelector('.contWrap');
-      const header = document.querySelector('header');
-      if (closeEl)  closeEl.classList.remove('active');
-      if (navEl)    navEl.classList.remove('panelactive');
-      if (overlay)  overlay.classList.remove('open');
-      if (contWrap) contWrap.classList.remove('moveLeft');
-      if (header)   header.classList.remove('moveLeft');
+      closeDrawer();
+    }
+    /* Clicking the overlay closes the drawer */
+    const overlay = e.target.closest('header .overlay');
+    if (overlay && overlay.classList.contains('open')) {
+      closeDrawer();
     }
   });
+
+  function closeDrawer() {
+    const closeEl = document.querySelector('.closebtn');
+    const navEl = document.getElementById('g-nav');
+    const overlayEl = document.querySelector('header .overlay');
+    const contWrap = document.querySelector('.contWrap');
+    const header = document.querySelector('header');
+    if (closeEl)  closeEl.classList.remove('active');
+    if (navEl)    navEl.classList.remove('panelactive');
+    if (overlayEl) overlayEl.classList.remove('open');
+    if (contWrap) contWrap.classList.remove('moveLeft');
+    if (header)   header.classList.remove('moveLeft');
+  }
 
   /* Keyboard support for openbtn / closebtn */
   document.addEventListener('keydown', function (e) {

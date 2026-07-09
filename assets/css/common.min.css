@@ -157,7 +157,7 @@ header #g-nav ul li.sub-nav a{padding-left:13px;margin-left:5px;position:relativ
 header #g-nav ul li.sub-nav a:before{content:"";height:1px;width:8px;background:#fff;position:absolute;left:0;top:50%;transform:translateY(-50%)}
 header #g-nav ul li.sub-nav a img{width:auto;height:18px}
 
-header .overlay{position:fixed;z-index:998;top:0;right:-120%;width:100%;height:100vh;background:rgba(0,0,0,0);transition:all .1s}
+header .overlay{position:fixed;z-index:998;top:0;right:-120%;width:100%;height:100vh;background:rgba(0,0,0,.3);transition:all .3s;cursor:pointer}
 header .overlay.open{right:0}
 header .openbtn{cursor:pointer}
 header .closebtn{
