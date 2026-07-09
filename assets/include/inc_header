@@ -85,7 +85,7 @@
       </ul>
 
       <!-- 繁體中文 (zh-HK) — DEFAULT -->
-      <ul class="tcCont">
+      <ul class="hkCont">
         <li>
           <ol>
             <li><a href="{$root}hk/about/index.html" data-keep-lang>關於Vgate</a></li><li><a href="{$root}hk/about/policy.html" data-keep-lang>企業理念</a></li><li><a href="{$root}hk/about/business.html" data-keep-lang>事業介紹</a></li><li><a href="{$root}hk/about/access.html" data-keep-lang>辦公室</a></li>

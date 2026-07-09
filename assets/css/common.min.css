@@ -124,7 +124,7 @@ header #g-nav.panelactive #g-nav-list{
   position:fixed; z-index:999; width:300px; height:100vh; overflow:auto;
   -webkit-overflow-scrolling:touch; transition:all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);overflow:hidden;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 header #g-nav ul{
   position:absolute; z-index:999;
   transition:top .8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -141,10 +141,10 @@ header #g-nav ul li p.toggleBtn.active a.btn span.cross>span{transition:.8s cubi
 header #g-nav ul li p.toggleBtn.active a.btn span.cross>span:nth-of-type(2){top:calc(50% - .5px);transform:rotate(0)}
 header #g-nav ul li p.toggleBtn+ol{margin-top:12px}
 header #g-nav ul li p.toggleBtn+ol li{padding:6px 0}
-header #g-nav ul li p.toggleBtn+ol li a{font-size:11px;letter-spacing:0;text-align:left;color:#fff;font-weight:300}
+header #g-nav ul li p.toggleBtn+ol li a{font-size:11px;letter-spacing:0;text-align:left;color:#fff;font-weight:300;line-height:1.6}
 header #g-nav ul li a{
   color:#fff; text-decoration:none; display:block; text-transform:uppercase;
-  letter-spacing:.1em; font-weight:bold; transform:translateY(200px);
+  letter-spacing:.1em; font-weight:bold; line-height:1.6; transform:translateY(200px);
   transition:.8s .5s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header #g-nav ul li a img{width:246px;height:auto}
