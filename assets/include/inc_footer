@@ -2,39 +2,7 @@
   <div class="inner">
     <div class="logo"><a href="{$root}" data-keep-lang>Vgate</a></div>
 
-    <!-- 日本語 (default) -->
-    <ol class="groupList jpnCont">
-      <li><a href="#" target="_blank" rel="noopener">Vgate Holdings</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Technology</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Design Lab</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Solutions</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Asia Pacific</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Europe</a></li>
-    </ol>
-    <ol class="groupList engCont">
-      <li><a href="#" target="_blank" rel="noopener">Vgate Holdings</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Technology</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Design Lab</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Solutions</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Asia Pacific</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate Europe</a></li>
-    </ol>
-    <ol class="groupList chnCont">
-      <li><a href="#" target="_blank" rel="noopener">Vgate 控股</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 科技</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 设计实验室</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 解决方案</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 亚太</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 欧洲</a></li>
-    </ol>
-    <ol class="groupList hkCont">
-      <li><a href="#" target="_blank" rel="noopener">Vgate 控股</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 科技</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 設計實驗室</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 解決方案</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 亞太</a></li>
-      <li><a href="#" target="_blank" rel="noopener">Vgate 歐洲</a></li>
-    </ol>
+    
 
     <nav aria-label="Footer navigation">
       <!-- 日本語 -->
