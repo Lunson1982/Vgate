@@ -255,8 +255,9 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner nav section div h3.img a.commitment{width:138px;background:url(../img/common/footer-commitment_nav.svg) no-repeat left center;background-size:138px 18px}
 .contWrap footer .inner nav section div h3.img a.recruit{width:77px;background:url(../img/common/footer-recruit_nav.svg) no-repeat left center;background-size:77px 18px}
 .contWrap footer .inner nav section div h3:last-of-type{margin-bottom:0}
-.contWrap footer .inner nav section div h3+ul{margin-top:18px}
-.contWrap footer .inner nav section div ul li{font-size:.8rem;margin-bottom:16px;letter-spacing:0}
+.contWrap footer .inner nav section div h3+ul{margin-top:18px;padding-left:0}
+.contWrap footer .inner nav section div ul li{font-size:.8rem;margin-bottom:16px;letter-spacing:0;list-style:none}
+.contWrap footer .inner nav section div ul li a{line-height:1.6;padding:2px 0}
 .contWrap footer .inner nav section div ul li:last-of-type{margin-bottom:0}
 .contWrap footer .inner nav section.graduateCont{display:none}
 .contWrap footer .inner nav ul.otherCont{display:none}
