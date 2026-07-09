@@ -306,6 +306,7 @@ footer .inner nav section div h3.img a.about{width:120px}
   .contWrap footer .inner nav section div h3+ul li{margin-bottom:12px}
   .contWrap footer .inner nav section div:last-of-type{margin-top:18px}
   .contWrap footer .inner nav section div:last-of-type h3{font-size:.8rem}
+footer .inner nav section[data-active="true"]{display:flex!important}
 }
 
 /* ---------- Pagetop (circular w/ dasharray draw-on-hover) ---------- */
