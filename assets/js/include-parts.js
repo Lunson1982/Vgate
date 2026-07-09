@@ -10,7 +10,7 @@ async function loadInclude(targetEl, url) {
     if (!res.ok) throw new Error(`HTTP ${res.status} on ${url}`);
     let html = await res.text();
     // Replace {$root} placeholder with the actual rootDir passed in
-    const rootDirMatch = url.match(/^(\.\.?\/)/);
+    const rootDirMatch = url.match(/^((?:\.\.\/)+)/);
     const rootDir = rootDirMatch ? rootDirMatch[0] : './';
     html = html.replace(/\{\$root\}/g, rootDir);
     targetEl.innerHTML = html;
