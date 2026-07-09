@@ -255,7 +255,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner address{margin-top:18px;font-size:1rem}
 
 .contWrap footer .inner nav{border-top:1px solid #1A1A1A;margin:18px auto 0;padding:18px 0 36px;width:100%}
-.contWrap footer .inner nav section{margin:0 auto;max-width:750px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap}
+.contWrap footer .inner nav section{margin:0 auto;max-width:750px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:flex-start;gap:12px}
 .contWrap footer .inner nav section div h3{margin-bottom:12px;font-size:.9rem;letter-spacing:0}
 .contWrap footer .inner nav section div h3.img a{text-indent:100%;white-space:nowrap;overflow:hidden;height:18px}
 .contWrap footer .inner nav section div h3.img a.about{width:102px;background:url(../img/common/footer-about_nav.svg) no-repeat left center;background-size:102px 18px}
@@ -288,9 +288,9 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
   .contWrap footer .inner .groupList li:nth-of-type(3),.contWrap footer .inner .groupList li:nth-of-type(7){border-right:1px solid #767676}
   .contWrap footer .inner .groupList li:nth-of-type(n+3){margin-top:6px}
   .contWrap footer .inner nav section{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px}
-footer .inner nav section div{flex:0 0 auto;min-width:120px;padding-right:24px}
-footer .inner nav section div:nth-child(1){flex:0 0 160px}  /* ABOUT US logo */
-footer .inner nav section div:last-of-type{margin-top:0}  /* Contact */
+.contWrap footer .inner nav section div{flex:0 0 auto;min-width:120px;padding-right:24px}
+.contWrap footer .inner nav section div:nth-child(1){flex:0 0 160px}  /* ABOUT US logo */
+.contWrap footer .inner nav section div:last-of-type{margin-top:0}  /* Contact */
 footer .inner nav section div h3.img a{height:54px}
 footer .inner nav section div h3.img a.about{width:120px}
   .contWrap footer .inner nav section div h3.img a{height:54px}
