@@ -9,18 +9,23 @@
 
   /* ---------- Hero subtitle rise-in (200ms after load) ---------- */
   function animateHero() {
-    const subSpan = document.querySelector('#mainVisual .titleWrap h1 span.subTitle span');
-    if (subSpan) {
-      // reset then animate
-      subSpan.style.transition = 'transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)';
-      subSpan.style.transform = 'translateY(0)';
-    }
+    // Animate every visible subTitle (one per language, only one shown at a time)
+    document.querySelectorAll('#mainVisual .titleWrap h1 span.subTitle span').forEach(function(subSpan) {
+      const parent = subSpan.parentElement;
+      if (parent.offsetParent !== null) { // only visible (not display:none)
+        subSpan.style.transition = 'transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)';
+        subSpan.style.transform = 'translateY(0)';
+      }
+    });
     const btn = document.querySelector('#mainVisual .btnArea a.btn');
     if (btn) {
       btn.style.transition = 'transform 1.2s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), background-color 1s cubic-bezier(0, 0.7, 0, 1)';
       btn.style.transform = 'translateY(0)';
     }
   }
+
+  // Also animate when user switches language
+  document.addEventListener('langChanged', animateHero);
   window.addEventListener('load', function () {
     setTimeout(animateHero, 200);
   });
