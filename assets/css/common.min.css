@@ -180,7 +180,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap .inner{max-width:750px;width:90%;margin:0 auto;padding:144px 0;text-align:justify}
 @media only screen and (max-width: 768px){.contWrap .inner{padding:72px 0}}
 
-.contWrap section.inner{display:flex;flex-direction:column;align-items:flex-start;max-width:750px}
+.contWrap section.inner{display:flex;flex-direction:column;align-items:flex-start;max-width:750px;padding-top:150px}
 .contWrap section.inner h2{font-size:1.7rem;margin-bottom:36px}
 .contWrap section.inner h2.h2Only{margin-bottom:0}
 .contWrap section.inner h2 span{display:block;font-size:1.2rem;margin-top:18px}
@@ -189,6 +189,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap section.inner p{font-size:1rem}
 .contWrap section.inner p span{margin-top:36px;display:block;text-align:right}
 @media only screen and (max-width: 768px){
+  .contWrap section.inner{padding-top:90px}
   .contWrap section.inner h2{width:100%;text-align:center;margin-bottom:36px}
   .contWrap section.inner h3{text-align:center}
   .contWrap section.inner p span{text-align:center}
