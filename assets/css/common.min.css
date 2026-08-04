@@ -124,7 +124,7 @@ header #g-nav.panelactive #g-nav-list{
   position:fixed; z-index:999; width:300px; height:100vh; overflow:auto;
   -webkit-overflow-scrolling:touch; transition:all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);opacity:1;transition:.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
 header #g-nav ul{
   position:absolute; z-index:999;
   transition:top .8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -145,7 +145,7 @@ header #g-nav ul li p.toggleBtn+ol li a{font-size:11px;letter-spacing:0;text-ali
 header #g-nav ul li a{
   color:#fff; text-decoration:none; display:block; text-transform:uppercase;
   letter-spacing:.1em; font-weight:bold; line-height:1.6; transform:translateY(200px);
-  transition:.8s .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity:0; transition:.5s .05s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header #g-nav ul li a img{width:246px;height:auto}
 header #g-nav ul li a svg{width:246px;height:auto}
