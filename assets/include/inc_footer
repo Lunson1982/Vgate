@@ -16,7 +16,7 @@
             <li><a href="{$root}about/ip" data-keep-lang>IPライセンス</a></li>
           </ul>
         </div>
-   class="f-col col-brands"ss="f-col">
+        <div class="f-col col-brands">
           <h3>ブランド一覧</h3>
           <ul>
             <li><a href="{$root}about" data-keep-lang>SNIDEL</a></li>
@@ -25,7 +25,8 @@
             <li><a href="{$root}about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}about" data-keep-lang>Kana Lili</a></li>
           </ul>
-       class="f-col col-more"   <div class="f-col">
+        </div>
+        <div class="f-col col-more">
           <h3>その他</h3>
           <ul>
             <li><a href="{$root}news" data-keep-lang>ニュース</a></li>
@@ -51,7 +52,7 @@
             <li><a href="{$root}en/about/ip" data-keep-lang>IP & Licensing</a></li>
           </ul>
         </div>
-   class="f-col col-brands"ss="f-col">
+        <div class="f-col col-brands">
           <h3>Brands</h3>
           <ul>
             <li><a href="{$root}en/about" data-keep-lang>SNIDEL</a></li>
@@ -60,7 +61,8 @@
             <li><a href="{$root}en/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}en/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-       class="f-col col-more"   <div class="f-col">
+        </div>
+        <div class="f-col col-more">
           <h3>More</h3>
           <ul>
             <li><a href="{$root}en/news" data-keep-lang>News</a></li>
@@ -86,7 +88,7 @@
             <li><a href="{$root}cn/about/ip" data-keep-lang>IP授权</a></li>
           </ul>
         </div>
-   class="f-col col-brands"ss="f-col">
+        <div class="f-col col-brands">
           <h3>品牌一览</h3>
           <ul>
             <li><a href="{$root}cn/about" data-keep-lang>SNIDEL</a></li>
@@ -95,7 +97,8 @@
             <li><a href="{$root}cn/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}cn/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-       class="f-col col-more"   <div class="f-col">
+        </div>
+        <div class="f-col col-more">
           <h3>其他</h3>
           <ul>
             <li><a href="{$root}cn/news" data-keep-lang>新闻</a></li>
@@ -121,7 +124,7 @@
             <li><a href="{$root}hk/about/ip" data-keep-lang>IP授權</a></li>
           </ul>
         </div>
-   class="f-col col-brands"ss="f-col">
+        <div class="f-col col-brands">
           <h3>品牌一覽</h3>
           <ul>
             <li><a href="{$root}hk/about" data-keep-lang>SNIDEL</a></li>
@@ -130,7 +133,8 @@
             <li><a href="{$root}hk/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}hk/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-       class="f-col col-more"   <div class="f-col">
+        </div>
+        <div class="f-col col-more">
           <h3>其他</h3>
           <ul>
             <li><a href="{$root}hk/news" data-keep-lang>新聞</a></li>
