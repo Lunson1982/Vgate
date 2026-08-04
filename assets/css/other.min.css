@@ -158,3 +158,25 @@
 .trackingWrap .chnCont {
   width: 100%;
 }
+
+/* Timeline for About page */
+.txtWrap .timeline{margin:18px 0 0;display:flex;flex-direction:column;gap:0}
+.txtWrap .timeline .tl-item{position:relative;display:flex;flex-direction:column;gap:6px;padding:12px 0 12px 18px;border-left:1px solid #1A1A1A}
+.txtWrap .timeline .tl-item::before{content:"";position:absolute;left:-5px;top:18px;width:9px;height:9px;background:#1A1A1A;border-radius:50%}
+.txtWrap .timeline .tl-item .tl-year{font-weight:700;font-size:.9rem;letter-spacing:0.05em;color:#1A1A1A}
+.txtWrap .timeline .tl-item .tl-text{font-size:1rem;line-height:1.6}
+@media only screen and (max-width:480px){
+  .txtWrap .timeline .tl-item{padding:10px 0 10px 14px}
+}
+
+/* Contact page cards */
+.txtWrap .contact-card{margin-top:14px;padding:12px 0 12px 18px;border-left:1px solid #1A1A1A}
+.txtWrap .contact-card .contact-name{font-size:1.1rem;font-weight:700;letter-spacing:0}
+.txtWrap .contact-card .contact-title{font-size:.9rem;margin-top:2px;letter-spacing:0.05em}
+.txtWrap .contact-card .contact-detail{font-size:1rem;margin-top:4px}
+.txtWrap .contact-card .contact-detail a{color:#1A1A1A;text-decoration:none}
+.txtWrap .contact-card .contact-detail a:hover{opacity:.7}
+/* IG link list */
+.txtWrap .ig-list{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:8px}
+.txtWrap .ig-list a{font-size:1rem;color:#1A1A1A;text-decoration:none}
+.txtWrap .ig-list a:hover{opacity:.7}

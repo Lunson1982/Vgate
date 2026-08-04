@@ -30,7 +30,7 @@
     { f: 'FRAY+ID_logo_RGB_2000px_300dpi-BK.jpg',                         n: 'FRAY I.D' },
     { f: 'FURFUR_logo_RGB_2000px_300dpi-BK.jpg',                          n: 'FURFUR' },
     { f: 'LILY+BROWN_logo_RGB_2000px_300dpi-BK.jpg',                      n: 'LILY BROWN' },
-    { f: 'Maison+Cielune_logo_RGB_2000px_300dpi-BK.jpg',                  n: 'Maison Cielune' },
+    { f: 'Maison+Cielune_logo_RGB_2000px_300dpi-BK.jpg',      n: 'Maison Cielune', u: 'https://www.maisoncielune.com/' },
     { f: 'NIJI+SELECT_logo_RGB_2000px_300dpi-BK.jpg',                     n: 'NIJI SELECT' },
     { f: 'SNIDEL+HOME_logo_RGB_2000px_300dpi-BK.jpg',                     n: 'SNIDEL HOME' },
     { f: 'SNIDEL_logo_RGB_2000px_300dpi-BK.jpg',                          n: 'SNIDEL' },
