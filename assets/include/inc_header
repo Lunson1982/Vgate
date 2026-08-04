@@ -34,7 +34,7 @@
       <ul class="jpnCont">
         <li>
           <ol>
-            <li><a href="{$root}about" data-keep-lang>Vgateについて</a></li><li><a href="{$root}about/philosophy" data-keep-lang>企業理念</a></li><li><a href="{$root}about/business" data-keep-lang>事業紹介</a></li><li><a href="{$root}about/access" data-keep-lang>オフィス</a></li>
+            <li><a href="{$root}about" data-keep-lang>Vgateについて</a></li><li><a href="{$root}about/philosophy" data-keep-lang>企業理念</a></li><li><a href="{$root}about/business" data-keep-lang>事業紹介</a></li><li><a href="{$root}about/access" data-keep-lang>オフィス</a></li><li><a href="{$root}about/network" data-keep-lang>店舗ネットワーク</a></li><li><a href="{$root}about/marketing" data-keep-lang>マーケティング</a></li><li><a href="{$root}about/ip" data-keep-lang>IPライセンス</a></li>
           </ol>
         </li>
         <li><a href="{$root}" data-keep-lang>
@@ -52,7 +52,7 @@
       <ul class="engCont">
         <li>
           <ol>
-            <li><a href="{$root}en/about" data-keep-lang>About Vgate</a></li><li><a href="{$root}en/about/philosophy" data-keep-lang>Philosophy</a></li><li><a href="{$root}en/about/business" data-keep-lang>Business</a></li><li><a href="{$root}en/about/access" data-keep-lang>Offices</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>About Vgate</a></li><li><a href="{$root}en/about/philosophy" data-keep-lang>Philosophy</a></li><li><a href="{$root}en/about/business" data-keep-lang>Business</a></li><li><a href="{$root}en/about/access" data-keep-lang>Offices</a></li><li><a href="{$root}en/about/network" data-keep-lang>Store Network</a></li><li><a href="{$root}en/about/marketing" data-keep-lang>Marketing</a></li><li><a href="{$root}en/about/ip" data-keep-lang>IP & Licensing</a></li>
           </ol>
         </li>
         <li><a href="{$root}en/" data-keep-lang>
@@ -70,7 +70,7 @@
       <ul class="chnCont">
         <li>
           <ol>
-            <li><a href="{$root}cn/about" data-keep-lang>关于Vgate</a></li><li><a href="{$root}cn/about/philosophy" data-keep-lang>企业理念</a></li><li><a href="{$root}cn/about/business" data-keep-lang>事业介绍</a></li><li><a href="{$root}cn/about/access" data-keep-lang>办公室</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>关于Vgate</a></li><li><a href="{$root}cn/about/philosophy" data-keep-lang>企业理念</a></li><li><a href="{$root}cn/about/business" data-keep-lang>事业介绍</a></li><li><a href="{$root}cn/about/access" data-keep-lang>办公室</a></li><li><a href="{$root}cn/about/network" data-keep-lang>店铺网络</a></li><li><a href="{$root}cn/about/marketing" data-keep-lang>市场推广</a></li><li><a href="{$root}cn/about/ip" data-keep-lang>IP授权</a></li>
           </ol>
         </li>
         <li><a href="{$root}cn/" data-keep-lang>
@@ -88,7 +88,7 @@
       <ul class="hkCont">
         <li>
           <ol>
-            <li><a href="{$root}hk/about" data-keep-lang>關於Vgate</a></li><li><a href="{$root}hk/about/philosophy" data-keep-lang>企業理念</a></li><li><a href="{$root}hk/about/business" data-keep-lang>事業介紹</a></li><li><a href="{$root}hk/about/access" data-keep-lang>辦公室</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>關於Vgate</a></li><li><a href="{$root}hk/about/philosophy" data-keep-lang>企業理念</a></li><li><a href="{$root}hk/about/business" data-keep-lang>事業介紹</a></li><li><a href="{$root}hk/about/access" data-keep-lang>辦公室</a></li><li><a href="{$root}hk/about/network" data-keep-lang>店舖網絡</a></li><li><a href="{$root}hk/about/marketing" data-keep-lang>市場推廣</a></li><li><a href="{$root}hk/about/ip" data-keep-lang>IP授權</a></li>
           </ol>
         </li>
         <li><a href="{$root}hk/" data-keep-lang>
