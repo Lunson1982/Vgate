@@ -34,5 +34,5 @@ function footer() {
   if (!el) return;
   var depth = window.location.pathname.split('/').filter(Boolean).length;
   var rootDir = depth === 0 ? './' : '../'.repeat(depth);
-  loadInclude(el, rootDir + 'assets/include/inc_footer?v=3');
+  loadInclude(el, rootDir + 'assets/include/inc_footer?v=4');
 }
