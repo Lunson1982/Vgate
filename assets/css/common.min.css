@@ -111,7 +111,7 @@ header .inner>dl>dd.language dl.accordion dd a.current{background:#767676;color:
 header .inner>dl>dd.language dl.accordion dd a.jpnCont.chn{font-family:"Noto Sans JP","Noto Sans SC","Noto Sans TC","Noto Sans",sans-serif}
 @media only screen and (max-width: 768px){header .inner{width:90%}}
 
-header.active{position:fixed;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);background-color:hsla(0,0%,100%,.5)}
+header.active{position:fixed;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);background-color:hsla(0,0%,100%,.96);box-shadow:0 1px 0 #000}
 header.active .inner .logo{max-width:0;max-height:0;margin-bottom:0;opacity:0;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 
 /* Drawer */
