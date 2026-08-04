@@ -4,7 +4,7 @@
 
       <!-- 日本語 -->
       <section class="jpnCont">
-        <div class="f-co col-aboutl">
+        <div class="f-col col-about">
           <h3>Vgateについて</h3>
           <ul>
             <li><a href="{$root}about" data-keep-lang>Vgateについて</a></li>
@@ -16,7 +16,7 @@
             <li><a href="{$root}about/ip" data-keep-lang>IPライセンス</a></li>
           </ul>
         </div>
-        <div c col-brandslass="f-col">
+   class="f-col col-brands"ss="f-col">
           <h3>ブランド一覧</h3>
           <ul>
             <li><a href="{$root}about" data-keep-lang>SNIDEL</a></li>
@@ -25,8 +25,7 @@
             <li><a href="{$root}about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}about" data-keep-lang>Kana Lili</a></li>
           </ul>
-        </div>
-    col-more     <div class="f-col">
+       class="f-col col-more"   <div class="f-col">
           <h3>その他</h3>
           <ul>
             <li><a href="{$root}news" data-keep-lang>ニュース</a></li>
@@ -40,7 +39,7 @@
 
       <!-- English -->
       <section class="engCont">
-        <div class="f-co col-aboutl">
+        <div class="f-col col-about">
           <h3>About Vgate</h3>
           <ul>
             <li><a href="{$root}en/about" data-keep-lang>About Vgate</a></li>
@@ -52,7 +51,7 @@
             <li><a href="{$root}en/about/ip" data-keep-lang>IP & Licensing</a></li>
           </ul>
         </div>
-        <div c col-brandslass="f-col">
+   class="f-col col-brands"ss="f-col">
           <h3>Brands</h3>
           <ul>
             <li><a href="{$root}en/about" data-keep-lang>SNIDEL</a></li>
@@ -61,8 +60,7 @@
             <li><a href="{$root}en/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}en/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-        </div>
-    col-more     <div class="f-col">
+       class="f-col col-more"   <div class="f-col">
           <h3>More</h3>
           <ul>
             <li><a href="{$root}en/news" data-keep-lang>News</a></li>
@@ -76,7 +74,7 @@
 
       <!-- 简体中文 -->
       <section class="chnCont">
-        <div class="f-co col-aboutl">
+        <div class="f-col col-about">
           <h3>关于Vgate</h3>
           <ul>
             <li><a href="{$root}cn/about" data-keep-lang>关于Vgate</a></li>
@@ -88,7 +86,7 @@
             <li><a href="{$root}cn/about/ip" data-keep-lang>IP授权</a></li>
           </ul>
         </div>
-        <div c col-brandslass="f-col">
+   class="f-col col-brands"ss="f-col">
           <h3>品牌一览</h3>
           <ul>
             <li><a href="{$root}cn/about" data-keep-lang>SNIDEL</a></li>
@@ -97,8 +95,7 @@
             <li><a href="{$root}cn/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}cn/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-        </div>
-    col-more     <div class="f-col">
+       class="f-col col-more"   <div class="f-col">
           <h3>其他</h3>
           <ul>
             <li><a href="{$root}cn/news" data-keep-lang>新闻</a></li>
@@ -112,7 +109,7 @@
 
       <!-- 繁體中文 -->
       <section class="hkCont">
-        <div class="f-co col-aboutl">
+        <div class="f-col col-about">
           <h3>關於Vgate</h3>
           <ul>
             <li><a href="{$root}hk/about" data-keep-lang>關於Vgate</a></li>
@@ -124,7 +121,7 @@
             <li><a href="{$root}hk/about/ip" data-keep-lang>IP授權</a></li>
           </ul>
         </div>
-        <div c col-brandslass="f-col">
+   class="f-col col-brands"ss="f-col">
           <h3>品牌一覽</h3>
           <ul>
             <li><a href="{$root}hk/about" data-keep-lang>SNIDEL</a></li>
@@ -133,8 +130,7 @@
             <li><a href="{$root}hk/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}hk/about" data-keep-lang>Kana Lili</a></li>
           </ul>
-        </div>
-    col-more     <div class="f-col">
+       class="f-col col-more"   <div class="f-col">
           <h3>其他</h3>
           <ul>
             <li><a href="{$root}hk/news" data-keep-lang>新聞</a></li>
