@@ -40,3 +40,17 @@
 /hk/privacypolicy.html /hk/privacypolicy 301
 /hk/sitepolicy.html /hk/sitepolicy 301
 /hk/sitemap.html /hk/sitemap 301
+
+# New pages from 2026-06 PPTX content
+/about/network.html /about/network 301
+/about/marketing.html /about/marketing 301
+/about/ip.html /about/ip 301
+/en/about/network.html /en/about/network 301
+/en/about/marketing.html /en/about/marketing 301
+/en/about/ip.html /en/about/ip 301
+/cn/about/network.html /cn/about/network 301
+/cn/about/marketing.html /cn/about/marketing 301
+/cn/about/ip.html /cn/about/ip 301
+/hk/about/network.html /hk/about/network 301
+/hk/about/marketing.html /hk/about/marketing 301
+/hk/about/ip.html /hk/about/ip 301
