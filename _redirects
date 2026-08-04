@@ -14,3 +14,29 @@
 
 # 404 fallback
 /* /404.html 404
+
+# Flat .html files → folder equivalents (Cloudflare Pages auto-strips .html)
+/about/access.html /about/access 301
+/about/business.html /about/business 301
+/about/philosophy.html /about/philosophy 301
+/en/about/access.html /en/about/access 301
+/en/about/business.html /en/about/business 301
+/en/about/philosophy.html /en/about/philosophy 301
+/cn/about/access.html /cn/about/access 301
+/cn/about/business.html /cn/about/business 301
+/cn/about/philosophy.html /cn/about/philosophy 301
+/hk/about/access.html /hk/about/access 301
+/hk/about/business.html /hk/about/business 301
+/hk/about/philosophy.html /hk/about/philosophy 301
+/privacypolicy.html /privacypolicy 301
+/sitepolicy.html /sitepolicy 301
+/sitemap.html /sitemap 301
+/en/privacypolicy.html /en/privacypolicy 301
+/en/sitepolicy.html /en/sitepolicy 301
+/en/sitemap.html /en/sitemap 301
+/cn/privacypolicy.html /cn/privacypolicy 301
+/cn/sitepolicy.html /cn/sitepolicy 301
+/cn/sitemap.html /cn/sitemap 301
+/hk/privacypolicy.html /hk/privacypolicy 301
+/hk/sitepolicy.html /hk/sitepolicy 301
+/hk/sitemap.html /hk/sitemap 301
