@@ -195,7 +195,29 @@
   }
 
   /* ------------------------------------------------------------------
-   * 9. Strip hash on reload (matches mashgroup behaviour)
+   * 
+  /* -------------------------------------------------------------
+   * 8.5 Close drawer when clicking anywhere outside nav / header
+   * ------------------------------------------------------------- */
+  document.addEventListener('click', function (e) {
+    const navEl = document.getElementById('g-nav');
+    const header = document.querySelector('header');
+    if (!navEl) return;
+    if (!navEl.classList.contains('panelactive')) return;
+    if (e.target.closest('#g-nav')) return;
+    if (e.target.closest('header')) return;
+    if (e.target.closest('.closebtn')) return;
+    const closeEl = document.querySelector('.closebtn');
+    const overlay = document.querySelector('header .overlay');
+    const contWrap = document.querySelector('.contWrap');
+    if (closeEl) closeEl.classList.remove('active');
+    if (navEl) navEl.classList.remove('panelactive');
+    if (overlay) overlay.classList.remove('open');
+    if (contWrap) contWrap.classList.remove('moveLeft');
+    if (header) header.classList.remove('moveLeft');
+  });
+
+9. Strip hash on reload (matches mashgroup behaviour)
    * ------------------------------------------------------------------ */
   if (performance.getEntriesByType('navigation')[0]?.type === 'reload' && location.hash) {
     history.replaceState(null, '', location.href.replace(/#.*/, ''));
