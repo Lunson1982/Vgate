@@ -239,7 +239,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner{padding:0;margin:0 auto;width:90%;max-width:900px;display:flex;flex-direction:column;align-items:flex-start}
 
 .contWrap footer nav{border-top:1px solid #1A1A1A;margin-top:0;padding-top:28px;width:100%}
-.contWrap footer nav section{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 36px;align-items:start}
+.contWrap footer nav section{display:grid !important;grid-template-columns:repeat(3,1fr);gap:32px 36px;align-items:start}
 .contWrap footer nav section .f-col{display:flex;flex-direction:column;gap:10px}
 .contWrap footer nav section .f-col h3{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#1A1A1A;margin:0 0 6px 0;padding-bottom:8px;border-bottom:1px solid #1A1A1A}
 .contWrap footer nav section .f-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
