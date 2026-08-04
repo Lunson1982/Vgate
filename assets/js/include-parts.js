@@ -1,32 +1,42 @@
 /*==========================================================
   include-parts.js — Vgate
-  Loads header / footer partials via fetch() (vanilla JS).
-  Replaces mashgroup's jQuery document.write approach.
+  Loads header / footer partials via fetch().
+  Automatically determines the rootDir from the current URL,
+  so every page depth works correctly.
 ==========================================================*/
 
 async function loadInclude(targetEl, url) {
   try {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`HTTP ${res.status} on ${url}`);
-    let html = await res.text();
-    // Replace {$root} placeholder with the actual rootDir passed in
-    const rootDirMatch = url.match(/^((?:\.\.\/)+)/);
-    const rootDir = rootDirMatch ? rootDirMatch[0] : './';
+    var res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status + " on " + url);
+    var html = await res.text();
+    // Replace {$root} placeholder with the computed rootDir
+    var m = url.match(/^((?:\.\.\/)+)/);
+    var rootDir = m ? m[0] : './';
     html = html.replace(/\{\$root\}/g, rootDir);
     targetEl.innerHTML = html;
-    // Fire a custom event so per-page scripts can react after injection
     document.dispatchEvent(new CustomEvent('vgate:include-loaded', { detail: { id: targetEl.id } }));
   } catch (err) {
     console.warn('[vgate] include load failed:', err);
   }
 }
 
-function header(rootDir) {
-  const el = document.getElementById('vgate-header');
-  if (el) loadInclude(el, rootDir + 'assets/include/inc_header');
+function header() {
+  var el = document.getElementById('vgate-header');
+  if (!el) return;
+  // Compute rootDir automatically from current URL
+  // /about/ -> "../"  /en/about/ -> "../../"  / -> "./"
+  var path = window.location.pathname.replace(/\/$/, '');
+  var depth = path.split('/').filter(Boolean).length;
+  var rootDir = depth === 0 ? './' : '../'.repeat(depth) + '../';
+  loadInclude(el, rootDir + 'assets/include/inc_header');
 }
 
-function footer(rootDir) {
-  const el = document.getElementById('vgate-footer');
-  if (el) loadInclude(el, rootDir + 'assets/include/inc_footer');
+function footer() {
+  var el = document.getElementById('vgate-footer');
+  if (!el) return;
+  var path = window.location.pathname.replace(/\/$/, '');
+  var depth = path.split('/').filter(Boolean).length;
+  var rootDir = depth === 0 ? './' : '../'.repeat(depth) + '../';
+  loadInclude(el, rootDir + 'assets/include/inc_footer');
 }
