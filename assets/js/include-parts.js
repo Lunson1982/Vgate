@@ -24,19 +24,15 @@ async function loadInclude(targetEl, url) {
 function header() {
   var el = document.getElementById('vgate-header');
   if (!el) return;
-  // Compute rootDir automatically from current URL
-  // /about/ -> "../"  /en/about/ -> "../../"  / -> "./"
-  var path = window.location.pathname.replace(/\/$/, '');
-  var depth = path.split('/').filter(Boolean).length;
-  var rootDir = depth === 0 ? './' : '../'.repeat(depth) + '../';
+  var depth = window.location.pathname.split('/').filter(Boolean).length;
+  var rootDir = depth === 0 ? './' : '../'.repeat(depth);
   loadInclude(el, rootDir + 'assets/include/inc_header');
 }
 
 function footer() {
   var el = document.getElementById('vgate-footer');
   if (!el) return;
-  var path = window.location.pathname.replace(/\/$/, '');
-  var depth = path.split('/').filter(Boolean).length;
-  var rootDir = depth === 0 ? './' : '../'.repeat(depth) + '../';
+  var depth = window.location.pathname.split('/').filter(Boolean).length;
+  var rootDir = depth === 0 ? './' : '../'.repeat(depth);
   loadInclude(el, rootDir + 'assets/include/inc_footer');
 }
