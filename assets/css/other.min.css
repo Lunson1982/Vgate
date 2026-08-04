@@ -180,3 +180,17 @@
 .txtWrap .ig-list{display:flex;flex-wrap:wrap;gap:14px 18px;margin-top:8px}
 .txtWrap .ig-list a{font-size:1rem;color:#1A1A1A;text-decoration:none}
 .txtWrap .ig-list a:hover{opacity:.7}
+
+/* Marketing — KOL grid / cards */
+.txtWrap .kol-section{margin-top:28px}
+.txtWrap .kol-section h3{margin-bottom:16px}
+.txtWrap .kol-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:4px}
+.txtWrap .kol-card{padding:16px 18px;border:1px solid #1A1A1A;border-left:3px solid #1A1A1A;display:flex;flex-direction:column;gap:6px}
+.txtWrap .kol-card .kol-name{font-size:1.05rem;font-weight:700;letter-spacing:0;color:#1A1A1A;line-height:1.3}
+.txtWrap .kol-card .kol-role{font-size:.85rem;letter-spacing:0.04em;color:#555;line-height:1.5}
+@media only screen and (max-width:480px){
+  .txtWrap .kol-grid{grid-template-columns:1fr}
+  .txtWrap .kol-card{padding:14px 14px}
+  .txtWrap .kol-card .kol-name{font-size:1rem}
+  .txtWrap .kol-card .kol-role{font-size:.8rem}
+}
