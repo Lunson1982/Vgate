@@ -30,7 +30,7 @@
         <div class="f-col col-more">
           <h3>その他</h3>
           <ul>
-            <li><a href="{$root}news" data-keep-lang>ニュース</a></li>
+            <li><a href="{$root}news" data-keep-lang>ニュース</a></li><li><a href="{$root}careers" data-keep-lang>採用情報</a></li>
             <li><a href="{$root}sitepolicy" data-keep-lang>サイトポリシー</a></li>
             <li><a href="{$root}privacypolicy" data-keep-lang>プライバシーポリシー</a></li>
             <li><a href="{$root}sitemap" data-keep-lang>サイトマップ</a></li>
@@ -66,7 +66,7 @@
         <div class="f-col col-more">
           <h3>More</h3>
           <ul>
-            <li><a href="{$root}en/news" data-keep-lang>News</a></li>
+            <li><a href="{$root}en/news" data-keep-lang>News</a></li><li><a href="{$root}en/careers" data-keep-lang>Careers</a></li>
             <li><a href="{$root}en/sitepolicy" data-keep-lang>Site Policy</a></li>
             <li><a href="{$root}en/privacypolicy" data-keep-lang>Privacy Policy</a></li>
             <li><a href="{$root}en/sitemap" data-keep-lang>Sitemap</a></li>
@@ -102,7 +102,7 @@
         <div class="f-col col-more">
           <h3>其他</h3>
           <ul>
-            <li><a href="{$root}cn/news" data-keep-lang>新闻</a></li>
+            <li><a href="{$root}cn/news" data-keep-lang>新闻</a></li><li><a href="{$root}cn/careers" data-keep-lang>招聘信息</a></li>
             <li><a href="{$root}cn/sitepolicy" data-keep-lang>网站政策</a></li>
             <li><a href="{$root}cn/privacypolicy" data-keep-lang>隐私政策</a></li>
             <li><a href="{$root}cn/sitemap" data-keep-lang>网站地图</a></li>
@@ -138,7 +138,7 @@
         <div class="f-col col-more">
           <h3>其他</h3>
           <ul>
-            <li><a href="{$root}hk/news" data-keep-lang>新聞</a></li>
+            <li><a href="{$root}hk/news" data-keep-lang>新聞</a></li><li><a href="{$root}hk/careers" data-keep-lang>招聘</a></li>
             <li><a href="{$root}hk/sitepolicy" data-keep-lang>網站政策</a></li>
             <li><a href="{$root}hk/privacypolicy" data-keep-lang>隱私權政策</a></li>
             <li><a href="{$root}hk/sitemap" data-keep-lang>網站地圖</a></li>
