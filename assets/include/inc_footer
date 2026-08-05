@@ -25,6 +25,11 @@
             <li><a href="{$root}about" data-keep-lang>FRAY I.D</a></li>
             <li><a href="{$root}about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}about" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}about" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}about" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}about" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}about" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}about" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -61,6 +66,11 @@
             <li><a href="{$root}en/about" data-keep-lang>FRAY I.D</a></li>
             <li><a href="{$root}en/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}en/about" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}en/about" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -97,6 +107,11 @@
             <li><a href="{$root}cn/about" data-keep-lang>FRAY I.D</a></li>
             <li><a href="{$root}cn/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}cn/about" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}cn/about" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -133,6 +148,11 @@
             <li><a href="{$root}hk/about" data-keep-lang>FRAY I.D</a></li>
             <li><a href="{$root}hk/about" data-keep-lang>Maison Cielune</a></li>
             <li><a href="{$root}hk/about" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}hk/about" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
