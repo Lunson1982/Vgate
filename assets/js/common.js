@@ -89,6 +89,10 @@
     if (e.target.closest('#g-nav a')) {
       closeDrawer();
     }
+    /* Clicking the full-viewport overlay (outside the menu) closes the drawer */
+    if (e.target.closest('.overlay')) {
+      closeDrawer();
+    }
   });
 
   function closeDrawer() {
