@@ -281,6 +281,34 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
   .contWrap footer .f-mark a{font-size:1.2rem}
   .contWrap footer .f-copy small{font-size:.68rem}
 }
+
+/* ---------- Pagetop (circular w/ dasharray draw-on-hover) ---------- */
+#pagetop{
+  overflow:hidden; width:50px; height:50px; position:fixed; cursor:pointer; z-index:10;
+  bottom:18px; right:18px; transform:translateY(170%);
+  transition:1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#pagetop:before{
+  content:""; position:absolute; top:0; z-index:-1;
+  background:#3a3a3a; border-radius:50px; width:100%; height:100%;
+  transition:1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#pagetop.active{transform:translate(0);transition:1s cubic-bezier(0.165, 0.84, 0.44, 1)}
+#pagetop.active:hover:before{background:#fff}
+#pagetop p{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;width:100%;height:100%}
+#pagetop p svg.arrow{width:50%;transform:rotate(-90deg);fill:#fff}
+#pagetop svg.roundBtnLine{position:absolute;z-index:11;left:0;top:0;width:100%;height:100%}
+#pagetop svg.roundBtnLine rect{
+  position:absolute; top:0; left:0; width:calc(100% - 1px); height:calc(100% - 1px);
+  transform:translate(0.5px, 0.5px); fill:none; stroke:#1A1A1A; stroke-width:1;
+  stroke-dasharray:0,50; stroke-dashoffset:50;
+  transition:all 1s cubic-bezier(0, 0.7, 0, 1); backface-visibility:hidden;
+}
+#pagetop:hover:before{background:#fff}
+#pagetop:hover p{animation:linkhover2 .8s cubic-bezier(0.645, 0.045, 0.355, 1)}
+#pagetop:hover p svg.arrow{fill:#1A1A1A}
+#pagetop:hover svg.roundBtnLine rect{stroke-width:1;stroke-dasharray:50,0;stroke-dashoffset:0}
+
 /* ---------- Breadcrumb (secondary pages) ---------- */
 .contWrap .breadcrumb{
   width:90%; max-width:750px; margin:36px auto 0; padding:18px 0 0;
