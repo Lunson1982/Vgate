@@ -115,6 +115,26 @@
       });
     });
 
+    // Also enforce the drawer nav's active language so only one <ul> shows
+    // inside the slide-out menu (currently lang.js only touched the footer).
+    document.querySelectorAll('#g-nav-list ul[data-active]').forEach(function (ul) {
+      ul.style.display = '';
+    });
+    // Hide all drawer-nav language blocks EXCEPT the currently active one.
+    // (lang.js only set data-active on footer; mirror it here on drawer nav.)
+    Object.keys(CONT_CLASS).forEach(function (k) {
+      var sel = '#g-nav-list .' + CONT_CLASS[k];
+      document.querySelectorAll(sel).forEach(function (ul) {
+        if (k === lang) {
+          ul.setAttribute('data-active', 'true');
+          ul.style.display = '';
+        } else {
+          ul.removeAttribute('data-active');
+          ul.style.display = 'none';
+        }
+      });
+    });
+
     // Update <html lang> + og:locale
     document.documentElement.setAttribute('lang', HTML_LANG[lang] || 'ja');
     var ogMeta = document.querySelector('meta[property="og:locale"]');

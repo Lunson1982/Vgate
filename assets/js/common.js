@@ -85,6 +85,10 @@
     if (anchorLink) {
       closeDrawer();
     }
+    /* Any navigation link inside the drawer closes it */
+    if (e.target.closest('#g-nav a')) {
+      closeDrawer();
+    }
   });
 
   function closeDrawer() {
