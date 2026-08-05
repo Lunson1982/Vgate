@@ -189,9 +189,13 @@
     }
     ogMeta.setAttribute('content', OG_LOCALE[lang] || 'ja_JP');
 
-    // Update dropdown dt label
+    // Update dropdown dt label + code
     document.querySelectorAll('.lang-current-label').forEach(function (s) {
       s.textContent = LANG_LABEL[lang] || '日本語';
+    });
+    document.querySelectorAll('.lang-current-code').forEach(function (s) {
+      var code = ({'ja':'JP','en':'EN','zh-CN':'CN','zh-HK':'HK'})[lang] || 'HK';
+      s.textContent = code;
     });
 
     // Mark the active option in the dropdown
