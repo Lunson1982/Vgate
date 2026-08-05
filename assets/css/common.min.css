@@ -158,6 +158,31 @@ header #g-nav ul > li > ol > li > a{
   padding:0 8px 0 16px; color:rgba(255,255,255,.85);
 }
 
+header #g-nav ul > li.navItem-brand{
+  display:flex; flex-direction:column; gap:14px;
+  padding:18px 12px; border-bottom:1px solid rgba(255,255,255,.12);
+}
+header #g-nav ul > li.navItem-brand .navItem__header{
+  font-size:1.05rem; font-weight:700; letter-spacing:.08em;
+  text-transform:uppercase; line-height:1.4;
+}
+header #g-nav ul > li.navItem-brand .navItem__sub{
+  font-size:.82rem; font-weight:400; letter-spacing:.02em;
+  text-transform:none; line-height:1.4; color:rgba(255,255,255,.72);
+}
+header #g-nav ul .brandList{
+  margin:4px 0 0 0; padding:0; list-style:none;
+  display:grid; grid-template-columns:1fr 1fr; gap:6px 14px;
+}
+header #g-nav ul .brandList li{padding:0}
+header #g-nav ul .brandList li a{
+  display:block; text-align:left;
+  font-size:.82rem; font-weight:400; letter-spacing:.02em;
+  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
+  padding:3px 8px 3px 16px; transform:translateY(200px); opacity:0;
+  transition:.5s .05s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header #g-nav ul .brandList li a:hover{color:#fff}
 header .overlay{position:fixed;z-index:998;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.5);opacity:0;visibility:hidden;transition:all .4s;pointer-events:none;cursor:pointer}
 header .overlay.open{opacity:1;visibility:visible;pointer-events:auto}
 header .openbtn{cursor:pointer}
