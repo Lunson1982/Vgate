@@ -178,6 +178,7 @@ header #g-nav ul > li.navItem-brand .navItem__sub{
   text-transform:none; line-height:1.4; color:rgba(255,255,255,.72);
 }
 header #g-nav ul .brandList{
+  position:static !important; top:auto !important; left:auto !important;
   margin:4px 0 0 0; padding:0; list-style:none;
   display:grid; grid-template-columns:1fr 1fr; gap:6px 14px;
 }
