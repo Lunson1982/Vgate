@@ -217,8 +217,9 @@
     if (header) header.classList.remove('moveLeft');
   });
 
-9. Strip hash on reload (matches mashgroup behaviour)
-   * ------------------------------------------------------------------ */
+  /* -------------------------------------------------------------
+   * 9. Strip hash on reload (matches mashgroup behaviour)
+   * ------------------------------------------------------------- */
   if (performance.getEntriesByType('navigation')[0]?.type === 'reload' && location.hash) {
     history.replaceState(null, '', location.href.replace(/#.*/, ''));
   }
