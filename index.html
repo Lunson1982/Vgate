@@ -40,7 +40,7 @@
 <body>
 
 <!-- ↓↓↓ Header ↓↓↓ -->
-<div id="vgate-header"><script>header();</script></div>
+<div id="vgate-header"></div>
 <!-- ↑↑↑ Header ↑↑↑ -->
 
 <div class="contWrap">
@@ -236,7 +236,7 @@
 </section>
 
 <!-- ↓↓↓ Footer ↓↓↓ -->
-<div id="vgate-footer"><script>footer();</script></div>
+<div id="vgate-footer"></div>
 <!-- ↑↑↑ Footer ↑↑↑ -->
 
 </div><!-- .contWrap END -->
@@ -250,5 +250,5 @@
 <script type="text/javascript" src="assets/js/common.js?v=1781202630"></script>
 <script type="text/javascript" src="assets/js/top.js?v=1781202315"></script>
 
-</body>
+<script>window.addEventListener("DOMContentLoaded", function(){ header(); footer(); });</script></body>
 </html>
