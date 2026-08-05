@@ -123,12 +123,12 @@ header.active .inner .logo{max-width:0;max-height:0;margin-bottom:0;opacity:0;tr
 
 /* Drawer */
 header #g-nav{
-  position:fixed; z-index:999; top:0; right:-360px; width:360px; height:100vh;
+  position:fixed; z-index:999; top:0; right:-420px; width:420px; height:100vh;
   background:#3a3a3a; transition:all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header #g-nav.panelactive{right:0}
 header #g-nav.panelactive #g-nav-list{
-  position:fixed; z-index:999; width:360px; height:100vh; overflow:auto;
+  position:fixed; z-index:999; width:420px; height:100vh; overflow:auto;
   -webkit-overflow-scrolling:touch; transition:all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);opacity:1;transition:.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
