@@ -97,6 +97,24 @@
       });
     });
 
+    // After setting data-active, enforce the footer 3-column flex layout.
+    // This is the authoritative place where the active section is decided, so
+    // the layout is guaranteed regardless of JS load order (defeats the race
+    // between footer partial script injection and lang.js init).
+    document.querySelectorAll('footer nav section[data-active]').forEach(function (sec) {
+      sec.style.cssText =
+        'display:flex !important;flex-wrap:wrap !important;justify-content:space-between ' +
+        '!important;align-items:flex-start !important;gap:28px 32px !important;width:100% !important;';
+      sec.querySelectorAll('.f-col').forEach(function (c) {
+        c.style.cssText = 'display:flex !important;flex-direction:column !important;';
+        if (c.classList.contains('col-about')) {
+          c.style.cssText += ';flex:1 1 340px !important;max-width:380px !important;';
+        } else if (c.classList.contains('col-brands') || c.classList.contains('col-more')) {
+          c.style.cssText += ';flex:0 0 200px !important;';
+        }
+      });
+    });
+
     // Update <html lang> + og:locale
     document.documentElement.setAttribute('lang', HTML_LANG[lang] || 'ja');
     var ogMeta = document.querySelector('meta[property="og:locale"]');
