@@ -166,7 +166,4 @@
       <small>&copy; <span class="f-year">2026</span> Vgate Company Ltd &middot; All rights reserved</small>
     </div>
 
-  </div>
-<script>!function(){function apply(){var sec=document.querySelector('footer nav section[data-active]');if(!sec)return;sec.style.cssText='display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:flex-start !important;gap:28px 32px !important;width:100% !important';sec.querySelectorAll('.f-col').forEach(function(c){c.style.cssText='display:flex !important;flex-direction:column !important';if(c.classList.contains('col-about')){c.style.cssText+=';flex:1 1 340px !important;max-width:380px !important'}else if(c.classList.contains('col-brands')||c.classList.contains('col-more')){c.style.cssText+=';flex:0 0 200px !important'}})}if(document.querySelector('footer nav section[data-active]')){apply()}else{var o=new MutationObserver(function(){if(document.querySelector('footer nav section[data-active]')){apply();o.disconnect()}});o.observe(document.getElementById('vgate-footer'),{childList:true,subtree:true,attributes:true,attributeOldValue:true,attributeFilter:['data-active']});setTimeout(function(){if(document.querySelector('footer nav section[data-active]')){apply();o.disconnect()}},800)}}();
-</script>
-</footer>
+  </div></footer>
