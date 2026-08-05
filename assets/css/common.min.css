@@ -239,7 +239,7 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 .contWrap footer .inner{padding:0;margin:0 auto;width:90%;max-width:980px;display:flex;flex-direction:column;align-items:flex-start}
 
 .contWrap footer nav{border-top:1px solid #1A1A1A;margin-top:0;padding-top:26px;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px}
-.contWrap footer nav section{display:flex !important;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px;width:100%}
+.contWrap footer nav section{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px;width:100%}
 .contWrap footer nav section .f-col{display:flex;flex-direction:column;gap:8px;flex:0 0 auto;width:auto}
 .contWrap footer nav section .f-col.col-about{flex:1 1 340px;max-width:380px}
 .contWrap footer nav section .f-col.col-brands{flex:0 0 200px}
