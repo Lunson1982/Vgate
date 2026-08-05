@@ -177,6 +177,38 @@ header #g-nav ul > li.navItem-brand .navItem__sub{
   font-size:.82rem; font-weight:400; letter-spacing:.02em;
   text-transform:none; line-height:1.4; color:rgba(255,255,255,.72);
 }
+/* About-us block */
+header #g-nav ul > li.navItem-about{
+  display:flex; flex-direction:column; gap:0;
+  padding:18px 12px 0; margin-bottom:0;
+}
+header #g-nav ul > li.navItem-about .navItem__header{
+  font-size:.78rem; font-weight:700; letter-spacing:.12em;
+  text-transform:uppercase; line-height:1.4;
+  color:rgba(255,255,255,.55); padding:0 8px 10px 16px;
+}
+header #g-nav ul > li.navItem-about > ol{
+  margin:0 0 14px 0; padding:0;
+}
+/* Separator between About and Brands */
+header #g-nav ul > li.nav-sep{
+  height:1px; background:rgba(255,255,255,.18);
+  margin:4px 12px 6px; padding:0; border-bottom:none;
+}
+/* Brand header link */
+header #g-nav ul > li.navItem-brand > a.navItem__header{
+  display:block; font-size:1.05rem; font-weight:700;
+  letter-spacing:.08em; text-transform:uppercase; line-height:1.4;
+  color:#fff; text-decoration:none;
+}
+/* Non-clickable brand items */
+header #g-nav ul .brandList li span{
+  display:block; text-align:left;
+  font-size:.82rem; font-weight:400; letter-spacing:.02em;
+  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
+  padding:3px 8px 3px 16px;
+}
+header #g-nav.panelactive ul .brandList li span{opacity:1;transform:none}
 header #g-nav ul .brandList{
   position:static !important; top:auto !important; left:auto !important;
   margin:4px 0 0 0; padding:0; list-style:none;
