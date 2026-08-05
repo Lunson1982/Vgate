@@ -235,33 +235,33 @@ header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:30
 }
 
 /* ---------- Footer ---------- */
-.contWrap footer{background:#F5F2EE;width:100%;padding:40px 0 0}
+.contWrap footer{background:#1A1A1A;color:#fff;width:100%;padding:40px 0 0}
 .contWrap footer .inner{padding:0;margin:0 auto;width:90%;max-width:980px;display:flex;flex-direction:column;align-items:flex-start}
 
-.contWrap footer nav{border-top:1px solid #1A1A1A;margin-top:0;padding-top:26px;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px}
+.contWrap footer nav{border-top:1px solid rgba(255,255,255,.25);margin-top:0;padding-top:26px;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px}
 .contWrap footer nav section{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px;width:100%}
 .contWrap footer nav section .f-col{display:flex;flex-direction:column;gap:8px;flex:0 0 auto;width:auto}
 .contWrap footer nav section .f-col.col-about{flex:1 1 340px;max-width:380px}
 .contWrap footer nav section .f-col.col-brands{flex:0 0 200px}
 .contWrap footer nav section .f-col.col-more{flex:0 0 200px}
 
-.contWrap footer nav section .f-col h3{font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1A1A1A;margin:0 0 6px 0;padding-bottom:7px;border-bottom:1px solid #1A1A1A}
+.contWrap footer nav section .f-col h3{font-size:.75rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#FFFFFF;margin:0 0 6px 0;padding-bottom:7px;border-bottom:1px solid rgba(255,255,255,.3)}
 .contWrap footer nav section .f-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
 .contWrap footer nav section .f-col ul li{margin:0}
-.contWrap footer nav section .f-col ul li a{font-size:.82rem;line-height:1.55;color:#3A3A3A;text-decoration:none;display:block;padding:1px 0;letter-spacing:.01em}
-.contWrap footer nav section .f-col ul li a:hover{color:#1A1A1A;text-decoration:underline}
+.contWrap footer nav section .f-col ul li a{font-size:.82rem;line-height:1.55;color:rgba(255,255,255,.82);text-decoration:none;display:block;padding:1px 0;letter-spacing:.01em}
+.contWrap footer nav section .f-col ul li a:hover{color:#FFFFFF;text-decoration:underline}
 
-.contWrap footer #snsArea{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:26px 0 0;padding-top:18px;border-top:1px solid #E0D9D2}
+.contWrap footer #snsArea{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.25)}
 .contWrap footer #snsArea ol{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin:0;padding:0;list-style:none}
 .contWrap footer #snsArea ol li{margin:0}
-.contWrap footer #snsArea ol li a{font-size:.78rem;letter-spacing:.04em;color:#1A1A1A;text-decoration:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0}
-.contWrap footer #snsArea ol li a:hover{color:#000;text-decoration:underline}
+.contWrap footer #snsArea ol li a{font-size:.78rem;letter-spacing:.04em;color:rgba(255,255,255,.82);text-decoration:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0}
+.contWrap footer #snsArea ol li a:hover{color:#FFFFFF;text-decoration:underline}
 
 .contWrap footer .f-mark{margin:20px 0 0;display:flex;align-items:center}
-.contWrap footer .f-mark a{font-size:1.35rem;font-weight:900;letter-spacing:.14em;color:#1A1A1A;text-decoration:none;text-transform:uppercase}
+.contWrap footer .f-mark a{font-size:1.35rem;font-weight:900;letter-spacing:.14em;color:#FFFFFF;text-decoration:none;text-transform:uppercase}
 
-.contWrap footer .f-copy{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:10px;padding-bottom:24px;border-bottom:1px solid #E0D9D2;width:100%}
-.contWrap footer .f-copy small{font-size:.7rem;color:#6E6560;letter-spacing:.04em}
+.contWrap footer .f-copy{display:flex;flex-direction:column;align-items:flex-start;gap:4px;margin-top:10px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.25);width:100%}
+.contWrap footer .f-copy small{font-size:.7rem;color:rgba(255,255,255,.6);letter-spacing:.04em}
 
 @media only screen and (max-width: 768px){
   .contWrap footer{padding:32px 0 0}
