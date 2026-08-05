@@ -139,6 +139,7 @@ header #g-nav ul{
 }
 header #g-nav ul li{list-style:none;padding:0;overflow:hidden}
 header #g-nav ul > li.navItem-brand{overflow:visible}
+header #g-nav ul .brandList li{overflow:visible}
 header #g-nav ul li a{
   color:#fff; text-decoration:none; display:block; transform:translateY(200px);
   opacity:0; transition:.5s .05s cubic-bezier(0.165, 0.84, 0.44, 1);
