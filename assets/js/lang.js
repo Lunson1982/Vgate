@@ -97,6 +97,19 @@
       });
     });
 
+    // Hide any drawer-nav language block EXCEPT the currently active one.
+    // (lang.js only set data-active on footer; mirror it here on drawer nav.)
+    // IMPORTANT: query the language-block <ul> only — .brandList is also a <ul>
+    // nested inside each language block, so '#g-nav-list ul' must NOT be used.
+    document.querySelectorAll('#g-nav-list > .jpnCont, #g-nav-list > .engCont, #g-nav-list > .chnCont, #g-nav-list > .hkCont').forEach(function (ul) {
+      var active = ul.hasAttribute('data-active') && ul.getAttribute('data-active') === 'true';
+      if (active) {
+        ul.style.display = '';
+      } else {
+        ul.style.display = 'none';
+      }
+    });
+
     // After setting data-active, enforce the footer 3-column flex layout.
     // This is the authoritative place where the active section is decided, so
     // the layout is guaranteed regardless of JS load order (defeats the race
