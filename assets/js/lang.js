@@ -60,6 +60,31 @@
     'zh-HK': 'hk/',
   };
 
+  // ---- browser language auto-detection ----
+  function guessBrowserLang() {
+    var candidates = [];
+    try {
+      if (navigator.languages && navigator.languages.length) {
+        candidates = navigator.languages;
+      } else if (navigator.language) {
+        candidates = [navigator.language];
+      }
+    } catch (e) {}
+    for (var i = 0; i < candidates.length; i++) {
+      var c = candidates[i].toLowerCase().replace('_', '-').replace('tw', '-hk').replace('cn', '-cn');
+      if (LANGS.indexOf(c) !== -1) return c;
+      // Match zh-Hant/* to zh-HK, zh-Hans/* to zh-CN
+      var base = c.split('-')[0];
+      if (base === 'zh') {
+        if (c.indexOf('hant') !== -1 || c.indexOf('hk') !== -1 || c.indexOf('tw') !== -1) return 'zh-HK';
+        if (c.indexOf('hans') !== -1 || c.indexOf('cn') !== -1) return 'zh-CN';
+      }
+      if (base === 'ja') return 'ja';
+      if (base === 'en') return 'en';
+    }
+    return null;
+  }
+
   // ---- current language resolution ----
   function resolveLang() {
     // 1) ?lang=xx query param (highest priority)
@@ -70,10 +95,13 @@
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && LANGS.indexOf(stored) !== -1) return stored;
     } catch (e) {}
-    // 3) <html lang> attribute set by page (only if it matches a known lang)
+    // 3) <html lang> attribute set by page
     var htmlLang = document.documentElement.getAttribute('lang');
     if (htmlLang && LANGS.indexOf(htmlLang) !== -1) return htmlLang;
-    // 4) Default
+    // 4) Auto-detect from browser language settings
+    var guessed = guessBrowserLang();
+    if (guessed) return guessed;
+    // 5) Default
     return DEFAULT_LANG;
   }
 
@@ -130,7 +158,10 @@
 
     // Also enforce the drawer nav's active language so only one <ul> shows
     // inside the slide-out menu (currently lang.js only touched the footer).
-    document.querySelectorAll('#g-nav-list ul[data-active]').forEach(function (ul) {
+    // IMPORTANT: the language blocks are DIRECT children of #g-nav-list.
+    // .brandList is ALSO a <ul> nested inside each language block, so
+    // '#g-nav-list ul[data-active]' would accidentally hit brandList too.
+    document.querySelectorAll('#g-nav-list > ul[data-active]').forEach(function (ul) {
       ul.style.display = '';
     });
     // Hide all drawer-nav language blocks EXCEPT the currently active one.
@@ -166,17 +197,15 @@
     // Mark the active option in the dropdown
     document.querySelectorAll('.lang-opt').forEach(function (a) {
       if (a.getAttribute('data-lang') === lang) {
-        a.classList.add('current');
+        a.classList.add('active');
       } else {
-        a.classList.remove('current');
+        a.classList.remove('active');
       }
     });
 
-    // Close the accordion after selection
-    var dd = document.querySelector('header .language dl.accordion dd');
-    if (dd) dd.style.display = 'none';
-    var dt = document.querySelector('header .language dl.accordion dt');
-    if (dt) dt.setAttribute('aria-expanded', 'false');
+    // Close the accordion after selection (new .dd.open pattern)
+    var acc = document.querySelector('header .language .accordion.dd');
+    if (acc) acc.classList.remove('open');
 
     // Persist
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
@@ -191,11 +220,9 @@
     document.addEventListener('click', function (e) {
       var dt = e.target.closest('header .language dl.accordion dt');
       if (!dt) return;
-      var dd = dt.nextElementSibling;
+      var dd = e.target.closest('header .language .accordion.dd');
       if (!dd) return;
-      var isOpen = dd.style.display === 'block';
-      dd.style.display = isOpen ? 'none' : 'block';
-      dt.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+      dd.classList.toggle('open');
     });
     // Keyboard support on dt
     document.addEventListener('keydown', function (e) {
@@ -215,13 +242,9 @@
     });
     // Click outside closes
     document.addEventListener('click', function (e) {
-      if (e.target.closest('header .language dl.accordion')) return;
-      var dd = document.querySelector('header .language dl.accordion dd');
-      var dt = document.querySelector('header .language dl.accordion dt');
-      if (dd && dd.style.display === 'block') {
-        dd.style.display = 'none';
-        if (dt) dt.setAttribute('aria-expanded', 'false');
-      }
+      if (e.target.closest('header .language .accordion')) return;
+      var dd = document.querySelector('header .language .accordion.dd');
+      if (dd) dd.classList.remove('open');
     });
   }
 
