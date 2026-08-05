@@ -1,4 +1,6 @@
 <footer>
+<style>footer nav section[data-active=true]{display:flex !important;flex-wrap:wrap !important;justify-content:space-between !important;align-items:flex-start !important;gap:28px 32px !important;width:100% !important}footer nav section[data-active=true] .f-col{display:flex !important;flex-direction:column !important}footer nav section[data-active=true] .f-col.col-about{flex:1 1 340px !important;max-width:380px !important}footer nav section[data-active=true] .f-col.col-brands{flex:0 0 200px !important}footer nav section[data-active=true] .f-col.col-more{flex:0 0 200px !important}</style>
+
   <div class="inner">
     <nav aria-label="Footer navigation">
 
