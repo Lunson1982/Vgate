@@ -135,7 +135,7 @@ header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);opacity:1;
 header #g-nav ul{
   position:absolute; z-index:999;
   transition:top .8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  top:90px; left:50%; transform:translateX(-50%); width:88%; padding-bottom:72px;
+  top:70px; left:50%; transform:translateX(-50%); width:88%; padding-bottom:72px;
 }
 header #g-nav ul li{list-style:none;padding:0;overflow:hidden}
 header #g-nav ul > li.navItem-brand{overflow:visible}
