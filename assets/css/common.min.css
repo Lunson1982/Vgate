@@ -209,6 +209,17 @@ header #g-nav ul .brandList li span{
   font-size:.82rem; font-weight:400; letter-spacing:.02em;
   text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
   padding:2px 8px 3px 16px;
+}#g-nav ul .brandList li a.brandLink{
+  display:block; text-align:left;
+  font-size:.82rem; font-weight:400; letter-spacing:.02em;
+  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
+  padding:3px 8px 3px 16px;
+  text-decoration:none;
+  transition:color .2s ease;
+}
+#g-nav ul .brandList li a.brandLink:hover{color:#F5C542}
+#g-nav ul .brandList li a.brandLink::after{
+  content:" \2197"; font-size:.7rem; opacity:.5; margin-left:4px;
 }
 header #g-nav.panelactive ul .brandList li span{opacity:1 !important;transform:none !important}
 header #g-nav ul .brandList{
