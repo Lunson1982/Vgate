@@ -44,7 +44,7 @@
     { f: 'FURFUR_logo_RGB_2000px_300dpi-BK.jpg',
       n: 'FURFUR' },
     { f: 'USAGI+ONLINE_logo_RGB_2000px_300dpi-BK.jpg',
-      n: 'USAGI ONLINE' },
+      n: 'USAGI ONLINE', u: 'https://www.usagi-online.com.hk/' },
   ];
   var BRAND_FILES = BRAND_META.map(function (b) { return b.f; });
 
