@@ -74,9 +74,9 @@ header{
   background:linear-gradient(to bottom, #fff 0%, #fff 80%, rgba(255,255,255,0) 100%);
 }
 header .inner{margin:0 auto;width:90%}
-header .inner .logo{max-width:410px;width:100%;margin-bottom:18px;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header .inner .logo img{max-width:410px;width:100%;height:auto}
-@media only screen and (max-width: 768px){header .inner .logo{max-width:410px}}
+header .inner .logo{max-width:205px;width:100%;margin-bottom:18px;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header .inner .logo img{max-width:205px;width:100%;height:auto}
+@media only screen and (max-width: 768px){header .inner .logo{max-width:205px}}
 @media only screen and (max-width: 480px){
   header .inner .logo{max-width:100%}
   header .inner .logo img{max-width:100%}
