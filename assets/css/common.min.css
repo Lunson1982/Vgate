@@ -83,6 +83,7 @@ header .inner .logo img{max-width:410px;width:100%;height:auto}
 header .inner>dl{
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
   width:100%; padding:0 0 12px;
+  border-bottom:1px solid transparent;
   transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header .inner>dl>dt{width:152px;height:auto}

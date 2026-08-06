@@ -40,11 +40,11 @@
     { f: 'Cosme+Kitchen_logo_RGB_2000px_300dpi-BK.jpg',
       n: 'Cosme Kitchen', u: 'https://www.instagram.com/cosmekitchenhk' },
     { f: 'CELFORD_logo_RGB_2000px_300dpi-BK.jpg',
-      n: 'Celvoke' },
+      n: 'CELFORD' },
     { f: 'FURFUR_logo_RGB_2000px_300dpi-BK.jpg',
-      n: 'Kana Lili' },
+      n: 'FURFUR' },
     { f: 'USAGI+ONLINE_logo_RGB_2000px_300dpi-BK.jpg',
-      n: 'Avantgardey' },
+      n: 'USAGI ONLINE' },
   ];
   var BRAND_FILES = BRAND_META.map(function (b) { return b.f; });
 
