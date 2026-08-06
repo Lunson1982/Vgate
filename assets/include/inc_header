@@ -1,7 +1,7 @@
 <header>
   <div class="inner">
     <div class="logo"><a href="{$root}" data-keep-lang>
-      <img class="forModern" src="{$root}assets/img/companies/group_logo.svg" width="" height="" alt="Vgate">
+      <img class="forModern" src="{$root}assets/img/companies/group_logo.png" width="" height="" alt="Vgate">
     </a></div>
     <dl>
       <dt><div class="author"><a href="{$root}" data-keep-lang><img src="{$root}assets/img/common/menu_left_pc.svg?v=2" width="" height="" alt="Vgate" class="switch"></a></div></dt>
