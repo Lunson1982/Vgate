@@ -80,9 +80,9 @@ header{
   background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
 }
 header .inner{margin:0 auto;width:90%;display:flex;flex-direction:column;justify-content:flex-end;height:100%;box-sizing:border-box}
-header .inner .logo{max-width:150px;width:100%;margin-bottom:14px;margin-left:-12px;align-self:flex-start;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header .inner .logo img{max-width:150px;width:100%;height:auto;margin-left:-12px}
-@media only screen and (max-width: 768px){header .inner .logo{max-width:150px}}
+header .inner .logo{max-width:220px;width:100%;margin-bottom:14px;margin-left:-12px;align-self:flex-start;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header .inner .logo img{max-width:220px;width:100%;height:auto;margin-left:-12px}
+@media only screen and (max-width: 768px){header .inner .logo{max-width:220px}}
 @media only screen and (max-width: 480px){
   header .inner .logo{max-width:100%}
   header .inner .logo img{max-width:100%}
