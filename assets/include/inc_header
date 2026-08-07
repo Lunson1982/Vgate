@@ -7,7 +7,7 @@
       <dd class="language">
         <dl class="accordion dd">
           <dt class="lang-selected" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
-            <img src="{$root}assets/img/common/language_menu_pc.svg" width="" height="" alt="Languages" class="switch">
+            <img src="{$root}assets/img/common/language_menu_pc.svg" width="" height="" alt="Languages" class="switch"><span class="lang-text">LANG</span>
             <span class="lang-current-code">HK</span>
             <span class="lang-current-label">繁體中文</span>
             <svg class="lang-chevron" viewBox="0 0 10 6"><path d="M1 1.5 L5 5.5 L9 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>

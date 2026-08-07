@@ -15,6 +15,12 @@
 }
 @media only screen and (max-width: 480px){
   .pcOnly{display:none}.pcTabOnly{display:none !important}.tabSpOnly{display:block}.tabOnly{display:none}.spOnly{display:block}
+  /* Compact mobile language toggle: just "LANG" */
+  .lang-selected img.switch,
+  .lang-selected .lang-current-code,
+  .lang-selected .lang-current-label{display:none !important}
+  .lang-text{display:inline !important;font-weight:700;font-size:.78rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
+  header .inner>dl>dd.language{width:auto !important;padding-right:0}
 }
 
 /* ---------- Keyframes ---------- */
@@ -104,6 +110,7 @@ header .inner>dl>dd.language dl.accordion{position:relative}
 .accordion dt .lang-current-code{font-weight:700;font-size:.88rem;letter-spacing:.14em;color:#fff;min-width:22px;text-align:center;line-height:1}
 .accordion dt .lang-current-label{font-size:.98rem;padding:0 6px 0 2px;letter-spacing:.01em;font-weight:600}
 .accordion dt .lang-chevron{width:11px;height:7px;transition:transform .25s;display:block;margin-left:1px;color:#fff}
+.accordion dt .lang-text{display:none}
 .accordion.dd.open dt .lang-chevron{transform:rotate(180deg)}
 .accordion.dd.open dt{background:rgba(0,0,0,.55);border-color:rgba(255,255,255,.85)}
 .lang-panel{position:absolute;top:calc(100% + 12px);right:0;width:260px;background:rgba(20,18,16,.96);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:10px;box-shadow:0 14px 40px rgba(0,0,0,.55);display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .22s,transform .22s;pointer-events:none;z-index:30000}
