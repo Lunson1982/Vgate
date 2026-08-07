@@ -129,7 +129,7 @@ header .inner>dl>dd.language dl.accordion{position:relative}
 
 header.active{position:fixed;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);border-bottom:0}
 header.active .inner{justify-content:flex-start;align-items:flex-start}
-header.active .inner .logo{max-width:60px;max-height:24px;width:auto;margin-top:12px;margin-bottom:0;margin-left:-12px;align-self:flex-start;justify-self:flex-start;opacity:1;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header.active .inner .logo{max-width:90px;max-height:36px;width:auto;margin-top:12px;margin-bottom:0;margin-left:-12px;align-self:flex-start;justify-self:flex-start;opacity:1;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 
 /* Drawer */
 header #g-nav{
