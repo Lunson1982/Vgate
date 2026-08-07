@@ -76,13 +76,13 @@ img[src$=".svg"]{width:100%;height:auto}
 /* ---------- Header (top fixed bar + drawer) ---------- */
 header{
   width:100%; position:fixed; z-index:9999; top:0;
-  height:96px; transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height:116px; transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
 }
 header .inner{margin:0 auto;width:90%;display:flex;flex-direction:column;justify-content:flex-end;height:100%;box-sizing:border-box}
-header .inner .logo{max-width:220px;width:100%;margin-bottom:14px;margin-left:-12px;align-self:flex-start;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header .inner .logo img{max-width:220px;width:100%;height:auto;margin-left:-12px}
-@media only screen and (max-width: 768px){header .inner .logo{max-width:220px}}
+header .inner .logo{max-width:150px;width:100%;margin-bottom:14px;margin-left:-12px;align-self:flex-start;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header .inner .logo img{max-width:150px;width:100%;height:auto;margin-left:-12px}
+@media only screen and (max-width: 768px){header .inner .logo{max-width:150px}}
 @media only screen and (max-width: 480px){
   header .inner .logo{max-width:100%}
   header .inner .logo img{max-width:100%}
@@ -128,7 +128,9 @@ header .inner>dl>dd.language dl.accordion{position:relative}
 @media only screen and (max-width: 768px){header .inner{width:90%}}
 
 header.active{position:fixed;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);border-bottom:0}
-header.active .inner .logo{max-width:88px;max-height:33px;margin-bottom:0;margin-top:0;margin-left:-12px;align-self:flex-start;justify-self:flex-start;opacity:1;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header.active .inner{justify-content:flex-start}
+header.active .inner .logo{max-width:60px;max-height:24px;margin-bottom:0;margin-top:12px;margin-left:-12px;align-self:flex-start;justify-self:flex-start;opacity:1;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header.active .inner .logo img{max-width:60px;height:auto}
 
 /* Drawer */
 header #g-nav{
