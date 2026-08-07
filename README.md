@@ -19,7 +19,7 @@ vgate/
 │   │   ├── reset.css       ← ONZE-style reset
 │   │   ├── aos.css         ← Vendored from mashgroup
 │   │   ├── swiper-bundle.min.css  ← Vendored from mashgroup
-│   │   ├── common.min.css?20260807092013se typography
+│   │   ├── common.min.css?20260807094429se typography
 │   │   ├── top.min.css     ← Homepage section styles
 │   │   └── other.min.css   ← Secondary-page styles (photoInner grid, timeline, officer table)
 │   ├── js/
@@ -62,10 +62,10 @@ vgate/
 | **Footer** | Grey `#d2d2d2`, 4-col nav (About/Commitment/Recruit/links), brand list, Instagram icon, © line. On mobile ≤480px, h3 headers become accordion toggles |
 | **Pagetop** | 50px circle, `stroke-dasharray: 0,50` → `50,0` on hover draws the border. Scrolls into view after 200px scroll |
 
-## Color palette (override these in `common.min.css?20260807092013
+## Color palette (override these in `common.min.css?20260807094429
 
 ```css
-/* in common.min.css?20260807092013/
+/* in common.min.css?20260807094429/
 header .inner>dl { border-bottom:1px solid #1A1A1A; }   /* primary ink */
 #brand { background:#F5F4F2; }                            /* warm section bg */
 .contWrap footer { background:#d2d2d2; }                  /* footer grey */
