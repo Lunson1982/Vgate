@@ -73,10 +73,10 @@ header{
   transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1); padding:18px 0;
   background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
 }
-header .inner{margin:0 auto;width:90%}
-header .inner .logo{max-width:186px;width:100%;margin-bottom:18px;margin-left:-12px;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header .inner .logo img{max-width:186px;width:100%;height:auto;margin-left:-12px}
-@media only screen and (max-width: 768px){header .inner .logo{max-width:186px}}
+header .inner{margin:0 auto;width:90%;display:flex;flex-direction:column;justify-content:flex-end}
+header .inner .logo{max-width:220px;width:100%;margin-bottom:18px;margin-left:-12px;align-self:flex-end;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header .inner .logo img{max-width:220px;width:100%;height:auto;margin-left:-12px}
+@media only screen and (max-width: 768px){header .inner .logo{max-width:220px}}
 @media only screen and (max-width: 480px){
   header .inner .logo{max-width:100%}
   header .inner .logo img{max-width:100%}
@@ -121,7 +121,7 @@ header .inner>dl>dd.language dl.accordion{position:relative}
 @media only screen and (max-width: 768px){header .inner{width:90%}}
 
 header.active{position:fixed;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);border-bottom:0}
-header.active .inner .logo{max-width:0;max-height:0;margin-bottom:0;opacity:0;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header.active .inner .logo{max-width:88px;max-height:33px;margin-bottom:0;margin-top:0;margin-left:-12px;align-self:flex-start;justify-self:flex-start;opacity:1;transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 
 /* Drawer */
 header #g-nav{
