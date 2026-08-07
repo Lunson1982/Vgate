@@ -76,7 +76,7 @@ img[src$=".svg"]{width:100%;height:auto}
 /* ---------- Header (top fixed bar + drawer) ---------- */
 header{
   width:100%; position:fixed; z-index:9999; top:0;
-  height:116px; transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  height:140px; transition:.8s cubic-bezier(0.165, 0.84, 0.44, 1);
   background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
 }
 header .inner{margin:0 auto;width:90%;display:flex;flex-direction:column;justify-content:flex-end;height:100%;box-sizing:border-box}
