@@ -82,40 +82,9 @@ header{
 header .inner{margin:0 auto;width:90%;display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-end;height:100%;box-sizing:border-box;gap:24px;transition:gap .8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 header .inner .logo{max-width:220px;width:auto;flex-shrink:0;margin-top:0;margin-bottom:22px;margin-left:-12px;align-self:flex-end;transition:max-width .8s cubic-bezier(0.165, 0.84, 0.44, 1), max-height .8s cubic-bezier(0.165, 0.84, 0.44, 1), margin-bottom .8s cubic-bezier(0.165, 0.84, 0.44, 1), margin-left .8s cubic-bezier(0.165, 0.84, 0.44, 1), margin-top .8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 header .inner .logo img{max-width:220px;width:100%;height:auto;margin-left:-12px}
-@media only screen and (max-width: 768px){header .inner .logo{max-width:180px}}
-@media only screen and (max-width: 768px){
-  header{height:88px}
-  header .inner{width:95%;gap:14px}
-  header .inner .logo{max-width:160px;margin-bottom:18px}
-  header .inner .logo img{max-width:160px}
-  header .inner>dl{width:calc(100% - 174px)}
-  header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:18px}
-  .accordion dt{padding:5px 10px 5px 8px;gap:6px}
-  .accordion dt img{height:14px}
-  .accordion dt .lang-current-code{font-size:.8rem;min-width:20px}
-  .accordion dt .lang-current-label{font-size:.82rem}
-  .accordion dt .lang-chevron{width:9px;height:6px;margin-left:1px}
-}
+@media only screen and (max-width: 768px){header .inner .logo{max-width:220px}}
 @media only screen and (max-width: 480px){
-  header{height:64px}
-  header .inner{width:94%;gap:10px;align-items:center}
-  header .inner .logo{max-width:110px;margin-bottom:0;margin-top:0}
-  header .inner .logo img{max-width:110px}
-  header .inner>dl>dd:nth-of-type(2){margin-bottom:0;width:44px}
-  header .inner>dl>dd:nth-of-type(2) .openbtn{font-size:.72rem;letter-spacing:.1em}
-  header .inner>dl>dd.language{margin-bottom:0;width:calc(100% - 54px)}
-  .accordion dt{padding:4px 9px 4px 7px;gap:5px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.5)}
-  .accordion dt img{height:13px}
-  .lang-selected .lang-current-code,
-  .lang-selected .lang-current-label,
-  .lang-selected .lang-chevron{display:none !important}
-  .lang-text{display:inline !important;font-weight:700;font-size:.7rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
-  header.active{height:54px}
-  header.active .inner .logo{max-width:68px;max-height:28px;margin-bottom:13px;margin-top:0}
-  header.active .inner{gap:12px}
-  header.active .inner>dl{margin-bottom:13px}
-  header.active .inner>dl>dd.language{margin-bottom:13px}
-  header.active .inner>dl>dd:nth-of-type(2){margin-bottom:13px}
+  header .inner .logo{max-width:100%}
   header .inner .logo img{max-width:100%}
 }
 header .inner>dl{
@@ -459,3 +428,67 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
 .chnCont[data-active="true"],
 .hkCont[data-active="true"] { display: block !important; }
 
+
+/* ---------- Responsive header (overrides - placed at end for cascade priority) ---------- */
+@media only screen and (max-width: 900px){
+  header{height:92px}
+  header .inner{width:95%;gap:14px}
+  header .inner .logo{max-width:170px;margin-bottom:20px}
+  header .inner .logo img{max-width:170px}
+  header .inner>dl{width:calc(100% - 184px)}
+  header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:20px}
+  header .inner>dl>dd:nth-of-type(2){margin-bottom:20px}
+  .accordion dt{padding:5px 12px 5px 9px;gap:6px}
+  .accordion dt img{height:14px}
+  .accordion dt .lang-current-code{font-size:.82rem;min-width:20px}
+  .accordion dt .lang-current-label{font-size:.84rem}
+  .accordion dt .lang-chevron{width:9px;height:6px}
+  header.active{height:60px}
+  header.active .inner .logo{max-width:72px;max-height:30px;margin-bottom:15px;margin-top:0}
+  header.active .inner{gap:14px}
+  header.active .inner>dl{margin-bottom:15px}
+  header.active .inner>dl>dd.language{margin-bottom:15px}
+  header.active .inner>dl>dd:nth-of-type(2){margin-bottom:15px}
+}
+@media only screen and (max-width: 768px){
+  header{height:84px}
+  header .inner{width:94%;gap:12px}
+  header .inner .logo{max-width:150px;margin-bottom:18px}
+  header .inner .logo img{max-width:150px}
+  header .inner>dl{width:calc(100% - 162px)}
+  header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:18px}
+  header .inner>dl>dd:nth-of-type(2){margin-bottom:18px}
+  .accordion dt{padding:4px 11px 4px 8px;gap:5px}
+  .accordion dt img{height:13px}
+  .accordion dt .lang-current-code{font-size:.78rem;min-width:18px}
+  .accordion dt .lang-current-label{font-size:.8rem}
+  .accordion dt .lang-chevron{width:9px;height:6px}
+  header.active{height:58px}
+  header.active .inner .logo{max-width:66px;max-height:28px;margin-bottom:13px;margin-top:0}
+  header.active .inner{gap:12px}
+  header.active .inner>dl{margin-bottom:13px}
+  header.active .inner>dl>dd.language{margin-bottom:13px}
+  header.active .inner>dl>dd:nth-of-type(2){margin-bottom:13px}
+}
+@media only screen and (max-width: 480px){
+  header{height:60px}
+  header .inner{width:94%;gap:10px;align-items:center}
+  header .inner .logo{max-width:100px;margin-bottom:0;margin-top:0}
+  header .inner .logo img{max-width:100px}
+  header .inner>dl{width:calc(100% - 110px)}
+  header .inner>dl>dd:nth-of-type(2){margin-bottom:0;width:42px}
+  header .inner>dl>dd:nth-of-type(2) div.openbtn{font-size:.7rem;letter-spacing:.08em}
+  header .inner>dl>dd.language{margin-bottom:0;width:calc(100% - 52px);padding-right:0}
+  .accordion dt{padding:4px 9px 4px 6px;gap:4px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.5)}
+  .accordion dt img{height:13px}
+  .lang-selected .lang-current-code,
+  .lang-selected .lang-current-label,
+  .lang-selected .lang-chevron{display:none !important}
+  .lang-text{display:inline !important;font-weight:700;font-size:.7rem;letter-spacing:.2em;color:#fff;align-self:center;line-height:1}
+  header.active{height:48px}
+  header.active .inner{align-items:center;gap:10px}
+  header.active .inner .logo{max-width:60px;max-height:24px;margin-bottom:0;margin-top:0}
+  header.active .inner>dl{margin-bottom:0}
+  header.active .inner>dl>dd.language{margin-bottom:0}
+  header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
+}
