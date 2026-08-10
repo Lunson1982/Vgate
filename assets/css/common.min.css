@@ -492,3 +492,78 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header.active .inner>dl>dd.language{margin-bottom:0}
   header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
 }
+
+/* ---------- Stores page (region pill bar + store grid) ---------- */
+.stores-wrap{margin-top:36px;width:100%}
+.region-tabs{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;
+  gap:10px 14px;padding:18px 16px;
+  background:rgba(20,18,16,.04);
+  border:1px solid rgba(20,18,16,.12);
+  border-radius:12px;
+  margin-bottom:32px;
+  position:sticky;top:60px;z-index:10;
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+}
+.region-tabs a{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:9px 18px;font-size:.78rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;line-height:1;
+  color:#1A1A1A;background:#fff;border:1px solid rgba(20,18,16,.18);
+  border-radius:999px;text-decoration:none;
+  transition:background .2s,color .2s,border-color .2s,box-shadow .2s;
+  white-space:nowrap;
+}
+.region-tabs a:hover{background:#1A1A1A;color:#fff;border-color:#1A1A1A;box-shadow:0 4px 12px rgba(20,18,16,.25)}
+.region-tabs a:active{transform:translateY(1px)}
+.region-block{margin-bottom:36px;scroll-margin-top:130px}
+.region-h{
+  font-size:1.1rem;font-weight:700;letter-spacing:.06em;
+  text-transform:uppercase;color:#1A1A1A;margin:0 0 18px 0;
+  padding-bottom:10px;border-bottom:1px solid rgba(20,18,16,.12);
+  display:flex;align-items:baseline;gap:14px;
+}
+.region-h:after{content:"";flex:1;height:1px;background:rgba(20,18,16,.08)}
+.store-grid{display:grid;grid-template-columns:repeat(3, 1fr);gap:14px 16px}
+.store-card{
+  display:flex;flex-direction:column;align-items:flex-start;
+  justify-content:center;gap:6px;padding:20px 20px;
+  background:#fff;border:1px solid rgba(20,18,16,.1);
+  border-radius:8px;min-height:118px;
+  transition:box-shadow .25s,border-color .25s,transform .25s;
+  position:relative;overflow:hidden;
+}
+.store-card:before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:#1A1A1A;opacity:.15;transition:opacity .25s;
+}
+.store-card:hover{box-shadow:0 8px 22px rgba(20,18,16,.12);border-color:rgba(20,18,16,.22);transform:translateY(-2px)}
+.store-card:hover:before{opacity:.6}
+.store-loc{
+  font-size:.72rem;font-weight:700;letter-spacing:.18em;
+  text-transform:uppercase;color:#8a6f2a;line-height:1;
+}
+.store-mall{
+  font-size:1.02rem;font-weight:700;color:#1A1A1A;line-height:1.3;
+  letter-spacing:.02em;
+}
+.store-brand{
+  font-size:.72rem;font-weight:500;color:rgba(20,18,16,.62);
+  letter-spacing:.06em;line-height:1.2;margin-top:4px;
+}
+.store-card:has(.store-brand) .store-brand{color:#8a6f2a;font-weight:600}
+@media only screen and (max-width: 900px){
+  .store-grid{grid-template-columns:repeat(2, 1fr);gap:12px 14px}
+  .region-tabs{top:54px;padding:14px 12px;gap:8px 10px}
+  .region-tabs a{padding:8px 14px;font-size:.72rem;letter-spacing:.14em}
+  .region-block{scroll-margin-top:120px}
+}
+@media only screen and (max-width: 600px){
+  .store-grid{grid-template-columns:1fr;gap:10px}
+  .region-tabs{position:static;background:transparent;border:none;border-radius:0;padding:8px 0 16px 0;backdrop-filter:none;-webkit-backdrop-filter:none;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start}
+  .region-tabs a{padding:8px 14px;font-size:.7rem}
+  .region-h{font-size:.95rem}
+  .store-card{min-height:96px;padding:16px 18px}
+}
+/* Smooth scroll offset for region anchor clicks (compensates fixed header) */
+html{scroll-padding-top:130px}
