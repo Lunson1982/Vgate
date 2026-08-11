@@ -1,8 +1,7 @@
 /*==========================================================
   common.js — Vgate
   Header logo shrink-on-scroll, drawer toggle, pagetop,
-  body fade-in on load, anchorLink href adjustment.
-  Pure vanilla JS (no jQuery).
+  body fade-in on load. Pure vanilla JS (no jQuery).
 ==========================================================*/
 
 (function () {
@@ -80,11 +79,6 @@
       }
       return;
     }
-    /* Anchor links inside the drawer close it */
-    const anchorLink = e.target.closest('a.anchorLink');
-    if (anchorLink) {
-      closeDrawer();
-    }
     /* Any navigation link inside the drawer closes it */
     if (e.target.closest('#g-nav a')) {
       closeDrawer();
@@ -119,72 +113,12 @@
   });
 
   /* ------------------------------------------------------------------
-   * 4. anchorLink href — point at homepage #commitment, or current dir
-   *    for sub-pages. Mirrors the mashgroup logic.
-   * ------------------------------------------------------------------ */
-  function setAnchorLinks() {
-    const path = window.location.pathname;
-    const href = window.location.href;
-    const dirRoot = window.location.origin + '/';
-    const dir = path.replace(/[^/]*$/, '');
-
-    let target = dirRoot + 'index.html#commitment';
-    if (href === dirRoot || href === dirRoot + 'index.html' || path === '/' || path === '/index.html') {
-      target = '#commitment';
-    }
-
-    document.querySelectorAll('a.anchorLink').forEach(function (a) {
-      a.setAttribute('href', target);
-    });
-
-    /* body class — useful for per-page CSS hooks */
-    if (href === dirRoot || href === dirRoot + 'index.html') {
-      document.body.classList.add('top');
-    } else if (path.indexOf('/about/') !== -1) {
-      document.body.classList.add('about', 'other');
-    } else {
-      document.body.classList.add('other');
-    }
-  }
-  // run after the header partial is injected
-  document.addEventListener('vgate:include-loaded', setAnchorLinks);
-  // also run now in case header is already inlined
-  setAnchorLinks();
-
-  /* ------------------------------------------------------------------
-   * 5. Language accordion — handled by assets/js/lang.js (4-lang support:
+   * 4. Language accordion — handled by assets/js/lang.js (4-lang support:
    *    ja, en, zh-CN, zh-HK with localStorage persistence).
    * ------------------------------------------------------------------ */
 
   /* ------------------------------------------------------------------
-   * 6. Footer nav accordion on mobile — clicking an h3.img toggles its
-   *    sibling <ul>. (Mirrors mashgroup mobile behaviour.)
-   * ------------------------------------------------------------------ */
-  document.addEventListener('click', function (e) {
-    if (window.innerWidth > 480) return;
-    const h3 = e.target.closest('footer .inner nav section div h3.img');
-    if (h3) {
-      e.preventDefault();
-      const ul = h3.nextElementSibling;
-      if (ul && ul.tagName === 'UL') {
-        h3.classList.toggle('active');
-      }
-    }
-  });
-
-  /* ------------------------------------------------------------------
-   * 7. Drawer sub-menu accordion (RECRUIT / ABOUT)
-   * ------------------------------------------------------------------ */
-  document.addEventListener('click', function (e) {
-    const tb = e.target.closest('#g-nav ul li p.toggleBtn');
-    if (tb) {
-      e.preventDefault();
-      tb.classList.toggle('active');
-    }
-  });
-
-  /* ------------------------------------------------------------------
-   * 8. Pagetop button — show on scroll, smooth-scroll to top
+   * 5. Pagetop button — show on scroll, smooth-scroll to top
    * ------------------------------------------------------------------ */
   const pagetop = document.getElementById('pagetop');
   if (pagetop) {
@@ -203,10 +137,8 @@
   }
 
   /* ------------------------------------------------------------------
-   * 
-  /* -------------------------------------------------------------
-   * 8.5 Close drawer when clicking anywhere outside nav / header
-   * ------------------------------------------------------------- */
+   * 6. Close drawer when clicking anywhere outside nav / header
+   * ------------------------------------------------------------------ */
   document.addEventListener('click', function (e) {
     const navEl = document.getElementById('g-nav');
     const header = document.querySelector('header');
@@ -225,9 +157,9 @@
     if (header) header.classList.remove('moveLeft');
   });
 
-  /* -------------------------------------------------------------
-   * 9. Strip hash on reload (matches mashgroup behaviour)
-   * ------------------------------------------------------------- */
+  /* ------------------------------------------------------------------
+   * 7. Strip hash on reload (matches mashgroup behaviour)
+   * ------------------------------------------------------------------ */
   if (performance.getEntriesByType('navigation')[0]?.type === 'reload' && location.hash) {
     history.replaceState(null, '', location.href.replace(/#.*/, ''));
   }
