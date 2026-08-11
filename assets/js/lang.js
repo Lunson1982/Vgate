@@ -87,7 +87,16 @@
 
   // ---- current language resolution ----
   function resolveLang() {
-    // 1) ?lang=xx query param (highest priority)
+    // 0) URL-path prefix (en/ cn/ hk/) — highest priority. This lets
+    //    /en/about/ and /cn/about/ correctly show their own language
+    //    regardless of the hardcoded <html lang> attribute.
+    var p = window.location.pathname.split('/').filter(Boolean);
+    if (p.length > 0) {
+      var first = p[0];
+      var pathLang = {'en':'en','cn':'zh-CN','hk':'zh-HK'}[first];
+      if (pathLang) return pathLang;
+    }
+    // 1) ?lang=xx query param
     var q = new URLSearchParams(window.location.search).get('lang');
     if (q && LANGS.indexOf(q) !== -1) return q;
     // 2) localStorage
@@ -95,13 +104,12 @@
       var stored = localStorage.getItem(STORAGE_KEY);
       if (stored && LANGS.indexOf(stored) !== -1) return stored;
     } catch (e) {}
-    // 3) <html lang> attribute set by page
+    // 3) <html lang> attribute
     var htmlLang = document.documentElement.getAttribute('lang');
     if (htmlLang && LANGS.indexOf(htmlLang) !== -1) return htmlLang;
-    // 4) Auto-detect from browser language settings
+    // 4) Browser
     var guessed = guessBrowserLang();
     if (guessed) return guessed;
-    // 5) Default
     return DEFAULT_LANG;
   }
 
