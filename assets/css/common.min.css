@@ -128,12 +128,41 @@ header .inner>dl{
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
   width:100%; padding:0;
   border-bottom:1px solid transparent;
-  transition:margin .8s cubic-bezier(0.165, 0.84, 0.44, 1), padding .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header .inner>dl>dt{width:152px;height:auto}
 header .inner>dl>dt img{height:14px;width:auto}
-header .inner>dl>dd:nth-of-type(2){width:52px;flex-shrink:0;margin-bottom:18px;transition:margin .8s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header .inner>dl>dd div.openbtn{overflow:hidden;display:flex;align-items:center;justify-content:flex-end;cursor:pointer;font-size:.85rem;font-weight:700;letter-spacing:.15em;color:#1A1A1A;font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif}
+
+/* SWITCH icon — GPU-composited scale only, so the language toggle icon
+   shrinks smoothly in sync with the logo when the header collapses.
+   Same transform value as the logo so everything moves in unison. */
+header .inner>dl>dd.language .switch{
+  display:inline-block;
+  transform:scale(1);
+  transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header.active .inner>dl>dd.language .switch{
+  transform:scale(0.6);
+}
+
+/* MENU button — same transform-only approach. The container keeps its
+   exact size in both states so the layout never reflows; only the
+   text/inner scale (compositor-only = no jump). */
+header .inner>dl>dd:nth-of-type(2){
+  width:52px;flex-shrink:0;margin-bottom:18px;
+}
+header .inner>dl>dd:nth-of-type(2) .openbtn{
+  overflow:hidden;display:flex;align-items:center;justify-content:flex-end;
+  cursor:pointer;
+  font-size:.85rem;font-weight:700;letter-spacing:.15em;
+  color:#1A1A1A;
+  font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
+  transform:scale(1);
+  transform-origin:right center;
+  transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header.active .inner>dl>dd:nth-of-type(2) .openbtn{
+  transform:scale(0.7);
+}
 
 
 
