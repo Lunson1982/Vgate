@@ -104,9 +104,9 @@ header .inner .logo a{
   width:100%;height:100%;
 }
 header .inner .logo img{
-  width:200px;height:80px;
+  width:160px;height:64px;
   margin:0;
-  transform:translate(0,40px);         /* sits at bottom of the 220×90 box */
+  transform:translate(0,26px);         /* 90 - 64 = 26px offset, image bottom = 90 (fits exactly) */
   backface-visibility:hidden;
   display:block;
   will-change:transform;
@@ -178,10 +178,10 @@ header.active .inner{
 }
 /* ACTIVE logo: the 220×90 box stays the same.
    The image scales down AND moves up-left, all via transform — compositor-only.
-   Rest  : translate(0, 40) scale(1)     (bottom-left of box, 200×80)
-   Active: translate(3, 14) scale(0.45)   (top-left of box, 90×36, x=-12 after -12px shift) */
+   Rest  : translate(0, 26) scale(1)       (160×64 at bottom of box)
+   Active: translate(-14, 2) scale(0.45)    (72×29 at top-left, x≈-14 after scale) */
 header.active .inner .logo img{
-  transform:translate(3px, 14px) scale(0.45);
+  transform:translate(-14px, 2px) scale(0.45);
   transform-origin:left top;
 }
 header.active .inner>dl{
