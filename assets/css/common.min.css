@@ -270,7 +270,7 @@ header.active{
 }
 header.active .inner{
   justify-content:flex-start;
-  align-items:flex-start;
+  align-items:center;      /* vertically center pill + MENU in active header */
   gap:18px;
 }
 /* ACTIVE logo: shrink AND move to top-left of the 120px-tall box.
@@ -282,9 +282,7 @@ header.active .inner .logo img{
 }
 header.active .inner>dl{
   width:100%;padding:0;
-  /* Vertically center the language pill + MENU in the 70px active header */
-  margin-top:calc(50% - 22px);   /* centers a ~44px-tall row */
-  margin-bottom:0;
+  margin:0;
 }
 header.active .inner>dl>dd.language{margin-bottom:0}
 header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
