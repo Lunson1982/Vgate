@@ -85,19 +85,18 @@ header .inner{
   display:flex;flex-direction:row;justify-content:flex-start;align-items:flex-end;
   height:100%;box-sizing:border-box;gap:24px;
 }
-/* LOGO container: single absolute box, SAME dimensions in both states.
-   Only the image inside uses transform (GPU-composited = no layout = smooth).
-   PNG natural size is 200×81 (aspect 2.469).  IMPORTANT: we set ONLY width
-   on the img and let height:auto preserve the real aspect — never force a
-   height that mismatches the PNG or the logo will vertically stretch/clip
-   (see viking://user/.../hydrogen_hero_image_object_position.md). */
+/* LOGO container: fixed 220×120 box (matches header height),
+   so the image is never cropped regardless of where it sits inside.
+   Only TRANSFORM is animated on the inner img — GPU-composited,
+   no layout reflow, no crop surprises.
+   Resting:  200×81 img, translate(0,43)  → image bottom = 124 (bottom of header)
+   Active:   translate(-2px, 29) scale(0.36) → 72×29 at top-left, ~24px above header bottom */
 header .inner .logo{
   position:absolute;
   left:0;top:0;
-  width:220px;height:90px;   /* fixed — never changes */
+  width:220px;height:120px;   /* matches header height — never clips */
   margin:0;padding:0;
   display:flex;align-items:flex-end;justify-content:flex-start;
-  overflow:hidden;
   pointer-events:auto;
 }
 header .inner .logo a{
@@ -105,9 +104,10 @@ header .inner .logo a{
   width:100%;height:100%;
 }
 header .inner .logo img{
-  width:200px;height:auto;   /* 200×81 — real PNG, no stretch */
+  width:200px;height:81px;    /* real PNG aspect — no stretch, no crop */
   margin:0;
-  transform:translate(0,9px);   /* box 90 - img 81 = 9px offset */
+  transform:translate(0px, 43px);
+  transform-origin:left bottom;
   backface-visibility:hidden;
   display:block;
   will-change:transform;
@@ -154,7 +154,7 @@ header .inner>dl>dd:nth-of-type(2){
 header .inner>dl>dd:nth-of-type(2) .openbtn{
   overflow:hidden;display:flex;align-items:center;justify-content:flex-end;
   cursor:pointer;
-  font-size:.85rem;font-weight:700;letter-spacing:.15em;
+  font-size:1.05rem;font-weight:700;letter-spacing:.18em;
   color:#1A1A1A;
   font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
   transform:scale(1);
@@ -162,7 +162,7 @@ header .inner>dl>dd:nth-of-type(2) .openbtn{
   transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header.active .inner>dl>dd:nth-of-type(2) .openbtn{
-  transform:scale(0.7);
+  transform:scale(0.95);
 }
 
 
@@ -179,11 +179,11 @@ header .inner>dl>dd.language dl.accordion{position:relative}
   padding:8px 14px 8px 10px;
   cursor:pointer;
   display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(212, 175, 55, 0.5);      /* gold accent border */
-  background:#141414;                                 /* rich ink, not translucent */
+  border:1px solid rgba(212, 175, 55, 0.5);
+  background:#141414;
   backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
   border-radius:999px;
-  color:#FFFFFF;
+  color:#FFFFFF !important;
   transition:background .25s ease, border-color .25s ease, box-shadow .25s ease;
   box-shadow:0 2px 10px rgba(0,0,0,.28), inset 0 0 0 1px rgba(212,175,55,0.12);
 }
@@ -194,22 +194,28 @@ header .language .accordion dt:hover{
 }
 header .language .accordion dt img{height:18px;width:auto;display:block}
 header .language .accordion dt .lang-current-code{
-  font-weight:700;font-size:.88rem;letter-spacing:.14em;
-  color:#D4AF37;
+  font-weight:700;font-size:.92rem;letter-spacing:.14em;
+  color:#FFD54F !important;
   min-width:22px;text-align:center;line-height:1;
 }
 header .language .accordion dt .lang-current-label{
-  font-size:.98rem;padding:0 6px 0 2px;letter-spacing:.01em;font-weight:600;color:#FFFFFF;
+  font-size:1rem;padding:0 6px 0 2px;letter-spacing:.01em;font-weight:600;color:#FFFFFF !important;
 }
 header .language .accordion dt .lang-chevron{
   width:11px;height:7px;transition:transform .25s ease;display:block;
-  margin-left:1px;color:#D4AF37;
+  margin-left:1px;color:#FFD54F !important;stroke:#FFD54F !important;
 }
 header .language .accordion dt .lang-text{display:none}
+header .language .accordion dd{color:#FFFFFF !important}
+header .language .accordion dt,
+header .language .accordion dt *,
+header .language .accordion dd *{color:#FFFFFF !important}
+header .language .accordion.dt,.accordion.dt,.accordion dd>dt.lang-selected{color:#FFFFFF !important}
 header .language .accordion.dd.open dt{
   background:#1e1e1e;
   border-color:rgba(212, 175, 55, 0.9);
   box-shadow:0 6px 22px rgba(0,0,0,.5), inset 0 0 0 1px rgba(212,175,55,0.3);
+  color:#FFFFFF !important;
 }
 header .language .accordion.dd.open dt .lang-chevron{transform:rotate(180deg)}
 .lang-panel{
@@ -267,19 +273,21 @@ header.active .inner{
   align-items:flex-start;
   gap:18px;
 }
-/* ACTIVE logo: the 220×90 box stays the same.
-   The image scales down AND moves up-left, all via transform — compositor-only.
-   Rest  : translate(0, 9)  scale(1)      (200×81 at bottom of box)
-   Active: translate(-20, 0) scale(0.4)    (80×32 at top-left) */
+/* ACTIVE logo: shrink AND move to top-left of the 120px-tall box.
+   translate(-2, 24) scale(0.36)  →  72×29 img at x=-2..70, y=24..53 (top-left).
+   transform-origin left top so shrink anchors to top-left corner. */
 header.active .inner .logo img{
-  transform:translate(-20px, 0px) scale(0.4);
+  transform:translate(-2px, 24px) scale(0.36);
   transform-origin:left top;
 }
 header.active .inner>dl{
-  width:100%;padding:0;margin-bottom:8px;
+  width:100%;padding:0;
+  /* Vertically center the language pill + MENU in the 70px active header */
+  margin-top:calc(50% - 22px);   /* centers a ~44px-tall row */
+  margin-bottom:0;
 }
-header.active .inner>dl>dd.language{margin-bottom:8px}
-header.active .inner>dl>dd:nth-of-type(2){margin-bottom:8px}
+header.active .inner>dl>dd.language{margin-bottom:0}
+header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
 
 /* Drawer */
 header #g-nav{
