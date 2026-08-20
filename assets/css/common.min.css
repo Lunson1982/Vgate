@@ -273,11 +273,14 @@ header.active .inner{
   align-items:center;      /* vertically center pill + MENU in active header */
   gap:18px;
 }
-/* ACTIVE logo: shrink AND move to top-left of the 120px-tall box.
-   translate(-2, 24) scale(0.36)  →  72×29 img at x=-2..70, y=24..53 (top-left).
-   transform-origin left top so shrink anchors to top-left corner. */
+/* ACTIVE logo: shrink AND move to BOTTOM-LEFT of the 120px-tall box.
+   In the active header (70px tall), the box is centered via align-items:center
+   so it occupies y=-25..95 relative to inner, which maps to y=0..70 of header.
+   To land the 72×29 image at the BOTTOM-LEFT of the 70px header
+   (y≈41..70, x≈0..72), we translate to (-2, 41) scale(0.36).
+   transform-origin left top so shrink anchors to top-left of the image. */
 header.active .inner .logo img{
-  transform:translate(-2px, 24px) scale(0.36);
+  transform:translate(0, 40px) scale(0.36);   /* image at y=40..69 in 70px header — near bottom-left, no clip */
   transform-origin:left top;
 }
 header.active .inner>dl{
