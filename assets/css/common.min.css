@@ -87,42 +87,43 @@ header .inner{
 }
 /* LOGO container: single absolute box, SAME dimensions in both states.
    Only the image inside uses transform (GPU-composited = no layout = smooth).
-   Resting position: 220×90 box, image at bottom-left = translate(0,40px).
-   Active position: image shrinks + moves top-left = translate(0,12px). */
+   PNG natural size is 200×81 (aspect 2.469).  IMPORTANT: we set ONLY width
+   on the img and let height:auto preserve the real aspect — never force a
+   height that mismatches the PNG or the logo will vertically stretch/clip
+   (see viking://user/.../hydrogen_hero_image_object_position.md). */
 header .inner .logo{
   position:absolute;
   left:0;top:0;
   width:220px;height:90px;   /* fixed — never changes */
-  margin:0;
-  padding:0;
-  display:flex;align-items:flex-start;justify-content:flex-start;
+  margin:0;padding:0;
+  display:flex;align-items:flex-end;justify-content:flex-start;
   overflow:hidden;
   pointer-events:auto;
 }
 header .inner .logo a{
-  display:inline-flex;align-items:center;justify-content:flex-start;
+  display:inline-flex;align-items:flex-end;justify-content:flex-start;
   width:100%;height:100%;
 }
 header .inner .logo img{
-  width:160px;height:64px;
+  width:200px;height:auto;   /* 200×81 — real PNG, no stretch */
   margin:0;
-  transform:translate(0,26px);         /* 90 - 64 = 26px offset, image bottom = 90 (fits exactly) */
+  transform:translate(0,9px);   /* box 90 - img 81 = 9px offset */
   backface-visibility:hidden;
   display:block;
   will-change:transform;
   transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media only screen and (max-width: 900px){
-  header .inner .logo{width:160px;height:64px;margin-bottom:14px}
-  header .inner .logo a, header .inner .logo img{width:160px;height:64px}
+  header .inner .logo{width:140px;height:56px}
+  header .inner .logo img{width:140px;height:auto}
 }
 @media only screen and (max-width: 768px){
-  header .inner .logo{width:140px;height:56px;margin-bottom:12px}
-  header .inner .logo a, header .inner .logo img{width:140px;height:56px}
+  header .inner .logo{width:120px;height:48px}
+  header .inner .logo img{width:120px;height:auto}
 }
 @media only screen and (max-width: 480px){
-  header .inner .logo{width:110px;height:44px;margin-bottom:8px}
-  header .inner .logo a, header .inner .logo img{width:110px;height:44px}
+  header .inner .logo{width:90px;height:36px}
+  header .inner .logo img{width:90px;height:auto}
 }
 header .inner>dl{
   display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap;
@@ -268,10 +269,10 @@ header.active .inner{
 }
 /* ACTIVE logo: the 220×90 box stays the same.
    The image scales down AND moves up-left, all via transform — compositor-only.
-   Rest  : translate(0, 26) scale(1)       (160×64 at bottom of box)
-   Active: translate(-14, 2) scale(0.45)    (72×29 at top-left, x≈-14 after scale) */
+   Rest  : translate(0, 9)  scale(1)      (200×81 at bottom of box)
+   Active: translate(-20, 0) scale(0.4)    (80×32 at top-left) */
 header.active .inner .logo img{
-  transform:translate(-14px, 2px) scale(0.45);
+  transform:translate(-20px, 0px) scale(0.4);
   transform-origin:left top;
 }
 header.active .inner>dl{
@@ -580,17 +581,16 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header{height:92px}
   header .inner{width:95%;gap:14px}
   header .inner .logo{width:140px;height:56px}
-  header .inner .logo a{width:140px;height:56px}
-  header .inner .logo img{width:120px;height:48px;transform:translate(0,14px)}
-  header.active .inner .logo img{transform:translate(-10px, 4px) scale(0.5)}
+  header .inner .logo img{width:140px;height:auto;transform:translate(0,8px)}   /* 140×54.6, box 56 */
+  header.active .inner .logo img{transform:translate(-14px, 2px) scale(0.45)}
   header .inner>dl{width:calc(100% - 154px)}
   header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:18px}
   header .inner>dl>dd:nth-of-type(2){margin-bottom:18px}
-  .accordion dt{padding:5px 12px 5px 9px;gap:6px}
-  .accordion dt img{height:14px}
-  .accordion dt .lang-current-code{font-size:.82rem;min-width:20px}
-  .accordion dt .lang-current-label{font-size:.84rem}
-  .accordion dt .lang-chevron{width:9px;height:6px}
+  .accordion.dt{padding:5px 12px 5px 9px;gap:6px}
+  header .language .accordion dt img{height:14px}
+  header .language .accordion dt .lang-current-code{font-size:.82rem;min-width:20px}
+  header .language .accordion dt .lang-current-label{font-size:.84rem}
+  header .language .accordion dt .lang-chevron{width:9px;height:6px}
   header.active{height:60px}
   header.active .inner{gap:14px}
   header.active .inner>dl{margin-bottom:15px}
@@ -601,17 +601,16 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header{height:84px}
   header .inner{width:94%;gap:12px}
   header .inner .logo{width:120px;height:48px}
-  header .inner .logo a{width:120px;height:48px}
-  header .inner .logo img{width:104px;height:42px;transform:translate(0,8px)}
-  header.active .inner .logo img{transform:translate(-8px, 2px) scale(0.5)}
+  header .inner .logo img{width:120px;height:auto;transform:translate(0,4px)}   /* 120×48.6 */
+  header.active .inner .logo img{transform:translate(-10px, 2px) scale(0.5)}
   header .inner>dl{width:calc(100% - 132px)}
   header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:14px}
   header .inner>dl>dd:nth-of-type(2){margin-bottom:14px}
-  .accordion dt{padding:4px 11px 4px 8px;gap:5px}
-  .accordion dt img{height:13px}
-  .accordion dt .lang-current-code{font-size:.78rem;min-width:18px}
-  .accordion dt .lang-current-label{font-size:.8rem}
-  .accordion dt .lang-chevron{width:9px;height:6px}
+  .accordion.dt{padding:4px 11px 4px 8px;gap:5px}
+  header .language .accordion dt img{height:13px}
+  header .language .accordion dt .lang-current-code{font-size:.78rem;min-width:18px}
+  header .language .accordion dt .lang-current-label{font-size:.8rem}
+  header .language .accordion dt .lang-chevron{width:9px;height:6px}
   header.active{height:58px}
   header.active .inner{gap:12px}
   header.active .inner>dl{margin-bottom:13px}
@@ -622,15 +621,14 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header{height:60px}
   header .inner{width:94%;gap:10px;align-items:center}
   header .inner .logo{width:90px;height:36px}
-  header .inner .logo a{width:90px;height:36px}
-  header .inner .logo img{width:80px;height:32px;transform:translate(0,4px)}
-  header.active .inner .logo img{transform:translate(-6px, 2px) scale(0.55)}
+  header .inner .logo img{width:90px;height:auto;transform:translate(0,1px)}   /* 90×36.4 */
+  header.active .inner .logo img{transform:translate(-6px, 0px) scale(0.55)}
   header .inner>dl{width:calc(100% - 100px)}
   header .inner>dl>dd:nth-of-type(2){margin-bottom:0;width:42px}
   header .inner>dl>dd:nth-of-type(2) div.openbtn{font-size:.7rem;letter-spacing:.08em}
   header .inner>dl>dd.language{margin-bottom:0;width:calc(100% - 52px);padding-right:0}
-  .accordion dt{padding:4px 9px 4px 6px;gap:4px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.5)}
-  .accordion dt img{height:13px}
+  .accordion.dt{padding:4px 9px 4px 6px;gap:4px;background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.5)}
+  header .language .accordion dt img{height:13px}
   .lang-selected .lang-current-code,
   .lang-selected .lang-current-label,
   .lang-selected .lang-chevron{display:none !important}
