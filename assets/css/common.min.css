@@ -1,4 +1,5 @@
-/*=========================================================
+/*
+=========================================================
   VGATE — common.min.css
   Global tokens, header, drawer nav, footer, buttons, pagetop
   Architecture cloned from mashgroup.jp (JIS corporate layout).
@@ -104,14 +105,15 @@ header .inner .logo a{
   width:100%;height:100%;
 }
 header .inner .logo img{
-  width:200px;height:81px;    /* real PNG aspect — no stretch, no crop */
+  width:200px;height:81px;
   margin:0;
-  transform:translate(0px, 43px);   /* img top=43, bottom=124 = header bottom */
-  transform-origin:left top;
+  transform:translate(0px, 21px);
+  transform-origin:left center;
+  opacity:1;
   backface-visibility:hidden;
   display:block;
-  will-change:transform;
-  transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change:transform,opacity;
+  transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1), opacity .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 @media only screen and (max-width: 900px){
   header .inner .logo{width:140px;height:56px}
@@ -144,6 +146,23 @@ header .inner>dl>dd.language .switch{
 header.active .inner>dl>dd.language .switch{
   transform:scale(0.6);
 }
+header.active{
+  height:70px;
+  background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
+}
+header.active .inner{
+  align-items:center;
+}
+header.active .inner .logo img{
+  transform:translate(0px, 19px) scale(0.4);
+  opacity:1;
+}
+header.active .inner>dl{
+  width:100%;padding:0;margin:0;
+}
+header.active .inner>dl>dd.language{margin-bottom:0}
+header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
+
 
 /* MENU button — same transform-only approach. The container keeps its
    exact size in both states so the layout never reflows; only the
@@ -171,260 +190,151 @@ header .inner>dl>dd.language{width:calc(100% - 210px);font-size:1rem;padding-rig
 @media only screen and (max-width: 768px){header .inner>dl>dd.language{padding-right:12px}}
 header .inner>dl>dd.language dl.accordion{position:relative}
 .accordion.dd{min-width:0}
-/* Language toggle pill — BLACK & GOLD scheme (per research: onething.design
-   "Black & Gold = natural choice for luxury goods", Wix "sleek professional").
-   Rich ink background + subtle gold accent. Glass backdrop keeps the pill
-   feeling refined on light header backgrounds. */
+
+/* Language toggle pill — MINIMALIST WHITE scheme
+   (per Tavily research: luxury fashion = "discreet, clean, minimalist"
+   with generous negative space. No heavy shadows, no dark pills —
+   matches the site's light header aesthetic.) */
 .accordion.dt,.accordion dd>dt.lang-selected,header .language .accordion dt{
-  padding:8px 14px 8px 10px;
+  padding:6px 14px 6px 8px;
   cursor:pointer;
   display:inline-flex;align-items:center;gap:8px;
-  border:1px solid rgba(212, 175, 55, 0.5);
-  background:#141414;
-  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-  border-radius:999px;
-  color:#FFFFFF !important;
-  transition:background .25s ease, border-color .25s ease, box-shadow .25s ease;
-  box-shadow:0 2px 10px rgba(0,0,0,.28), inset 0 0 0 1px rgba(212,175,55,0.12);
+  border:1px solid #E8E8E8;
+  background:#FFFFFF;
+  border-radius:2px;
+  color:#1A1A1A;
+  transition:border-color .25s ease, background .25s ease;
 }
 header .language .accordion dt:hover{
-  background:#1a1a1a;
-  border-color:rgba(212, 175, 55, 0.85);
-  box-shadow:0 4px 18px rgba(0,0,0,.42), inset 0 0 0 1px rgba(212,175,55,0.25);
+  background:#F7F7F7;
+  border-color:#1A1A1A;
 }
-header .language .accordion dt img{height:18px;width:auto;display:block}
+header .language .accordion dt img{height:18px;width:auto;display:block;opacity:.7}
 header .language .accordion dt .lang-current-code{
   font-weight:700;font-size:.92rem;letter-spacing:.14em;
-  color:#FFD54F !important;
+  color:#1A1A1A;
   min-width:22px;text-align:center;line-height:1;
 }
 header .language .accordion dt .lang-current-label{
-  font-size:1rem;padding:0 6px 0 2px;letter-spacing:.01em;font-weight:600;color:#FFFFFF !important;
+  font-size:1rem;padding:0 6px 0 2px;letter-spacing:.01em;font-weight:500;color:#4A4A4A;
 }
 header .language .accordion dt .lang-chevron{
   width:11px;height:7px;transition:transform .25s ease;display:block;
-  margin-left:1px;color:#FFD54F !important;stroke:#FFD54F !important;
+  margin-left:1px;color:#1A1A1A;stroke:#1A1A1A;
 }
 header .language .accordion dt .lang-text{display:none}
-header .language .accordion dd{color:#FFFFFF !important}
+header .language .accordion dd{color:#1A1A1A}
 header .language .accordion dt,
 header .language .accordion dt *,
-header .language .accordion dd *{color:#FFFFFF !important}
-header .language .accordion.dt,.accordion.dt,.accordion dd>dt.lang-selected{color:#FFFFFF !important}
-header .language .accordion.dd.open dt{
-  background:#1e1e1e;
-  border-color:rgba(212, 175, 55, 0.9);
-  box-shadow:0 6px 22px rgba(0,0,0,.5), inset 0 0 0 1px rgba(212,175,55,0.3);
-  color:#FFFFFF !important;
-}
+header .language .accordion dd *{color:#1A1A1A}
+header .language .accordion.dt,.accordion.dt,.accordion dd>dt.lang-selected{color:#1A1A1A}
+header .language .accordion.dd.open dt{background:#F7F7F7;border-color:#1A1A1A}
 header .language .accordion.dd.open dt .lang-chevron{transform:rotate(180deg)}
 .lang-panel{
-  position:absolute;top:calc(100% + 12px);right:0;width:260px;
-  background:#141414;                                       /* rich ink, matches pill */
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border:1px solid rgba(212, 175, 55, 0.4);                /* gold border */
-  border-radius:14px;padding:10px;
-  box-shadow:0 14px 40px rgba(0,0,0,.65), inset 0 0 0 1px rgba(212,175,55,0.1);
-  display:grid;grid-template-columns:1fr 1fr;gap:10px 14px;
-  opacity:0;visibility:hidden;transform:translateY(-6px);
-  transition:opacity .22s ease,transform .22s ease;
-  pointer-events:none;z-index:30000;
+  position:absolute;top:calc(100% + 12px);right:0;width:240px;
+  background:#FFFFFF;
+  border:1px solid #E8E8E8;
+  border-radius:2px;
+  padding:12px 14px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  animation:fade 0.3s ease;
+  z-index:9999;
 }
-.accordion.dd.open .lang-panel{opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto}
-.lang-opt{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;
-  padding:13px 10px;border-radius:9px;color:#fff;text-decoration:none;
-  background:rgba(212, 175, 55, 0.06);                     /* faint gold tint */
-  border:1px solid rgba(212, 175, 55, 0.15);
-  transition:background .18s ease,border-color .18s ease,transform .18s ease,color .18s ease;
+@keyframes fade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+.lang-panel .lang-row{
+  display:flex;align-items:center;gap:10px;padding:9px 8px;cursor:pointer;border-radius:2px;
+  font-size:.95rem;color:#1A1A1A;transition:background .18s ease;
 }
-.lang-opt:hover{
-  background:rgba(212, 175, 55, 0.14);
-  border-color:rgba(212, 175, 55, 0.45);
-  transform:translateY(-1px);
-}
-.lang-opt.active{
-  background:rgba(212, 175, 55, 0.22);
-  border-color:rgba(212, 175, 55, 0.6);
-  box-shadow:inset 0 0 0 1px rgba(212,175,55,0.35);
-  color:#D4AF37;
-}
-.lang-opt .lang-code{
-  font-weight:700;font-size:1.2rem;letter-spacing:.16em;
-  color:#D4AF37;line-height:1;                              /* gold code */
-}
-.lang-opt .lang-name{font-size:.92rem;color:rgba(255,255,255,.78);font-weight:500;line-height:1.25}
-@media only screen and (max-width: 900px){
-  .lang-panel{right:auto;left:50%;transform:translateX(-50%) translateY(-6px);width:240px}
-  .accordion.dd.open .lang-panel{transform:translateX(-50%) translateY(0)}
-}
-"Noto Sans JP","Noto Sans TC","Noto Sans SC","Noto Sans",sans-serif}
-@media only screen and (max-width: 768px){header .inner{width:90%}}
-
+.lang-panel .lang-row:hover{background:#F7F7F7;color:#000}
+.lang-panel .lang-row.active{color:#1A1A1A;font-weight:700}
+.lang-panel .lang-row.active .lang-code{color:#1A1A1A}
+.lang-panel .lang-code{font-weight:600;width:28px;color:#1A1A1A}
+.lang-panel .lang-label{color:#4A4A4A}
+.lang-panel .lang-row.active .lang-label{color:#1A1A1A;font-weight:600}
+/* ACTIVE header (70px) — vertically center everything via align-items:center.
+   Logo shrinks + fades to top-left (still visible in the smaller header).
+   Language pill + MENU are centered with the logo. */
 header.active{
-  position:fixed;
-  background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
-  border-bottom:0;
   height:70px;
-  transition:height .8s cubic-bezier(0.165, 0.84, 0.44, 1), background .8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-header.active .inner{
-  justify-content:flex-start;
-  align-items:center;      /* vertically center pill + MENU in active header */
-  gap:18px;
-}
-/* ACTIVE logo: shrink AND move to BOTTOM-LEFT of the 120px-tall box.
-   In the active header (70px tall), the box is centered via align-items:center
-   so it occupies y=-25..95 relative to inner, which maps to y=0..70 of header.
-   To land the 72×29 image at the BOTTOM-LEFT of the 70px header
-   (y≈41..70, x≈0..72), we translate to (-2, 41) scale(0.36).
-   transform-origin left top so shrink anchors to top-left of the image. */
-header.active .inner .logo img{
-  transform:translate(0, 40px) scale(0.36);   /* image at y=40..69 in 70px header — near bottom-left, no clip */
-  transform-origin:left top;
-}
-header.active .inner>dl{
-  width:100%;padding:0;
-  margin:0;
-}
-header.active .inner>dl>dd.language{margin-bottom:0}
-header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
-
-/* Drawer */
-header #g-nav{
-  position:fixed; z-index:999; top:0; right:-520px; width:520px; height:100vh;
-  background:#3a3a3a; transition:all .8s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-header #g-nav.panelactive{right:0}
-header #g-nav.panelactive #g-nav-list{
-  position:absolute; top:0; left:0; z-index:999; width:100%; height:100%; overflow:auto;
-  -webkit-overflow-scrolling:touch;
-}
-header #g-nav.panelactive #g-nav-list ul li a{transform:translateY(0);opacity:1;transition:.5s cubic-bezier(0.165, 0.84, 0.44, 1)}
-header #g-nav ul{
-  position:absolute; z-index:999;
-  transition:top .8s cubic-bezier(0.165, 0.84, 0.44, 1);
-  top:40px; left:50%; transform:translateX(-50%); width:88%; padding-bottom:72px;
-}
-header #g-nav ul li{list-style:none;padding:0;overflow:hidden}
-header #g-nav ul > li.navItem-brand{overflow:visible}
-header #g-nav ul .brandList li{overflow:visible}
-header #g-nav ul li a{
-  color:#fff; text-decoration:none; display:block; transform:translateY(200px);
-  opacity:0; transition:.5s .05s cubic-bezier(0.165, 0.84, 0.44, 1);
-  font-family:"Noto Sans","Noto Sans JP","Noto Sans TC","Noto Sans SC",sans-serif;
-}
-/* Primary nav items (about, brands, news, contact) — bold header + small sub-text */
-header #g-nav ul > li > a > .navItem{
-  display:flex; flex-direction:column; gap:6px;
-  padding:18px 12px; border-bottom:1px solid rgba(255,255,255,.12);
-}
-header #g-nav ul > li > a > .navItem .navItem__header{
-  font-size:1.05rem; font-weight:700; letter-spacing:.08em;
-  text-transform:uppercase; line-height:1.4;
-}
-header #g-nav ul > li > a > .navItem .navItem__sub{
-  font-size:.82rem; font-weight:400; letter-spacing:.02em;
-  text-transform:none; line-height:1.4; color:rgba(255,255,255,.72);
-}
-/* Sub-items (about pages) — smaller, left-aligned, indented */
-header #g-nav ul > li > ol{margin:10px 0 16px 0;padding:0}
-header #g-nav ul > li > ol > li{padding:4px 8px}
-header #g-nav ul > li > ol > li > a{
-  font-size:.92rem; font-weight:400; letter-spacing:.04em;
-  text-transform:none; text-align:left; line-height:1.5;
-  padding:0 8px 0 16px; color:rgba(255,255,255,.85);
+  background:linear-gradient(to bottom, #fff 0%, #fff 90%, rgba(255,255,255,0) 100%);
 }
 
-header #g-nav ul > li.navItem-brand{
-  display:flex; flex-direction:column; gap:14px;
-  padding:10px 12px 10px; margin-bottom:6px; border-bottom:1px solid rgba(255,255,255,.12);
-}
-header #g-nav ul > li.navItem-brand .navItem__header{
-  font-size:1.05rem; font-weight:700; letter-spacing:.08em;
-  text-transform:uppercase; line-height:1.4;
-}
-header #g-nav ul > li.navItem-brand .navItem__sub{
-  font-size:.82rem; font-weight:400; letter-spacing:.02em;
-  text-transform:none; line-height:1.4; color:rgba(255,255,255,.72);
-}
-/* About-us block */
-header #g-nav ul > li.navItem-about{
-  display:flex; flex-direction:column; gap:0;
-  padding:10px 12px 0; margin-bottom:0;
-}
-header #g-nav ul > li.navItem-about .navItem__header{
-  font-size:.78rem; font-weight:700; letter-spacing:.12em;
-  text-transform:uppercase; line-height:1.4;
-  color:#F5C542; padding:0 8px 10px 16px;
-}
-header #g-nav ul > li.navItem-about > ol{
-  margin:0 0 14px 0; padding:0;
-}
-/* Separator between About and Brands */
-header #g-nav ul > li.nav-sep{
-  height:1px; background:rgba(255,255,255,.18);
-  margin:4px 12px 6px; padding:0; border-bottom:none;
-}
-/* Brand header link */
-header #g-nav ul > li.navItem-brand > a.navItem__header{
-  display:block; font-size:1.05rem; font-weight:700;
-  letter-spacing:.08em; text-transform:uppercase; line-height:1.4;
-  color:#fff; text-decoration:none;
-}
-/* Non-clickable brand items */
-header #g-nav ul .brandList li span{
-  display:block; text-align:left;
-  font-size:.82rem; font-weight:400; letter-spacing:.02em;
-  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
-  padding:2px 8px 3px 16px;
-}#g-nav ul .brandList li a.brandLink{
-  display:block; text-align:left;
-  font-size:.82rem; font-weight:400; letter-spacing:.02em;
-  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
-  padding:3px 8px 3px 16px;
-  text-decoration:none;
-  transition:color .2s ease;
-}
-#g-nav ul .brandList li a.brandLink:hover{color:#F5C542}
-#g-nav ul .brandList li a.brandLink::after{
-  content:" \2197"; font-size:.7rem; opacity:.5; margin-left:4px;
-}
-header #g-nav.panelactive ul .brandList li span{opacity:1 !important;transform:none !important}
-header #g-nav ul .brandList{
-  position:static !important; top:auto !important; left:auto !important;
-  width:auto !important; transform:none !important;
-  margin:4px 0 0 0; padding:0; list-style:none;
-  display:grid; grid-template-columns:1fr 1fr; gap:4px 14px;
-}
-header #g-nav ul .brandList li{padding:0}
-header #g-nav ul .brandList li a{
-  display:block; text-align:left;
-  font-size:.82rem; font-weight:400; letter-spacing:.02em;
-  text-transform:none; line-height:1.5; color:rgba(255,255,255,.92);
-  padding:2px 8px 3px 16px;
-}
-header #g-nav.panelactive ul .brandList li a{opacity:1 !important;transform:none !important}
-header #g-nav ul .brandList li a:hover{color:#fff}
-header .overlay{position:fixed;z-index:998;top:0;left:0;width:100%;height:100vh;background:rgba(0,0,0,.5);opacity:0;visibility:hidden;transition:all .4s;pointer-events:none;cursor:pointer}
-header .overlay.open{opacity:1;visibility:visible;pointer-events:auto}
-header .openbtn{cursor:pointer}
-header .closebtn{
-  pointer-events:none; opacity:0; cursor:pointer; transition:all .8s;
-  position:fixed; z-index:10001; top:18px; right:18px; width:44px; height:44px;
-  background:transparent; border-radius:50%; border:1px solid rgba(255,255,255,.7);
-  display:flex; align-items:center; justify-content:center;
-  font-size:20px; font-weight:300; color:#fff;
-  font-family:"Helvetica Neue",Arial,sans-serif;
-}
-header .closebtn:hover{background:rgba(255,255,255,.1);border-color:#fff}
-header .closebtn.active{opacity:1;pointer-events:auto}
 
-header{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:0}
-header.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:360px}
-.contWrap{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:0}
-.contWrap.moveLeft{transition:right .8s cubic-bezier(0.165, 0.84, 0.44, 1);right:360px}
-.contWrap{position:relative;overflow-x:hidden}
+/*
+=========================================================
+  VGATE — common.min.css
+  Global tokens, header, drawer nav, footer, buttons, pagetop
+  Architecture cloned from mashgroup.jp (JIS corporate layout).
+  Only color tokens differ (Vgate palette).
+=========================================================*/
+
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap";
+
+/* ---------- Breakpoint helpers ---------- */
+.pcOnly{display:block}.pcTabOnly{display:block}.tabSpOnly{display:none}.tabOnly{display:none}.spOnly{display:none}
+@media only screen and (max-width: 768px){
+  .pcOnly{display:none}.pcTabOnly{display:block}.tabSpOnly{display:block}.tabOnly{display:block}.spOnly{display:none}
+}
+@media only screen and (max-width: 480px){
+  .pcOnly{display:none}.pcTabOnly{display:none !important}.tabSpOnly{display:block}.tabOnly{display:none}.spOnly{display:block}
+  /* Compact mobile language toggle: just "LANG" */
+  .lang-selected img.switch,
+  .lang-selected .lang-current-code,
+  .lang-selected .lang-current-label{display:none !important}
+  .lang-text{display:inline !important;font-weight:700;font-size:.78rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
+  header .inner>dl>dd.language{width:auto !important;padding-right:0}
+}
+
+/* ---------- Keyframes ---------- */
+@keyframes loader{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+@keyframes gnaviAnime{0%{opacity:0}100%{opacity:1}}
+@keyframes downAnime{from{transform:translateY(-100px)}to{transform:translateY(0)}}
+@keyframes upAnime{from{transform:translateY(0)}to{transform:translateY(-100px)}}
+@keyframes linkhover{0%{opacity:1}50%{opacity:0;transform:translate3d(100%, 0, 0)}55%{opacity:0;transform:translate3d(-100%, 0, 0)}100%{opacity:1;transform:translate3d(0, 0, 0)}}
+@keyframes linkhover2{0%{opacity:1}50%{opacity:0;transform:translate3d(0, -100%, 0)}55%{opacity:0;transform:translate3d(0, 100%, 0)}100%{opacity:1;transform:translate3d(0, 0, 0)}}
+@keyframes linkhover3{0%{opacity:0}50%{opacity:0;transform:translate3d(0, -100%, 0)}55%{opacity:.1;transform:translate3d(0, 100%, 0)}100%{opacity:1;transform:translate3d(0, 0, 0)}}
+@keyframes ripple{0%{opacity:1;transform:scale(1);box-shadow:0 0 0 1px #1A1A1A}100%{opacity:0;transform:scale(2);box-shadow:0 0 0 10px #1A1A1A}}
+@keyframes ripple2{0%{opacity:1;transform:scale(1);box-shadow:0 0 0 1px #1A1A1A}100%{opacity:0;transform:scale(2);box-shadow:0 0 0 10px #1A1A1A}}
+@keyframes PageAnime{0%{transform-origin:left;transform:scaleX(0)}50%{transform-origin:left;transform:scaleX(1)}50.001%{transform-origin:right}100%{transform-origin:right;transform:scaleX(0)}}
+@keyframes PageAnimeAppear{0%{opacity:0}100%{opacity:1}}
+@keyframes rotate{0%{transform:rotate(-100deg)}100%{transform:rotate(0deg)}}
+@keyframes rotate2{0%{opacity:0;transform:rotate(60deg)}100%{opacity:1;transform:rotate(360deg)}}
+@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}
+@keyframes fadeOut{0%{opacity:1}100%{opacity:0}}
+@keyframes figureLeftToRight{0%{transform:translateX(0)}100%{transform:translateX(100%)}}
+
+/* ---------- Page-load fade ---------- */
+body{opacity:0;transition:opacity .6s cubic-bezier(0.25, 0.25, 0.75, 0.75)}
+body.show{opacity:1;transition:opacity .6s cubic-bezier(0.25, 0.25, 0.75, 0.75)}
+.is-fade-element{transition:opacity .8s,transform .8s}
+.is-fade-standby{opacity:0;transform:translate(0, 100px);transition:none}
+@media only screen and (max-width: 768px){.is-fade-standby{transform:translate(0, 80px)}}
+
+/* ---------- Base typography ---------- */
+html,body{
+  font-family: "Noto Sans JP","Noto Sans","Hiragino Sans","Hiragino Kaku Gothic ProN","Arial","Yu Gothic","Meiryo",sans-serif;
+  line-height:1; font-weight:400; font-size:13px; overflow-x:hidden; width:100%;
+  color:#1A1A1A; background:#fff;
+}
+html a,body a{color:#1A1A1A;cursor:pointer;transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+@media only screen and (min-width: 769px){
+  html a:hover,body a:hover{opacity:.8;transition:all 1s cubic-bezier(0.215, 0.61, 0.355, 1)}
+}
+html a.disable,body a.disable{pointer-events:none}
+html a.externalLink,body a.externalLink{position:relative;padding-right:18px;display:inline;font-weight:700;text-decoration:underline}
+html a.externalLink:before,body a.externalLink:before{
+  content:url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M82.61,95H17.4A12.39,12.39,0,0,1,5,82.61V17.39A12.39,12.39,0,0,1,17.4,5H41.31v7.35H17.4a5,5,0,0,0-5,5V82.61a5,5,0,0,0,5,5H82.61a5,5,0,0,0,5-5V58.69H95V82.61A12.39,12.39,0,0,1,82.61,95Z"/><rect x="17.88" y="35.67" width="86.08" height="7.35" transform="translate(-9.98 54.6) rotate(-45)"/><polygon points="95.03 46.17 87.68 46.17 87.68 12.37 53.88 12.37 53.88 5.02 95.03 5.02 95.03 46.17"/></svg>');
+  display:inline-block;position:absolute;height:13px;width:13px;top:-1px;right:2px
+}
+html h3,body h3{letter-spacing:.05em}
+html h4,body h4{letter-spacing:.05em}
+html p,body p{letter-spacing:.05em}
+@media only screen and (max-width: 480px){html,body{font-size:3.4933333333vw}}
+.font-eng{font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Arial","Yu Gothic","Meiryo",sans-serif}
+.colorW{fill:#fff}
+img{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+img[src$=".svg"]{width:100%;height:auto}
 
 /* ---------- ContWrap — page-content container ---------- */
 .contWrap .inner{max-width:750px;width:90%;margin:0 auto;padding:144px 0;text-align:justify}
