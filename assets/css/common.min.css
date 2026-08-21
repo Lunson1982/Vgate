@@ -154,7 +154,7 @@ header.active .inner{
   align-items:center;
 }
 header.active .inner .logo img{
-  transform:translate(0px, 19px) scale(0.4);
+  transform:translate(0px, 0px) scale(0.4);   /* 80×32 at top-left of 70px header */
   opacity:1;
 }
 header.active .inner>dl{
