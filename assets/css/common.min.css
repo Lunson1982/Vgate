@@ -136,7 +136,7 @@ header .inner>dl>dt{width:152px;height:auto}
 header .inner>dl>dt img{height:14px;width:auto}
 
 /* SWITCH icon — GPU-composited scale only, so the language toggle icon
-   shrinks smoothly in sync with the logo when the header collapses.
+   stays the same size in both states (no shrinking that makes it invisible).
    Same transform value as the logo so everything moves in unison. */
 header .inner>dl>dd.language .switch{
   display:inline-block;
@@ -144,7 +144,7 @@ header .inner>dl>dd.language .switch{
   transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header.active .inner>dl>dd.language .switch{
-  transform:scale(0.6);
+  transform:scale(1);
 }
 header.active{
   height:70px;
@@ -166,14 +166,16 @@ header.active .inner>dl>dd:nth-of-type(2){margin-bottom:0}
 
 /* MENU button — same transform-only approach. The container keeps its
    exact size in both states so the layout never reflows; only the
-   text/inner scale (compositor-only = no jump). */
+   text/inner scale (compositor-only = no jump).
+   Resting: scale(1) — full size, readable
+   Active:  scale(1) — kept full size, no shrink */
 header .inner>dl>dd:nth-of-type(2){
-  width:52px;flex-shrink:0;margin-bottom:18px;
+  width:52px;flex-shrink:0;margin:0;
 }
 header .inner>dl>dd:nth-of-type(2) .openbtn{
   overflow:hidden;display:flex;align-items:center;justify-content:flex-end;
   cursor:pointer;
-  font-size:1.05rem;font-weight:700;letter-spacing:.18em;
+  font-size:1.15rem;font-weight:700;letter-spacing:.18em;
   color:#1A1A1A;
   font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Yu Gothic",sans-serif;
   transform:scale(1);
@@ -181,12 +183,12 @@ header .inner>dl>dd:nth-of-type(2) .openbtn{
   transition:transform .8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 header.active .inner>dl>dd:nth-of-type(2) .openbtn{
-  transform:scale(0.95);
+  transform:scale(1);
 }
 
 
 
-header .inner>dl>dd.language{width:calc(100% - 210px);font-size:1rem;padding-right:30px;display:flex;justify-content:flex-end;margin-bottom:18px;transition:margin .8s cubic-bezier(0.165, 0.84, 0.44, 1)}
+header .inner>dl>dd.language{width:calc(100% - 210px);font-size:1rem;padding-right:30px;display:flex;justify-content:flex-end;margin:0;transition:margin .8s cubic-bezier(0.165, 0.84, 0.44, 1)}
 @media only screen and (max-width: 768px){header .inner>dl>dd.language{padding-right:12px}}
 header .inner>dl>dd.language dl.accordion{position:relative}
 .accordion.dd{min-width:0}

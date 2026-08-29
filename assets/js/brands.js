@@ -68,7 +68,7 @@
 
   function buildCard(filename, idx) {
     var meta = getMeta(filename);
-    var src = BRANDS_DIR + filename;
+    var src = encodeURI(BRANDS_DIR + filename);
     var name = meta.n;
     var url  = meta.u || '#';
     var card = document.createElement('div');
