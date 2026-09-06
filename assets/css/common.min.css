@@ -637,3 +637,16 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
 }
 /* Smooth scroll offset for region anchor clicks (compensates fixed header) */
 html{scroll-padding-top:130px}
+
+
+/* ==========================================================
+   POLISH PASS (2026-09-07)
+   - closebtn cursor:pointer (button-cursor audit)
+   - drawer links min 44px touch targets on mobile
+   - pagetop button cursor (it has one already at line 450)
+   ========================================================== */
+.closebtn{cursor:pointer;user-select:none}
+@media only screen and (max-width: 768px){
+  #g-nav-list a{display:flex;align-items:center;min-height:44px}
+  .region-tabs a{min-height:44px;display:inline-flex;align-items:center}
+}
