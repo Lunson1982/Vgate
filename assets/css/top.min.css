@@ -68,7 +68,7 @@
 }
 
 /* ---------- Banner carousel (Swiper) ---------- */
-#mainVisual+.bannerWrap{margin-top:36px}
+#mainVisual+.bannerWrap{margin-top:36px;overflow:hidden}
 @media only screen and (max-width: 768px){#mainVisual+.bannerWrap{margin-top:18px}}
 #mainVisual+.bannerWrap .swiper-banner{overflow:visible}
 #mainVisual+.bannerWrap .swiper-banner .swiper-slide{
