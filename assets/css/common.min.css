@@ -678,27 +678,32 @@ html{scroll-padding-top:130px}
    during earlier header CSS cleanups (duplicate-block deletion).
    Uses Black & Gold palette (matches site luxury aesthetic).
    ========================================================== */
-#overlay,#g-nav{
+#g-nav{
   visibility:hidden;pointer-events:none;
 }
-header.show #g-nav,header.show .overlay{
+#g-nav.panelactive{
   visibility:visible;pointer-events:auto;
 }
 .overlay{
   position:fixed;inset:0;
   background:rgba(20,18,16,0.68);
   -webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);
-  z-index:998;
-  opacity:0;transition:opacity .4s ease;
+  z-index:1000;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .4s ease;
 }
-header.show .overlay{opacity:1}
+header .overlay.open{
+  opacity:1;
+  pointer-events:auto;
+}
 #g-nav{
   position:fixed;top:0;right:0;
   width:460px;max-width:88vw;
   height:100vh;height:100dvh;
   background:#141414;
   overflow-y:auto;overflow-x:hidden;
-  z-index:999;
+  z-index:1100;
   transform:translateX(100%);
   transition:transform .45s cubic-bezier(.16,.84,.24,1);
   padding:104px 0 84px 0;
@@ -706,6 +711,7 @@ header.show .overlay{opacity:1}
   color:#EDECEA;
   scrollbar-width:thin;scrollbar-color:rgba(212,175,55,0.5) transparent;
 }
+#g-nav.panelactive{transform:translateX(0)}
 #g-nav::-webkit-scrollbar{width:5px}
 #g-nav::-webkit-scrollbar-track{background:transparent}
 #g-nav::-webkit-scrollbar-thumb{background:rgba(212,175,55,0.4);border-radius:3px}
@@ -777,8 +783,8 @@ header.show #g-nav{transform:translateX(0)}
   z-index:1000;
   transition:color .25s ease, transform .25s ease;
 }
-header.show .closebtn{display:flex !important}
-header.show .openbtn{opacity:0;pointer-events:none;transform:scale(.4);transition:opacity .3s ease, transform .3s ease}
+.closebtn.active{display:flex !important}
+header.moveLeft .openbtn{opacity:0;pointer-events:none;transform:scale(.4);transition:opacity .3s ease, transform .3s ease}
 .closebtn:hover{color:#D4AF37;transform:scale(1.12)}
 
 @media only screen and (max-width:768px){
