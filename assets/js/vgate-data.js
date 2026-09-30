@@ -42,16 +42,16 @@
         jp: 'VGate が中華地区で扱う日韓ファッションブランド — モダンなレディースからセレクトショップまで。'
       },
       brands: [
-        { f: 'usagi-online-store.png', n: 'USAGI ONLINE STORE', u: '', d: 'VGate\'s flagship e-commerce and physical retail store, handling popular brands such as Snidel and gelato pique.'s flagship e-commerce platform and physical retail store, offering curated Japanese and Korean fashion brands under one roof in premium shopping malls.'s flagship e-commerce platform and physical retail store, offering curated Japanese and Korean fashion brands under one roof.', d: 'VGate's flagship e-commerce platform and physical retail store, offering curated Japanese and Korean fashion brands under one roof.' },
+        { f: 'usagi-online-store.png', n: 'USAGI ONLINE STORE', u: '', d: "VGate's flagship e-commerce and physical retail store, offering curated Japanese and Korean fashion brands under one roof in premium shopping malls." },
         { f: 'niji-select.png', n: 'NIJI SELECT', u: '', d: 'A leading Japanese curated boutique specializing in natural and organic beauty products, featuring internationally certified sustainable skincare products that prioritize eco-friendly, natural, and organic concepts.', d: 'A Japanese curated boutique specializing in natural and organic beauty products with internationally certified sustainable skincare.' },
         { f: 'snidel.png', n: 'SNIDEL', u: 'https://snidel.com/', d: 'A Japanese fashion brand established in 2005, known for its versatile contemporary womenswear that blends sophistication with everyday style. Currently has stores in Japan, China, Hong Kong, Taiwan, Singapore, and Thailand.' },
-        { f: 'snidel-home.png', n: 'SNIDEL HOME', u: 'https://snidel.com/snidel_home/', d: 'Home goods extension of SNIDEL, bringing the brand\'s refined aesthetic to interior living with lifestyle products and homeware.'s refined aesthetic to interior living with lifestyle products and homeware.'s aesthetic to interior living with lifestyle products and homeware.' },
-        { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://gelatopique.com/', d: 'A room wear brand launched in Autumn 2008. With the core concept of \'Desserts for Adults\', the brand is dedicated to providing supreme comfort and touch. gelato pique offers stylish room wear for men and women of all ages, tailored to each individual\'s lifestyle, transforming moments of relaxation at home into a unique experience.'Desserts for Adults', dedicated to supreme comfort and touch.' },
+        { f: 'snidel-home.png', n: 'SNIDEL HOME', u: 'https://snidel.com/snidel_home/', d: "Home goods extension of SNIDEL, bringing the brand's refined aesthetic to interior living with lifestyle products and homeware." },
+        { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://gelatopique.com/', d: "A room wear brand launched in Autumn 2008. With the core concept of 'Desserts for Adults', the brand is dedicated to providing supreme comfort and touch. gelato pique offers stylish room wear for men and women of all ages." },
         { f: 'lily-brown.png', n: 'LILY BROWN', u: 'https://lily-brw.com/', d: 'A vintage-featured clothing brand from Mash Style Lab Japan, communicating modernised beauty with emphasised vintage elements to each creation.' },
         { f: 'maison-cielune-logo.png', n: 'Maison Cielune', u: 'https://maisoncielune.com/', d: 'A fashion brand inspired by the breathtaking beauty of the sky. The brand\'s vision embodies a soft, dreamy, and playful aesthetic that captures the essence of nature\'s most enchanting canvas. Maison Cielune\'s garments encourage you to embrace your multifaceted self, like the ever-changing sky.' },
         { f: 'kanalili.png', n: 'KanaLili', u: 'https://www.kanalili.com/', d: 'Founded in 2013 by Lilian Kan, a rising fashion designer in Hong Kong. Celebrating beauty, delicacy, art and fantasies through a contemporary and enchanting approach, KanaLili is a label that offers a wide range of whimsical clothing and accessories, from Prêt-à-Porter to couture.' },
         { f: 'fray-id.png', n: 'FRAY I.D', u: 'https://fray-id.com/', d: 'A Japanese fashion brand that seamlessly blends traditional craftsmanship with contemporary design, emphasising new mode career fashion with a unique blend of elegance.' },
-        { f: 'celford.png', n: 'CELFORD', u: 'https://celford.com/', d: 'Crafted around the concept of \'Vintage Feature Dress\', the brand integrates the exquisite craftsmanship and original designs of vintage pieces with modern daily wear. Paying homage to fashion history, the brand features bold color combinations and eye-catching details, embodying both a free-spirited sensibility and a refined aesthetic.'Vintage Feature Dress', integrating vintage craftsmanship with modern daily wear.' },
+        { f: 'celford.png', n: 'CELFORD', u: 'https://celford.com/', d: "Crafted around the concept of 'Vintage Feature Dress', the brand integrates vintage craftsmanship with modern daily wear, featuring bold color combinations and eye-catching details." },
         { f: 'lip-service.png', n: 'LIP SERVICE', u: 'https://lipservice.jp/', d: 'A Japanese clothing brand started around the early 2000s, popular among many styles of gyaru. A women\'s style brand with the concept of [LADY CONSCIOUS].' },
         { f: 'rojita.png', n: 'ROJITA', u: 'https://rlab-store.jp/', d: 'A Japanese fashion brand known for Jirai Kei and Lolita-inspired styles, featuring frill blouses, layered dresses, and girly, dreamy designs.' },
         { f: 'furfur.png', n: 'FURFUR', u: 'https://furfurfur.jp/', d: 'A women\'s fashion brand based on the concept of \'Feminine Mode Wears\', supple and elegant yet powerful with a little humor and essence of mode.' },
@@ -73,8 +73,8 @@
       brands: [
         { f: 'cosme-kitchen.png', n: 'Cosme Kitchen', u: 'https://www.cosmekitchen-webstore.jp/CosmeKitchen/', d: 'In the natural and organic beauty industry, curating a diverse selection of natural and organic skincare and makeup products, dedicated to highlighting each customer\'s unique personality and enhancing their natural beauty.' },
         { f: 'celvoke-logo.png', n: 'Celvoke', u: 'https://celvoke.com/', d: 'A beauty brand created by Mash Beauty Lab, with Ms. Yoko Tagami as Brand Director. Cell + Voke = Celvoke. Listening to the voice of your cells, Celvoke responds to your skin\'s desires, unleashing the exquisite radiance hidden deep within.' },
-        { f: 'snidel-beauty.png', n: 'SNIDEL BEAUTY', u: 'https://snidelbeauty.com/', d: 'Launched in the spring of 2021, a beauty brand originated from the fashion brand SNIDEL. Guided by the philosophy of \'Clean Beauty — beauty that can transform your lifestyle\', SNIDEL BEAUTY is committed to using natural ingredients and sustainable production to bring out each person\'s unique beauty.'Clean Beauty'.' },
-        { f: 'toone.png', n: 'to/one', u: 'https://toonecosmetics.com/', d: '\'to/one\' combines two meanings: \'tone\' evokes \'bringing out the most beautiful shades in your complexion\', while \'to one\' refers to \'letting your personality shine and revealing your unique colors\'.'tone' evokes bringing out the most beautiful shades in your complexion, and 'to one' means letting your personality shine.' },
+        { f: 'snidel-beauty.png', n: 'SNIDEL BEAUTY', u: 'https://snidelbeauty.com/', d: "Launched in spring 2021, a beauty brand originated from fashion brand SNIDEL. Guided by the philosophy of 'Clean Beauty', SNIDEL BEAUTY uses natural ingredients and sustainable production." },
+        { f: 'toone.png', n: 'to/one', u: 'https://toonecosmetics.com/', d: "'to/one' combines two meanings: 'tone' evokes bringing out the most beautiful shades in your complexion, while 'to one' means letting your personality shine." },
         { f: 'f-organics.png', n: 'F ORGANICS', u: 'https://f-organics.jp/', d: 'A brand that specializes in skincare products based on international organic certification standards. Its skincare line features four common ingredients — large-leaved thistle, Damask rose, pomegranate, and frankincense.' },
         { f: 'o-by-f.png', n: 'O by F', u: 'https://f-organics.jp/obyf.aspx', d: 'A beauty brand focused on organic and natural skincare with a minimalist approach to beauty.' },
         { f: 'femmue.png', n: 'FUMMUE', u: 'https://femmue.jp/', d: 'A beauty brand offering skincare and cosmetic products with a focus on natural ingredients and efficacy.' },
@@ -91,7 +91,7 @@
         jp: 'VGate オリジナルのオンライン小売プラットフォーム — 香港における日韓ライフスタイルブランドのキュレーション拠点。'
       },
       brands: [
-        { f: 'usagi-online.png', n: 'USAGI ONLINE (HONG KONG)', u: 'https://www.usagi-online.com.hk/', d: 'VGate\'s e-commerce platform for Japanese and Korean fashion brands, offering online shopping convenience.'s e-commerce platform for Japanese and Korean fashion brands, offering online shopping convenience.'s e-commerce platform for Japanese and Korean fashion brands, offering online shopping convenience.', d: 'VGate's e-commerce platform for Japanese and Korean fashion brands, offering online shopping convenience.' }
+        { f: 'usagi-online.png', n: 'USAGI ONLINE (HONG KONG)', u: 'https://www.usagi-online.com.hk/', d: "VGate's e-commerce platform for Japanese and Korean fashion brands, offering online shopping convenience to customers across Hong Kong." }
       ]
     },
     {
@@ -104,7 +104,7 @@
         jp: '“Desserts for Adults” — gelato pique と共同創出するシグネチャーカフェ体験。2025年・2026年に香港で2店舗をオープン。'
       },
       brands: [
-        { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://pique-cafe.com/', d: 'A popular cafe created in collaboration with gelato pique, the renowned Japanese loungewear brand. In 2025, we partnered with gelato pique to open our first Hong Kong location at Kai Tak AIRSIDE. A second cafe was opened at Shatin New Town Plaza in 2026. Embodying the brand\'s core concept of \'desserts for adults\'.'s signature Pique Blue and French crêpes.' }
+        { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://pique-cafe.com/', d: "A popular cafe created in collaboration with gelato pique, the renowned Japanese loungewear brand. Opened first Hong Kong location at Kai Tak AIRSIDE in 2025, followed by Shatin New Town Plaza in 2026. Embodying the brand's signature Pique Blue and French crêpes." }
       ]
     },
     {
@@ -128,12 +128,12 @@
     { f: 'usagi-online.png', n: 'USAGI ONLINE (HONG KONG)', u: 'https://www.usagi-online.com.hk/' },
     { f: 'usagi-online-store.png', n: 'USAGI ONLINE STORE', u: '' },
     { f: 'snidel.png', n: 'SNIDEL', u: 'https://www.instagram.com/snidelhk/', d: 'A leading Japanese fashion brand known for its versatile contemporary womenswear that blends sophistication with everyday style.' },
-    { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://www.instagram.com/gelatopiquehk/', d: 'A room wear brand launched in 2008 with the core concept of 'Desserts for Adults', dedicated to supreme comfort and touch.' },
+    { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://www.instagram.com/gelatopiquehk/', d: "A room wear brand launched in 2008 with the core concept of 'Desserts for Adults', dedicated to supreme comfort and touch." },
     { f: 'lily-brown.png', n: 'LILY BROWN', u: 'https://www.instagram.com/lilybrownhk/', d: 'A Japanese fashion brand inspired by vintage fashion, offering classic and preppy styles with a modern sensibility.' },
     { f: 'maison-cielune-logo.png', n: 'Maison Cielune', u: 'https://www.instagram.com/maison.cielune/', d: 'A Hong Kong fashion brand inspired by the beauty of the sky, embodying a soft, dreamy, and playful aesthetic.' },
     { f: 'kanalili.png', n: 'KanaLili', u: 'https://www.instagram.com/kanalili/', d: 'Founded in 2013 by designer Lilian Kan, celebrating beauty, delicacy, art and fantasies through a contemporary approach.' },
     { f: 'rojita.png', n: 'ROJITA', u: '', d: 'A Japanese brand known for its distinctive design philosophy and creative approach to fashion and lifestyle.' },
-    { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://www.instagram.com/gelato_pique_cafe_hk/', d: 'A popular cafe in collaboration with gelato pique, featuring the brand's signature Pique Blue and French crêpes.' },
+    { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://www.instagram.com/gelato_pique_cafe_hk/', d: "A popular cafe in collaboration with gelato pique, featuring the brand's signature Pique Blue and French crêpes." },
     { f: 'cosme-kitchen.png', n: 'Cosme Kitchen', u: 'https://www.instagram.com/cosmekitchenhk/', d: 'In the natural and organic beauty industry, curating a diverse selection of natural and organic skincare and makeup products.' },
     { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.beauty/' }
   ],
