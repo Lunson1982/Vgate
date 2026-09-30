@@ -712,9 +712,9 @@ header .overlay.open{
   scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.2) transparent;
   display:flex;flex-direction:column;
 }
-.nav-header{padding:0 48px 28px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.nav-header{padding:0 48px 28px 80px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08)}
 .nav-eyebrow{display:block;font-size:.66rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:rgba(237,236,234,0.45);margin-bottom:8px}
-.nav-title{display:block;font-family:var(--font-serif);font-size:1.6rem;font-weight:500;letter-spacing:.04em;color:#FFFFFF}
+.nav-title{display:block;font-family:var(--font-serif);font-size:1.6rem;font-weight:500;letter-spacing:.04em;color:#FFFFFF;padding-right:64px}
 #g-nav.panelactive{transform:translateX(0)}
 #g-nav::-webkit-scrollbar{width:5px}
 #g-nav::-webkit-scrollbar-track{background:transparent}
@@ -779,14 +779,14 @@ header.show #g-nav{transform:translateX(0)}
    .dd (the language dd) has position:relative, so closebtn anchors there. */
 .closebtn{
   display:none !important;
-  position:absolute;top:0;right:0;
+  position:fixed;top:0;right:0;
   width:56px;height:56px;
   align-items:center;justify-content:center;
-  color:#FFFFFF;cursor:pointer;user-select:none;
+  color:#FFFFFF;background:#0F0F0F;cursor:pointer;user-select:none;
   font-size:20px;letter-spacing:0;line-height:1;
   font-weight:400;
-  z-index:1000;
-  transition:color .25s ease, transform .25s ease;
+  z-index:1200;
+  transition:color .25s ease, transform .25s ease, background .25s ease;
 }
 .closebtn.active{display:flex !important}
 header.moveLeft .openbtn{opacity:0;pointer-events:none;transform:scale(.4);transition:opacity .3s ease, transform .3s ease}
