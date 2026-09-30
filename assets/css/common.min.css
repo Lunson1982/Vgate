@@ -712,9 +712,9 @@ header .overlay.open{
   scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.2) transparent;
   display:flex;flex-direction:column;
 }
-.nav-header{padding:0 24px 24px 24px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08)}
-.nav-eyebrow{display:block;font-size:.66rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:rgba(237,236,234,0.45);margin-bottom:8px;padding-left:50px}
-.nav-title{display:block;font-family:var(--font-serif);font-size:1.4rem;font-weight:500;letter-spacing:.02em;color:#FFFFFF;padding-left:50px;padding-right:64px}
+.nav-header{padding:24px 70px 24px 24px;margin-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.08)}
+.nav-eyebrow{display:block;font-size:.66rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:rgba(237,236,234,0.45);margin-bottom:8px}
+.nav-title{display:block;font-family:var(--font-serif);font-size:1.4rem;font-weight:500;letter-spacing:.02em;color:#FFFFFF}
 #g-nav.panelactive{transform:translateX(0)}
 #g-nav::-webkit-scrollbar{width:5px}
 #g-nav::-webkit-scrollbar-track{background:transparent}
@@ -776,27 +776,28 @@ header.show #g-nav{transform:translateX(0)}
 #g-nav-list .brandList li:last-child{border-bottom:0}
 
 /* MENU button — inline in header; swap to CLOSE when drawer opens.
-   .dd (the language dd) has position:relative, so closebtn anchors there. */
+   Close button uses position:fixed with very high z-index so it floats above
+   the nav drawer (which is also fixed but at z:1100). */
 .closebtn{
   display:none !important;
-  position:fixed;top:0;right:0;
-  width:56px;height:56px;
+  position:fixed;top:14px;right:14px;
+  width:44px;height:44px;
   align-items:center;justify-content:center;
-  color:#FFFFFF;background:#0F0F0F;cursor:pointer;user-select:none;
-  font-size:20px;letter-spacing:0;line-height:1;
-  font-weight:400;
-  z-index:1200;
+  color:#FFFFFF;background:transparent;cursor:pointer;user-select:none;
+  font-size:22px;letter-spacing:0;line-height:1;
+  font-weight:300;
+  z-index:99999;
+  border-radius:50%;
   transition:color .25s ease, transform .25s ease, background .25s ease;
 }
 .closebtn.active{display:flex !important}
 header.moveLeft .openbtn{opacity:0;pointer-events:none;transform:scale(.4);transition:opacity .3s ease, transform .3s ease}
-.closebtn:hover{color:#FFFFFF;transform:scale(1.12)}
+.closebtn:hover{color:#FFFFFF;transform:scale(1.12);background:rgba(255,255,255,0.08)}
 
 @media only screen and (max-width:768px){
   #g-nav{width:100%;max-width:100%;padding:80px 0 32px 0}
-  .nav-header{padding:0 18px 18px 18px}
-  .nav-eyebrow{padding-left:50px}
-  .nav-title{padding-left:50px;padding-right:64px;font-size:1.25rem}
+  .nav-header{padding:18px 64px 18px 18px}
+  .nav-title{font-size:1.25rem}
   #g-nav-list{padding:8px 28px 0}
   #g-nav-list li>a{padding:15px 0;font-size:1.12rem}
   #g-nav-list .navItem__sub{margin-top:6px;font-size:.86rem}
@@ -804,9 +805,7 @@ header.moveLeft .openbtn{opacity:0;pointer-events:none;transform:scale(.4);trans
   #g-nav-list .brandList span{padding:10px 0 10px 12px;font-size:.88rem}
 }
 @media only screen and (max-width:480px){
-  .nav-header{padding:0 16px 16px 16px}
-  .nav-eyebrow{padding-left:50px}
-  .nav-title{padding-left:50px;padding-right:60px}
+  .nav-header{padding:16px 60px 16px 16px}
   #g-nav-list{padding:8px 22px 0}
   #g-nav-list li>a{padding:14px 0;font-size:1.05rem}
 }
