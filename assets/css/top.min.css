@@ -348,3 +348,24 @@
   height: 100%;
 }
 
+/* ---- Pillars section (homepage "What we do") ---- */
+#pillars{padding:80px 0;border-top:1px solid #e8e8e8;background:#fff}
+#pillars .inner.txtWrap{text-align:left;margin-bottom:36px}
+#pillars h2{margin:0 0 16px 0;display:flex;flex-direction:column;gap:6px}
+#pillars h2 .section-title-en{font-size:2.4rem;font-weight:500;letter-spacing:-.01em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;line-height:1.1}
+#pillars h2 .section-title-ja{font-size:.92rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:#717071}
+#pillars p{font-size:.98rem;color:#4a4a4a;margin:0;max-width:680px;line-height:1.7}
+.pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+.pillar{position:relative;background:#fff;border:1px solid #e0e0e0;padding:32px 26px 28px;display:flex;flex-direction:column;gap:14px;text-decoration:none;color:#1A1A1A;transition:background-color .35s cubic-bezier(0.165,0.84,0.44,1),border-color .35s cubic-bezier(0.165,0.84,0.44,1),transform .35s cubic-bezier(0.165,0.84,0.44,1);min-height:240px;cursor:pointer}
+.pillar:hover{background:#1A1A1A;border-color:#1A1A1A;color:#fff;transform:translateY(-3px)}
+.pillar-num{font-size:.78rem;letter-spacing:.18em;color:#717071;font-weight:600;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif}
+.pillar:hover .pillar-num{color:rgba(255,255,255,.6)}
+.pillar-title{font-size:1.5rem;font-weight:500;letter-spacing:.005em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;line-height:1.2}
+.pillar:hover .pillar-title{color:#fff}
+.pillar-desc{font-size:.88rem;line-height:1.65;color:#4a4a4a;flex:1;margin:0}
+.pillar:hover .pillar-desc{color:rgba(255,255,255,.85)}
+.pillar-arrow{font-size:1.4rem;align-self:flex-end;margin-top:8px;line-height:1;transition:transform .35s cubic-bezier(0.165,0.84,0.44,1)}
+.pillar:hover .pillar-arrow{transform:translateX(6px);color:#fff}
+@media only screen and (max-width:980px){.pillars-grid{grid-template-columns:repeat(2,1fr)}}
+@media only screen and (max-width:560px){.pillars-grid{grid-template-columns:1fr;gap:14px}#pillars{padding:54px 0}#pillars h2 .section-title-en{font-size:1.8rem}}
+
