@@ -3,8 +3,8 @@
 #vg-stores .inner{width:90%;max-width:980px;margin:0 auto;padding:54px 0}
 @media only screen and (max-width:768px){#vg-stores .inner{width:88%;padding:40px 0}}
 
-.vg-title{display:block;font-size:1.7rem;font-weight:400;letter-spacing:.05em;font-family:"Noto Sans","Noto Sans JP","Hiragino Sans",sans-serif;color:#1A1A1A}
-.vg-title-sub{display:block;font-size:1.2rem;margin-top:16px;color:#1A1A1A;font-weight:400}
+.vg-title{display:block;font-size:1.9rem;font-weight:400;letter-spacing:.02em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A}
+.vg-title-sub{display:block;font-size:1.15rem;margin-top:12px;color:#1A1A1A;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
 .vg-intro{margin:22px auto 0;max-width:720px;font-size:.92rem;line-height:1.9;color:#4a4a4a}
 @media only screen and (max-width:768px){.vg-title{font-size:1.3rem;text-align:center}.vg-title-sub{font-size:1.1rem;text-align:center}}
 
@@ -19,7 +19,7 @@
 .vg-chains{margin-top:42px;border-top:1px solid #e8e8e8}
 .vg-chain{padding:22px 0;border-bottom:1px solid #e8e8e8}
 .vg-chain-head{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
-.vg-chain-head h3{font-size:1.02rem;font-weight:600;letter-spacing:.04em;color:#1A1A1A;margin:0}
+.vg-chain-head h3{font-size:1.12rem;font-weight:500;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;letter-spacing:.04em;color:#1A1A1A;margin:0}
 .vg-chain-head .vg-chain-count{font-size:.74rem;color:#999;letter-spacing:.08em}
 .vg-chain-locs{display:flex;flex-wrap:wrap;gap:8px}
 .vg-chain-locs a{font-size:.78rem;line-height:1.35;color:#3a3a3a;text-decoration:none;border:1px solid #e0e0e0;background:#fff;padding:8px 12px;transition:border-color .3s,color .3s,background-color .3s,transform .3s;display:inline-flex;flex-direction:column;gap:2px;min-width:0}

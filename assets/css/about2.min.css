@@ -2,9 +2,9 @@
 #vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:54px 0}
 @media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:40px 0}}
 
-.vg-title{display:block;font-size:1.7rem;font-weight:400;letter-spacing:.05em;font-family:"Noto Sans","Noto Sans JP","Hiragino Sans",sans-serif;color:#1A1A1A}
-.vg-title-sub{display:block;font-size:1.2rem;margin-top:16px;color:#1A1A1A;font-weight:400}
-.vg-h3{font-size:1.18rem;font-weight:600;letter-spacing:.05em;color:#1A1A1A;margin:0 0 20px 0;padding-bottom:12px;border-bottom:1px solid #e8e8e8}
+.vg-title{display:block;font-size:1.9rem;font-weight:400;letter-spacing:.02em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A}
+.vg-title-sub{display:block;font-size:1.15rem;margin-top:12px;color:#1A1A1A;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
+.vg-h3{font-size:1.22rem;font-weight:500;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;letter-spacing:.05em;color:#1A1A1A;margin:0 0 20px 0;padding-bottom:12px;border-bottom:1px solid #e8e8e8}
 .vg-body{font-size:.92rem;line-height:1.95;color:#4a4a4a;max-width:720px}
 .vg-body p{margin:0 0 16px 0}
 .vg-body p:last-child{margin-bottom:0}
@@ -55,7 +55,7 @@
 /* Contact staff cards */
 .vg-staff{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
 .vg-staff-card{border:1px solid #e8e8e8;padding:24px;display:flex;flex-direction:column;gap:8px}
-.vg-staff-card h3{font-size:1.06rem;font-weight:600;color:#1A1A1A;margin:0}
+.vg-staff-card h3{font-size:1.12rem;font-weight:500;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;margin:0}
 .vg-staff-title{font-size:.78rem;letter-spacing:.06em;color:#717071;text-transform:uppercase}
 .vg-staff-card a{font-size:.84rem;color:#3a3a3a;text-decoration:none;border-bottom:1px solid #c8c8c8;word-break:break-all}
 .vg-staff-card a:hover{border-bottom-color:#1A1A1A}
