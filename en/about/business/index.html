@@ -210,6 +210,12 @@
     span.className = 'vg-brand-name';
     span.textContent = brand.n;
     el.appendChild(span);
+    if (brand.d) {
+      var desc = document.createElement('p');
+      desc.className = 'vg-brand-desc';
+      desc.textContent = brand.d;
+      el.appendChild(desc);
+    }
     return el;
   }
 
