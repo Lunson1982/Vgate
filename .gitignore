@@ -24,3 +24,11 @@ dist/
 
 # Workerd / Wrangler
 .wrangler/
+
+# Client handoff source material (93 MB of original logos, shop photos,
+# docs, spreadsheets). Kept locally for reference — do not ship to GitHub.
+files930/
+
+# Local audit / test scratch scripts
+full_audit*.js
+test_nav.js
