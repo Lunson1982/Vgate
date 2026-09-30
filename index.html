@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="ja">
 <head>
 <!-- meta -->
 <meta charset="utf-8">
@@ -15,7 +15,7 @@
 <meta property="og:title" content="Vgate">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Vgate">
-<meta property="og:locale" content="zh_HK">
+<meta property="og:locale" content="ja_JP">
 <meta property="og:description" content="Vgate — fashion, lifestyle, and accessory retail since 2005.">
 <meta property="og:url" content="https://vgate.example/">
 <meta property="og:image" content="https://vgate.example/assets/img/companies/group_logo.svg">
@@ -28,14 +28,15 @@
 <link rel="stylesheet" type="text/css" media="all" href="/assets/css/aos.css?v=1781202315">
 <link rel="stylesheet" type="text/css" media="all" href="/assets/css/swiper-bundle.min.css?v=1781202315">
 <link rel="stylesheet" type="text/css" media="all" href="/assets/css/common.min.css?v=20260914102656">
-<link rel="stylesheet" type="text/css" media="all" href="/assets/css/top.min.css?v=20260914102656">
+<link rel="stylesheet" type="text/css" media="all" href="/assets/css/top.min.css?v=2026093001">
 
 <!-- js -->
 <script type="text/javascript" src="/assets/js/aos.js?v=1781202315"></script>
 <script type="text/javascript" src="/assets/js/swiper-bundle.min.js?v=1781202315"></script>
 <script type="text/javascript" src="/assets/js/include-parts.js?v=20260805g"></script>
 <script type="text/javascript" src="/assets/js/lang.js?v=20260811120828"></script>
-<script type="text/javascript" src="/assets/js/brands.js?v=20260830031336"></script>
+<script type="text/javascript" src="/assets/js/vgate-data.js?v=2026093001"></script>
+<script type="text/javascript" src="/assets/js/brands.js?v=2026093001"></script>
 </head>
 <body>
 
@@ -46,45 +47,22 @@
 <div class="contWrap">
 
 <section id="mainVisual">
-  <div class="titleWrap">
-    <h1>
-      <a href="about/index.html">
-        <span class="mainTitle"></span>
-        <!-- 日本語 -->
-        <span class="subTitle jpnCont"><span>テクノロジーで、<br>人々と社会により良い未来を。</span></span>
-        <!-- English -->
-        <span class="subTitle engCont"><span>Technology for a<br>better future for people and society.</span></span>
-        <!-- 简体中文 -->
-        <span class="subTitle chnCont"><span>以科技，为人们<br>与社会创造更美好的未来。</span></span>
-        <!-- 繁體中文 HK (default) -->
-        <span class="subTitle hkCont"><span>以科技，為人們<br>與社會創造更美好的未來。</span></span>
-      </a>
-    </h1>
-  </div>
-  <div class="mainSlider">
-    <div class="slide01"></div>
-  </div>
-  <div class="btnArea"><a href="about/index.html" class="over btn"><p>
-    <svg class="forModern" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
-      <text x="0" y="40" font-family="'Noto Sans', Arial, sans-serif" font-size="32" font-weight="700" letter-spacing="2" fill="#fff">ABOUT US</text>
-    </svg>
-    <span class="jpnCont">Vgateについて</span>
-    <span class="engCont">About Vgate</span>
-    <span class="chnCont">关于Vgate</span>
-    <span class="hkCont">關於Vgate</span>
-  </p></a></div>
-</section>
-
-<section class="bannerWrap">
-  <div class="swiper carouselWrap swiper-banner">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">PRESS RELEASE</div></a></div>
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">PARTNERSHIP</div></a></div>
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">NEW SERVICE</div></a></div>
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">EVENT</div></a></div>
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">MEDIA</div></a></div>
-      <div class="swiper-slide"><a href="#" target="_blank" rel="noopener"><div class="ph">CAMPAIGN</div></a></div>
-    </div>
+  <div class="mainSlider"></div>
+  <div class="heroCtas">
+    <a href="about/index.html" class="hero-cta" data-keep-lang>
+      <span class="jpnCont">Vgateについて</span>
+      <span class="engCont">About VGate</span>
+      <span class="chnCont">关于Vgate</span>
+      <span class="hkCont">關於Vgate</span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
+    <a href="about/network/index.html" class="hero-cta" data-keep-lang>
+      <span class="jpnCont">店舗ネットワーク</span>
+      <span class="engCont">Store Locator</span>
+      <span class="chnCont">门店网络</span>
+      <span class="hkCont">門市網絡</span>
+      <span class="arrow" aria-hidden="true">→</span>
+    </a>
   </div>
 </section>
 
@@ -93,28 +71,28 @@
   <!-- 日本語 -->
   <div class="inner txtWrap jpnCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate BRANDS</span><span class="section-title-ja">ブランド一覧</span>
+      <span class="section-title-en">OUR FEATURED BRANDS</span><span class="section-title-ja">特集ブランド</span>
     </h2>
     <p data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">Vgate各ブランドの詳細情報</p>
   </div>
   <!-- English -->
   <div class="inner txtWrap engCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate BRANDS</span><span class="section-title-ja">Brands</span>
+      <span class="section-title-en">OUR FEATURED BRANDS</span><span class="section-title-ja">Featured Brands</span>
     </h2>
     <p>Our portfolio of fashion, lifestyle and accessory brands.</p>
   </div>
   <!-- 简体中文 -->
   <div class="inner txtWrap chnCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate BRANDS</span><span class="section-title-ja">品牌一览</span>
+      <span class="section-title-en">OUR FEATURED BRANDS</span><span class="section-title-ja">精选品牌</span>
     </h2>
     <p>了解更多Vgate集团旗下品牌信息</p>
   </div>
   <!-- 繁體中文 HK (default) -->
   <div class="inner txtWrap hkCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate BRANDS</span><span class="section-title-ja">品牌一覽</span>
+      <span class="section-title-en">OUR FEATURED BRANDS</span><span class="section-title-ja">精選品牌</span>
     </h2>
     <p>了解更多Vgate集團旗下品牌資訊</p>
   </div>
@@ -122,44 +100,12 @@
   <div class="inner" style="padding-top:36px;padding-bottom:72px"><div id="brands-grid" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true"></div></div>
 </section>
 
-<!-- Companies section (4 languages) -->
-<section id="companies" data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-  <!-- 日本語 -->
-  <div class="inner txtWrap jpnCont">
-    <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate COMPANIES</span><span class="section-title-ja">Vgate一覧</span>
-    </h2>
-    <p>国内外のグループ会社一覧</p>
-  </div>
-  <!-- English -->
-  <div class="inner txtWrap engCont">
-    <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate COMPANIES</span><span class="section-title-ja">Group Companies</span>
-    </h2>
-    <p>Our group companies in Hong Kong, Macau, Singapore and beyond.</p>
-  </div>
-  <!-- 简体中文 -->
-  <div class="inner txtWrap chnCont">
-    <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate COMPANIES</span><span class="section-title-ja">集团一览</span>
-    </h2>
-    <p>海内外集团成员公司信息</p>
-  </div>
-  <!-- 繁體中文 HK (default) -->
-  <div class="inner txtWrap hkCont">
-    <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate COMPANIES</span><span class="section-title-ja">集團一覽</span>
-    </h2>
-    <p>國內外集團成員公司資訊</p>
-  </div>
-</section>
-
 <!-- News section (4 languages) -->
 <section id="news" data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
   <!-- 日本語 -->
   <div class="inner txtWrap jpnCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate NEWS</span><span class="section-title-ja">ニュース</span>
+      <span class="section-title-en">NEWS</span><span class="section-title-ja">ニュース</span>
     </h2>
     <div data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
       <article>
@@ -167,14 +113,6 @@
           <dl>
             <dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>ニュース</span></dt>
             <dd><p>Vgateの新しい取り組みについて発表しました。</p></dd>
-          </dl>
-        </a>
-      </article>
-      <article>
-        <a href="news/index.html">
-          <dl>
-            <dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>ニュース</span></dt>
-            <dd><p>サステナビリティレポート2026を発行しました。</p></dd>
           </dl>
         </a>
       </article>
@@ -194,11 +132,10 @@
   <!-- English -->
   <div class="inner txtWrap engCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate NEWS</span><span class="section-title-ja">News</span>
+      <span class="section-title-en">NEWS</span><span class="section-title-ja">News</span>
     </h2>
     <div data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>News</span></dt><dd><p>Vgate announces new initiatives.</p></dd></dl></a></article>
-      <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>News</span></dt><dd><p>Sustainability Report 2026 published.</p></dd></dl></a></article>
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>Notice</span></dt><dd><p>Golden Week holiday schedule information.</p></dd></dl></a></article>
     </div>
     <div class="btnArea" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
@@ -208,11 +145,10 @@
   <!-- 简体中文 -->
   <div class="inner txtWrap chnCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate NEWS</span><span class="section-title-ja">新闻</span>
+      <span class="section-title-en">NEWS</span><span class="section-title-ja">新闻</span>
     </h2>
     <div data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>新闻</span></dt><dd><p>Vgate集团宣布新计划</p></dd></dl></a></article>
-      <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>新闻</span></dt><dd><p>可持续发展报告2026已发布</p></dd></dl></a></article>
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>通知</span></dt><dd><p>黄金周期间营业时间安排</p></dd></dl></a></article>
     </div>
     <div class="btnArea" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
@@ -222,11 +158,10 @@
   <!-- 繁體中文 HK (default) -->
   <div class="inner txtWrap hkCont">
     <h2 data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
-      <span class="section-title-en">Vgate NEWS</span><span class="section-title-ja">新聞</span>
+      <span class="section-title-en">NEWS</span><span class="section-title-ja">新聞</span>
     </h2>
     <div data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>新聞</span></dt><dd><p>Vgate集團宣布全新計劃</p></dd></dl></a></article>
-      <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>新聞</span></dt><dd><p>永續發展報告2026已發布</p></dd></dl></a></article>
       <article><a href="news/index.html"><dl><dt class="category"><time datetime="2026-06-10">2026.06.10</time><span>通知</span></dt><dd><p>黃金周期間營業時間安排</p></dd></dl></a></article>
     </div>
     <div class="btnArea" data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-out-quart" data-aos-duration="800" data-aos-once="true">

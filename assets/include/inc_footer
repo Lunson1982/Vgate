@@ -162,11 +162,15 @@
     </nav>
 
     <div id="snsArea">
+      <p class="sns-label">Instagram</p>
       <ol>
-        <li class="snsIcon insta"><a href="https://instagram.com/vgate_official" target="_blank" rel="noopener" aria-label="Instagram">@vgate_official</a></li>
-        <li class="snsIcon"><a href="https://instagram.com/maison.cielune" target="_blank" rel="noopener" aria-label="Instagram">@maison.cielune</a></li>
-        <li class="snsIcon"><a href="https://instagram.com/maisoncielune_official" target="_blank" rel="noopener" aria-label="Instagram">@maisoncielune_official</a></li>
-        <li class="snsIcon"><a href="https://instagram.com/nicholas.wang" target="_blank" rel="noopener" aria-label="Instagram">@nicholas.wang</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/usagionline_hk/" target="_blank" rel="noopener noreferrer">@usagionline_hk</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/snidelhk/" target="_blank" rel="noopener noreferrer">@snidelhk</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/gelatopiquehk/" target="_blank" rel="noopener noreferrer">@gelatopiquehk</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/gelato_pique_cafe_hk/" target="_blank" rel="noopener noreferrer">@gelato_pique_cafe_hk</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/lilybrownhk/" target="_blank" rel="noopener noreferrer">@lilybrownhk</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/maison.cielune/" target="_blank" rel="noopener noreferrer">@maison.cielune</a></li>
+        <li><a class="sns-handle" href="https://www.instagram.com/cosmekitchenhk/" target="_blank" rel="noopener noreferrer">@cosmekitchenhk</a></li>
       </ol>
     </div>
 

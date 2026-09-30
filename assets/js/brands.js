@@ -1,6 +1,6 @@
 /*==========================================================
   brands.js — Vgate brands grid
-  Renders a responsive grid of brand logos from a manifest.
+  Renders a responsive grid of brand logos.
   Drop files into /assets/img/brands/ and add their filename
   to BRAND_FILES, plus an optional entry in BRAND_META for a
   human-readable name and brand URL.
@@ -115,18 +115,56 @@
     var hosts = document.querySelectorAll('#brands-grid, .brands-grid');
     if (!hosts.length) return;
 
+    // When VGATE.featured is available (vgate-data.js loaded before brands.js),
+    // use it for the homepage #brands-grid so it pulls the 12 featured brands
+    // instead of the internal BRAND_META list.
+    var useFeatured = (typeof window.VGATE !== 'undefined' &&
+                        Array.isArray(window.VGATE.featured));
+
     hosts.forEach(function (host) {
       host.innerHTML = '';
-      var entries = BRAND_FILES.filter(function (f) {
-        return SUPPORTED_EXT.indexOf(fileExt(f)) !== -1;
-      });
+
+      var entries;
+      if (useFeatured) {
+        // Use VGATE.featured: [{f, n, u}, ...]
+        entries = window.VGATE.featured.map(function (item) {
+          return { f: item.f, _name: item.n, _url: item.u };
+        });
+      } else {
+        entries = BRAND_FILES.filter(function (f) {
+          return SUPPORTED_EXT.indexOf(fileExt(f)) !== -1;
+        }).map(function (f) { return { f: f }; });
+      }
 
       if (!entries.length) {
         renderEmptyState(host);
         return;
       }
-      entries.forEach(function (f, i) {
-        host.appendChild(buildCard(f, i));
+      entries.forEach(function (item, i) {
+        var card = document.createElement('div');
+        card.className = 'brand-card';
+        card.setAttribute('data-brand', item.f);
+        card.style.animationDelay = (i * 50) + 'ms';
+
+        var src = encodeURI(BRANDS_DIR + item.f);
+        var name = item._name || getMeta(item.f).n;
+        var url  = item._url  || getMeta(item.f).u || '#';
+
+        var isPlaceholder = !url || url === '#' || url === '' || /^javascript:/i.test(url);
+        if (isPlaceholder) {
+          card.classList.add('brand-card--no-link');
+          card.innerHTML =
+            '<div class="brand-card-inner" role="img" aria-label="' + escapeAttr(name) + '">' +
+              '<img src="' + escapeAttr(src) + '" alt="' + escapeAttr(name) + '" decoding="async" width="200" height="200">' +
+            '</div>';
+        } else {
+          card.innerHTML =
+            '<a href="' + escapeAttr(url) + '" aria-label="' + escapeAttr(name) + '" target="_blank" rel="noopener">' +
+              '<img src="' + escapeAttr(src) + '" alt="' + escapeAttr(name) + '" decoding="async" width="200" height="200">' +
+            '</a>';
+        }
+        card.querySelectorAll('a[href="#"]').forEach(function (a) { a.removeAttribute('href'); });
+        host.appendChild(card);
       });
     });
   }
