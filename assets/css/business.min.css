@@ -65,7 +65,7 @@
 /* Brand card grid */
 .vg-brand-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
   gap: 16px;
   margin-top: 34px;
   width: 100%;
@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: 768px) {
   .vg-brand-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 12px;
   }
 }
