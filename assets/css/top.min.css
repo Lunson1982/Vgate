@@ -87,7 +87,7 @@
 /* Placeholder for banner slides (no photos) */
 #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{
   display:flex; align-items:center; justify-content:center; padding:0 32px;
-  background:#efefef; color:#1A1A1A; font-size:.8rem; letter-spacing:.1em;
+  background:#efefef; color:#1A1A1A; font-size:.86rem; letter-spacing:.1em;
   height:165.7px; text-transform:uppercase; font-weight:700;
   width:280px; box-sizing:border-box;
 }
@@ -95,7 +95,7 @@
   #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{height:127.31px;width:220px}
 }
 @media only screen and (max-width: 480px){
-  #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{height:106.22px;width:180px;font-size:.7rem}
+  #mainVisual+.bannerWrap .swiper-banner .swiper-slide .ph{height:106.22px;width:180px;font-size:.86rem}
 }
 
 /* ---------- Commitment section ---------- */
@@ -316,7 +316,7 @@
 #news .inner>div article:first-of-type{margin-top:0}
 #news .inner>div article a dl dt.category{
   display:flex; align-items:center; flex-wrap:wrap;
-  font-size:0.8rem; line-height:1; color:#717071; margin-bottom:12px;
+  font-size:.86rem; line-height:1; color:#717071; margin-bottom:12px;
 }
 #news .inner>div article a dl dt.category span{
   margin:0 0 0 12px; padding:3px 0 3px; width:100px; text-align:center;
@@ -334,7 +334,7 @@
 #mainVisual .titleWrap{display:none}
 #mainVisual .heroCtas{position:absolute;left:0;right:0;bottom:56px;z-index:1003;display:flex;justify-content:center;gap:22px;padding:0 24px;flex-wrap:wrap}
 @media only screen and (max-width:480px){#mainVisual .heroCtas{bottom:36px;gap:14px;flex-direction:column;align-items:center}}
-#mainVisual .heroCtas a.hero-cta{position:relative;display:flex;align-items:center;gap:12px;padding:16px 30px;border:1px solid rgba(255,255,255,.85);background:transparent;color:#fff;text-decoration:none;font-size:.82rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;line-height:1;transition:background-color .6s cubic-bezier(0,0.7,0,1),color .6s cubic-bezier(0,0.7,0,1)}
+#mainVisual .heroCtas a.hero-cta{position:relative;display:flex;align-items:center;gap:12px;padding:16px 30px;border:1px solid rgba(255,255,255,.85);background:transparent;color:#fff;text-decoration:none;font-size:.86rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;line-height:1;transition:background-color .6s cubic-bezier(0,0.7,0,1),color .6s cubic-bezier(0,0.7,0,1)}
 #mainVisual .heroCtas a.hero-cta:hover{background:#fff;color:#1A1A1A}
 #mainVisual .heroCtas a.hero-cta .arrow{font-size:1rem;letter-spacing:0}
 
