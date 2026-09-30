@@ -45,6 +45,7 @@
   </div>
   <div class="vg-chains" id="chain-list"></div>
   <div class="vg-shops" id="shop-list"></div>
+  <div class="vg-no-results" id="no-results" style="display:none">No stores found for this brand.</div>
 </div>
 
 </div><!-- /.contWrap -->
@@ -55,142 +56,8 @@
   <p><svg class="arrow" viewBox="0 0 81 70.2" aria-hidden="true"><polygon points="57.7,1.8 75.9,33.3 0,33.3 0,36.9 39.5,36.9 75.9,36.9 57.7,68.4 60.8,70.2 81,35.1 60.8,0" /></svg></p>
   <svg class="roundBtnLine" aria-hidden="true"><rect rx="25"></rect></svg>
 </div>
-<script>
-window.addEventListener('DOMContentLoaded', function () {
-  AOS.init();
-
-  var LANG = 'hk';
-  var shops = window.VGATE.shops;
-  var t = window.VGATE.t;
-  var storeBrands = window.VGATE.storeBrands;
-
-  var filterEl = document.getElementById('brand-filter');
-  var allBtn = filterEl.querySelector('button[data-brand=""]');
-
-  storeBrands.forEach(function (brand) {
-    var btn = document.createElement('button');
-    btn.dataset.brand = brand;
-    btn.textContent = brand;
-    filterEl.appendChild(btn);
-  });
-
-  filterEl.addEventListener('click', function (e) {
-    var btn = e.target.closest('.vg-filter button');
-    if (!btn) return;
-    var selected = btn.dataset.brand;
-    filterEl.querySelectorAll('button').forEach(function (b) { b.classList.remove('is-on'); });
-    btn.classList.add('is-on');
-    applyFilter(selected);
-  });
-
-  function applyFilter(brand) {
-    document.querySelectorAll('.vg-shop').forEach(function (card) {
-      if (!brand) {
-        card.classList.remove('is-filtered-out');
-      } else {
-        var brands = card.dataset.brands.split(',');
-        card.classList.toggle('is-filtered-out', brands.indexOf(brand) === -1);
-      }
-    });
-  }
-
-  var chainMap = {};
-  shops.forEach(function (shop) {
-    var colonIdx = shop.shop.en.indexOf(':');
-    var chain = colonIdx > -1 ? shop.shop.en.substring(0, colonIdx).trim() : shop.shop.en.trim();
-    if (!chainMap[chain]) chainMap[chain] = [];
-    chainMap[chain].push(shop);
-  });
-
-  var chainOrder = [
-    'USAGI ONLINE STORE', 'NIJI SELECT', 'SNIDEL', 'Maison Cielune',
-    'gelato pique', 'LILY BROWN', 'gelato pique cafe', 'Cosme Kitchen'
-  ];
-
-  var chainListEl = document.getElementById('chain-list');
-
-  chainOrder.forEach(function (chain) {
-    var shopsInChain = chainMap[chain];
-    if (!shopsInChain || shopsInChain.length === 0) return;
-
-    var chainDiv = document.createElement('div');
-    chainDiv.className = 'vg-chain';
-
-    var head = document.createElement('div');
-    head.className = 'vg-chain-head';
-    head.innerHTML = '<h3>' + chain + '</h3><span class="vg-chain-count">' + shopsInChain.length + ' SHOPS</span>';
-
-    var locs = document.createElement('div');
-    locs.className = 'vg-chain-locs';
-
-    shopsInChain.forEach(function (shop) {
-      var a = document.createElement('a');
-      a.href = '#' + shop.anchor;
-      a.dataset.target = shop.anchor;
-      var district = t(shop.district, LANG);
-      var mall = t(shop.mall, LANG);
-      a.innerHTML = '<span class="vg-loc-district">' + district + '</span><span class="vg-loc-mall">' + mall + '</span>';
-      a.addEventListener('click', function (ev) {
-        ev.preventDefault();
-        var target = document.getElementById(shop.anchor);
-        if (!target) return;
-        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        target.classList.remove('vg-shop--active');
-        void target.offsetWidth;
-        target.classList.add('vg-shop--active');
-        clearTimeout(target._highlightTimer);
-        target._highlightTimer = setTimeout(function () {
-          target.classList.remove('vg-shop--active');
-        }, 2000);
-      });
-      locs.appendChild(a);
-    });
-
-    chainDiv.appendChild(head);
-    chainDiv.appendChild(locs);
-    chainListEl.appendChild(chainDiv);
-  });
-
-  var shopListEl = document.getElementById('shop-list');
-
-  shops.forEach(function (shop) {
-    var card = document.createElement('article');
-    card.className = 'vg-shop';
-    card.id = shop.anchor;
-    card.dataset.brands = shop.brands.join(',');
-
-    var hasPhoto = shop.photo && shop.photo.trim() !== '';
-    if (!hasPhoto) card.classList.add('vg-shop--no-photo');
-
-    var photoHtml = '';
-    if (hasPhoto) {
-      photoHtml = '<div class="vg-shop-photo"><img src="/assets/img/shops/' + shop.photo + '" alt="' + t(shop.shop, LANG) + '" loading="lazy"></div>';
-    }
-
-    var hoursRaw = t(shop.hours, LANG);
-    var hoursHtml = hoursRaw ? '<p class="vg-shop-hours"><strong>BUSINESS HOURS</strong> ' + hoursRaw + '</p>' : '';
-
-    var phoneDigits = shop.phone.replace(/\D/g, '');
-
-    var brandsHtml = '<ul class="vg-shop-brands">' +
-      shop.brands.map(function (b) { return '<li>' + b + '</li>'; }).join('') +
-      '</ul>';
-
-    card.innerHTML =
-      photoHtml +
-      '<div class="vg-shop-body">' +
-        '<p class="vg-shop-no">NO. ' + String(shop.no).padStart(2, '0') + '</p>' +
-        '<h3 class="vg-shop-name">' + t(shop.shop, LANG) + '</h3>' +
-        '<p class="vg-shop-loc"><strong>LOCATION</strong> ' + t(shop.location, LANG) + '</p>' +
-        '<p class="vg-shop-phone"><strong>PHONE</strong> <a href="tel:' + phoneDigits + '">' + shop.phone + '</a></p>' +
-        hoursHtml +
-        brandsHtml +
-      '</div>';
-
-    shopListEl.appendChild(card);
-  });
-});
-</script>
+<script>window.VGATE_LANG = 'hk';</script>
+<script src="/assets/js/network.js?v=2026093003"></script>
 <script src="/assets/js/common.js?v=2026093003"></script>
 </body>
 </html>

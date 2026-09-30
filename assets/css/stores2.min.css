@@ -45,7 +45,12 @@
 .vg-shop-hours{font-size:.82rem;line-height:1.7;color:#4a4a4a;margin:0}
 .vg-shop-loc strong,.vg-shop-phone strong,.vg-shop-hours strong{display:inline-block;min-width:112px;font-size:.7rem;letter-spacing:.14em;color:#999;font-weight:700;text-transform:uppercase;vertical-align:top}
 .vg-shop-brands{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 0;padding:0;list-style:none}
-.vg-shop-brands li{font-size:.7rem;letter-spacing:.05em;padding:4px 9px;background:#F5F4F2;color:#3a3a3a;text-transform:uppercase}
+.vg-shop-brands li{font-size:.7rem;letter-spacing:.05em;padding:4px 9px;background:#F5F4F2;color:#3a3a3a;text-transform:uppercase;cursor:pointer;transition:background-color .25s,color .25s;border:1px solid transparent}
+.vg-shop-brands li:hover{background:#1A1A1A;color:#fff}
+.vg-shop-brands li.vg-brand-tag.is-on{background:#1A1A1A;color:#fff;border-color:#1A1A1A}
+
+/* No results */
+.vg-no-results{padding:48px 24px;text-align:center;color:#999;font-size:.9rem;letter-spacing:.04em;border:1px dashed #d8d8d8;background:#fafafa}
 .vg-shop.vg-shop--no-photo{grid-template-columns:1fr}
 .vg-shop.vg-shop--no-photo .vg-shop-body{padding:26px}
 @media only screen and (max-width:768px){.vg-shop{grid-template-columns:1fr}.vg-shop-photo{min-height:200px;height:200px}.vg-shop-body{padding:18px 20px}.vg-shop-loc strong,.vg-shop-phone strong,.vg-shop-hours strong{display:block;min-width:0;margin-bottom:2px}}
