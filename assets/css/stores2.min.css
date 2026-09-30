@@ -16,9 +16,9 @@
 .vg-filter .vg-filter-count{font-size:.86rem;color:#999;align-self:center;margin-left:6px}
 
 /* Chain grouped list */
-.vg-chains{margin-top:42px;border-top:1px solid #e8e8e8}
-.vg-chain{padding:22px 0;border-bottom:1px solid #e8e8e8}
-.vg-chain-head{display:flex;align-items:baseline;gap:12px;margin-bottom:12px}
+.vg-chains{margin-top:42px;border-top:1px solid #e8e8e8;scroll-margin-top:140px}
+.vg-chain{padding:22px 0;border-bottom:1px solid #e8e8e8;scroll-margin-top:140px}
+.vg-chain-head{display:flex;align-items:baseline;gap:12px;margin-bottom:12px;scroll-margin-top:140px}
 .vg-chain-head h3{font-size:1.12rem;font-weight:500;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;letter-spacing:.04em;color:#1A1A1A;margin:0}
 .vg-chain-head .vg-chain-count{font-size:.86rem;color:#999;letter-spacing:.08em}
 .vg-chain-locs{display:flex;flex-wrap:wrap;gap:8px}
