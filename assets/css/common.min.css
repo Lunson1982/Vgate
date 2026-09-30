@@ -331,7 +331,7 @@ html,body{
   line-height:1; font-weight:400; font-size:13px; overflow-x:hidden; width:100%;
   color:#1A1A1A; background:#fff;
 }
-html,body{height:100%}
+html,body{min-height:100%}
 .contWrap{min-height:100vh;display:flex;flex-direction:column}
 .contWrap>section,.contWrap>div{flex:0 0 auto}
 .contWrap>footer{margin-top:auto;flex:0 0 auto}
