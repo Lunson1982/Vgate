@@ -267,7 +267,7 @@ header .language .accordion.dd.open > dd.lang-panel,
 .lang-panel .lang-row.active{color:#1A1A1A;font-weight:700;background:#F0EDE8}
 .lang-panel .lang-code{
   font-weight:700;font-size:.85rem;letter-spacing:.1em;
-  width:28px;color:#8a6f2a;line-height:1;flex-shrink:0;
+  width:34px;color:#8a6f2a;line-height:1;flex-shrink:0;
   font-feature-settings:"tnum";
 }
 .lang-panel .lang-opt.active .lang-code,
