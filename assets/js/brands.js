@@ -14,7 +14,7 @@
 (function () {
   'use strict';
 
-  var BRANDS_DIR = 'assets/img/brands/';
+  var BRANDS_DIR = '/assets/img/brands/';
 
   // ─────────────────────────────────────────────────────────
   // Brand manifest. Order = display order.

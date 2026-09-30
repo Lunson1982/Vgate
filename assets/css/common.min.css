@@ -20,7 +20,7 @@
   .lang-selected img.switch,
   .lang-selected .lang-current-code,
   .lang-selected .lang-current-label{display:none !important}
-  .lang-text{display:inline !important;font-weight:700;font-size:.78rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
+  .lang-text{display:inline !important;font-weight:700;font-size:.85rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
   header .inner>dl>dd.language{width:auto !important;padding-right:0}
 }
 
@@ -266,7 +266,7 @@ header .language .accordion.dd.open > dd.lang-panel,
 .lang-panel .lang-opt.active,
 .lang-panel .lang-row.active{color:#1A1A1A;font-weight:700;background:#F0EDE8}
 .lang-panel .lang-code{
-  font-weight:700;font-size:.86rem;letter-spacing:.1em;
+  font-weight:700;font-size:.85rem;letter-spacing:.1em;
   width:28px;color:#8a6f2a;line-height:1;flex-shrink:0;
   font-feature-settings:"tnum";
 }
@@ -306,7 +306,7 @@ header.active{
   .lang-selected img.switch,
   .lang-selected .lang-current-code,
   .lang-selected .lang-current-label{display:none !important}
-  .lang-text{display:inline !important;font-weight:700;font-size:.78rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
+  .lang-text{display:inline !important;font-weight:700;font-size:.85rem;letter-spacing:.22em;color:#fff;align-self:center;line-height:1}
   header .inner>dl>dd.language{width:auto !important;padding-right:0}
 }
 
@@ -401,7 +401,7 @@ img[src$=".svg"]{width:100%;height:auto}
 }
 
 /* ---------- Footer ---------- */
-.contWrap footer{background:#1A1A1A;color:#fff;width:100%;padding:40px 0 0}
+.contWrap footer{background:#1A1A1A;color:#fff;width:100%;padding:40px 0 0;font-size:16px}
 .contWrap footer .inner{padding:0;margin:0 auto;width:90%;max-width:980px;display:flex;flex-direction:column;align-items:flex-start}
 
 .contWrap footer nav{border-top:1px solid rgba(255,255,255,.25);margin-top:0;padding-top:26px;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:28px 32px}
@@ -420,7 +420,7 @@ img[src$=".svg"]{width:100%;height:auto}
 .contWrap footer #snsArea{display:flex;align-items:center;flex-wrap:wrap;gap:12px 18px;margin:26px 0 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.25)}
 .contWrap footer #snsArea ol{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin:0;padding:0;list-style:none}
 .contWrap footer #snsArea ol li{margin:0}
-.contWrap footer #snsArea ol li a{font-size:.78rem;letter-spacing:.04em;color:rgba(255,255,255,.82);text-decoration:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0}
+.contWrap footer #snsArea ol li a{font-size:.86rem;letter-spacing:.04em;color:rgba(255,255,255,.82);text-decoration:none;display:inline-flex;align-items:center;gap:6px;padding:4px 0}
 .contWrap footer #snsArea ol li a:hover{color:#FFFFFF;text-decoration:underline}
 
 .contWrap footer .f-mark{margin:20px 0 0;display:flex;align-items:center}
@@ -433,8 +433,8 @@ img[src$=".svg"]{width:100%;height:auto}
   .contWrap footer{padding:32px 0 0}
   .contWrap footer nav section{flex-direction:column;gap:18px}
   .contWrap footer nav section .f-col{width:100%;max-width:none;flex:none}
-  .contWrap footer nav section .f-col h3{font-size:.72rem}
-  .contWrap footer nav section .f-col ul li a{font-size:.78rem}
+  .contWrap footer nav section .f-col h3{font-size:.78rem}
+  .contWrap footer nav section .f-col ul li a{font-size:.84rem}
 }
 @media only screen and (max-width: 480px){
   .contWrap footer{padding:24px 0 0}
@@ -443,9 +443,9 @@ img[src$=".svg"]{width:100%;height:auto}
   .contWrap footer nav section .f-col ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 12px}
   .contWrap footer #snsArea{gap:8px 14px}
   .contWrap footer #snsArea ol{gap:8px 14px}
-  .contWrap footer #snsArea ol li a{font-size:.74rem}
+  .contWrap footer #snsArea ol li a{font-size:.86rem}
   .contWrap footer .f-mark a{font-size:1.2rem}
-  .contWrap footer .f-copy small{font-size:.68rem}
+  .contWrap footer .f-copy small{font-size:.74rem}
 }
 
 /* ---------- Pagetop (circular w/ dasharray draw-on-hover) ---------- */
@@ -558,7 +558,7 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   .lang-selected .lang-current-code,
   .lang-selected .lang-current-label,
   .lang-selected .lang-chevron{display:none !important}
-  .lang-text{display:inline !important;font-weight:700;font-size:.78rem;letter-spacing:.2em;color:#fff;align-self:center;line-height:1}
+  .lang-text{display:inline !important;font-weight:700;font-size:.85rem;letter-spacing:.2em;color:#fff;align-self:center;line-height:1}
   header.active{height:48px}
   header.active .inner{align-items:center;gap:10px}
   header.active .inner>dl{margin-bottom:0}
