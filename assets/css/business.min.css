@@ -215,7 +215,8 @@
 #vg-featured-grid .vg-brand-desc{display:none}
 /* Per-category "all brands" grid — compact 2-col bar w/ one-liner descriptions */
 .vg-cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important;max-width:560px!important;margin-left:auto;margin-right:auto}
-.vg-cat-grid .vg-brand-card-inner{min-height:78px!important;padding:4px!important}
+.vg-cat-grid .vg-brand-card-inner{min-height:78px!important;padding:4px!important;min-width:0!important}
+.vg-cat-grid .vg-brand-card{min-width:0!important;padding:18px 12px 12px!important;gap:8px!important}
 .vg-cat-grid .vg-brand-card-inner img{max-height:48px!important}
 .vg-cat-grid .vg-brand-name{font-size:.72rem!important}
 .vg-cat-grid .vg-brand-desc{display:block!important;font-size:.72rem!important;line-height:1.4!important;color:#717071!important;text-align:center!important;letter-spacing:.02em!important;margin:0 6px 4px!important;padding-top:6px!important;border-top:1px solid #f0f0f0!important;white-space:normal!important}
