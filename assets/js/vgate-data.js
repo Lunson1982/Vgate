@@ -78,7 +78,7 @@
         { f: 'f-organics.png', n: 'F ORGANICS', u: 'https://f-organics.jp/', d: 'A brand that specializes in skincare products based on international organic certification standards. Its skincare line features four common ingredients — large-leaved thistle, Damask rose, pomegranate, and frankincense.' },
         { f: 'o-by-f.png', n: 'O by F', u: 'https://f-organics.jp/obyf.aspx', d: 'A beauty brand focused on organic and natural skincare with a minimalist approach to beauty.' },
         { f: 'femmue.png', n: 'FUMMUE', u: 'https://femmue.jp/', d: 'A beauty brand offering skincare and cosmetic products with a focus on natural ingredients and efficacy.' },
-        { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.beauty/', d: 'A cross-border e-commerce platform connecting Japanese and Korean brands with the North American market.', d: 'A cross-border e-commerce platform connecting Japanese and Korean brands with the North American market.' }
+        { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.online/', d: 'A cross-border e-commerce platform connecting Japanese and Korean brands with the North American market.', d: 'A cross-border e-commerce platform connecting Japanese and Korean brands with the North American market.' }
       ]
     },
     {
@@ -135,7 +135,7 @@
     { f: 'rojita.png', n: 'ROJITA', u: '', d: 'A Japanese brand known for its distinctive design philosophy and creative approach to fashion and lifestyle.' },
     { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://www.instagram.com/gelato_pique_cafe_hk/', d: "A popular cafe in collaboration with gelato pique, featuring the brand's signature Pique Blue and French crêpes." },
     { f: 'cosme-kitchen.png', n: 'Cosme Kitchen', u: 'https://www.instagram.com/cosmekitchenhk/', d: 'In the natural and organic beauty industry, curating a diverse selection of natural and organic skincare and makeup products.' },
-    { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.beauty/' }
+    { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.online/' }
   ],
 
   /* ─────────────────────────────────────────────────────────
