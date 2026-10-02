@@ -1,16 +1,15 @@
 # Cloudflare Pages redirects
 # Format: <source> <destination> [status]
 
-# Trailing-slash normalization
-/about/* /about/:splat 200
-/commitment/* /commitment/:splat 200
-/recruit/* /recruit/:splat 200
-/news/* /news/:splat 200
-/contact/* /contact/:splat 200
 
 # Old URLs that might still get traffic
 /index.html / 301
 
+
+# NOTE: no trailing-slash normalization rules here. Cloudflare Pages serves
+# /path/ and /path/index.html natively, and _redirects does NOT support status-200
+# rewrites (only 301/302/303/307/308). A blanket `/about/* ... 200` also shadowed
+# the .html 301 rules below, breaking them once the flat files were deleted.
 
 # 404 fallback
 /* /404.html 404
