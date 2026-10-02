@@ -5,10 +5,8 @@
 =========================================================*/
 
 /* ---------- Main visual (hero) ---------- */
-#mainVisual{position:relative;top:0;width:100%;overflow:hidden}
-#mainVisual:before{content:"";display:block;padding-top:56.40625%}
-@media only screen and (max-width: 768px){#mainVisual:before{padding-top:120%}}
-@media only screen and (max-width: 480px){#mainVisual:before{padding-top:150%}}
+#mainVisual{position:relative;top:0;width:100%;height:100vh;min-height:560px;overflow:hidden}
+#mainVisual:before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.72) 100%);z-index:1001}
 #mainVisual .titleWrap{
   position:absolute; top:0; z-index:1002; width:100%; height:100%;
   display:flex; justify-content:center; align-items:flex-start; flex-wrap:wrap;
