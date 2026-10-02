@@ -750,21 +750,15 @@ header.show #g-nav{transform:translateX(0)}
 #g-nav-list .navItem__header{
   display:inline-block;font-size:1.18rem;font-weight:500;letter-spacing:0.015em;
 }
-#g-nav-list .navItem__sub{
   display:block;font-size:.78rem;font-weight:500;
   letter-spacing:0.16em;text-transform:uppercase;
   color:rgba(237,236,234,0.5);margin-top:7px;
 }
-#g-nav-list li.nav-sep{
   height:16px;padding:0;margin:6px 0;
   border-top:1px solid rgba(255,255,255,0.12);
   list-style:none;
 }
-#g-nav-list .brandList{list-style:none;margin:6px 0 0 0;padding:0;display:none}
-#g-nav-list .brandList.show{display:block}
-#g-nav-list .brandList li{border:0;padding:0}
 #g-nav-list .brandList a,
-#g-nav-list .brandList span{
   display:block;padding:9px 0 9px 14px;
   color:rgba(237,236,234,0.78);font-size:.92rem;
   text-decoration:none;letter-spacing:0.04em;
@@ -772,8 +766,6 @@ header.show #g-nav{transform:translateX(0)}
   cursor:pointer;
   transition:color .2s ease,padding-left .2s ease;
 }
-#g-nav-list .brandList a:hover{color:#FFFFFF;padding-left:18px}
-#g-nav-list .brandList li:last-child{border-bottom:0}
 
 /* MENU button — inline in header; swap to CLOSE when drawer opens.
    Close button uses position:fixed with very high z-index so it floats above
@@ -800,9 +792,7 @@ header.moveLeft .openbtn{opacity:0;pointer-events:none;transform:scale(.4);trans
   .nav-title{font-size:1.25rem}
   #g-nav-list{padding:8px 28px 0}
   #g-nav-list li>a{padding:15px 0;font-size:1.12rem}
-  #g-nav-list .navItem__sub{margin-top:6px;font-size:.86rem}
   #g-nav-list .brandList a,
-  #g-nav-list .brandList span{padding:10px 0 10px 12px;font-size:.88rem}
 }
 @media only screen and (max-width:480px){
   .nav-header{padding:16px 60px 16px 16px}

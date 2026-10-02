@@ -41,11 +41,9 @@
         <li><a href="{$root}about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事業紹介</span></span></a></li>
         <li><a href="{$root}about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店舗ネットワーク</span></span></a></li>
         <li><a href="{$root}about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IPライセンス</span></span></a></li>
-        <li><a href="{$root}careers" data-keep-lang><span class="navItem"><span class="navItem__header">採用情報</span></span></a></li>
-        <li class="nav-sep"></li>
-        <li class="navItem-brand"><a href="/about/business/" data-keep-lang class="navItem__header">ブランド</a><span class="navItem__sub">ファッション・ライフスタイルブランド</span><ul class="brandList"><li><a href="https://www.instagram.com/snidelhk" target="_blank" rel="noopener" class="brandLink">SNIDEL</a></li><li><a href="https://www.instagram.com/gelatopiquehk" target="_blank" rel="noopener" class="brandLink">gelato pique</a></li><li><span>FRAY I.D</span></li><li><a href="https://www.instagram.com/maison.cielune/" target="_blank" rel="noopener" class="brandLink">Maison Cielune</a></li><li><span>Kana Lili</span></li><li><a href="https://www.instagram.com/lilybrownhk" target="_blank" rel="noopener" class="brandLink">Lily Brown</a></li><li><span>Niji Select</span></li><li><span>Celvoke</span></li><li><a href="https://www.instagram.com/cosmekitchenhk" target="_blank" rel="noopener" class="brandLink">Cosme Kitchen</a></li><li><span>Avantgardey</span></li></ul></li>
-        <li><a href="{$root}news" data-keep-lang><span class="navItem"><span class="navItem__header">ニュース</span><span class="navItem__sub">最新情報</span></a></li>
-        <li><a href="{$root}contact" data-keep-lang><span class="navItem"><span class="navItem__header">お問い合わせ</span><span class="navItem__sub">こちらまで</span></a></li>
+        <li><a href="{$root}about/business" data-keep-lang><span class="navItem"><span class="navItem__header">ブランド</span></span></a></li>
+        <li><a href="{$root}news" data-keep-lang><span class="navItem"><span class="navItem__header">ニュース</span></span></a></li>
+        <li><a href="{$root}contact" data-keep-lang><span class="navItem"><span class="navItem__header">お問い合わせ</span></span></a></li>
       </ul>
 
       <!-- English -->
@@ -54,11 +52,9 @@
         <li><a href="{$root}en/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">Our Businesses</span></span></a></li>
         <li><a href="{$root}en/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">Our Stores</span></span></a></li>
         <li><a href="{$root}en/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP &amp; Licensing</span></span></a></li>
-        <li><a href="{$root}en/careers" data-keep-lang><span class="navItem"><span class="navItem__header">Work with Us</span></span></a></li>
-        <li class="nav-sep"></li>
-        <li class="navItem-brand"><a href="/about/business/" data-keep-lang class="navItem__header">Brands</a><span class="navItem__sub">Fashion &amp; lifestyle brands</span><ul class="brandList"><li><a href="https://www.instagram.com/snidelhk" target="_blank" rel="noopener" class="brandLink">SNIDEL</a></li><li><a href="https://www.instagram.com/gelatopiquehk" target="_blank" rel="noopener" class="brandLink">gelato pique</a></li><li><span>FRAY I.D</span></li><li><a href="https://www.instagram.com/maison.cielune/" target="_blank" rel="noopener" class="brandLink">Maison Cielune</a></li><li><span>Kana Lili</span></li><li><a href="https://www.instagram.com/lilybrownhk" target="_blank" rel="noopener" class="brandLink">Lily Brown</a></li><li><span>Niji Select</span></li><li><span>Celvoke</span></li><li><a href="https://www.instagram.com/cosmekitchenhk" target="_blank" rel="noopener" class="brandLink">Cosme Kitchen</a></li><li><span>Avantgardey</span></li><li><a href="https://www.usagi-online.com.hk/" target="_blank" rel="noopener" class="brandLink">USAGI ONLINE STORE</a></li></ul></li>
-        <li><a href="{$root}en/news" data-keep-lang><span class="navItem"><span class="navItem__header">News</span><span class="navItem__sub">Latest updates</span></a></li>
-        <li><a href="{$root}en/contact" data-keep-lang><span class="navItem"><span class="navItem__header">Contact</span><span class="navItem__sub">Get in touch</span></a></li>
+        <li><a href="{$root}en/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">Brands</span></span></a></li>
+        <li><a href="{$root}en/news" data-keep-lang><span class="navItem"><span class="navItem__header">News</span></span></a></li>
+        <li><a href="{$root}en/contact" data-keep-lang><span class="navItem"><span class="navItem__header">Contact</span></span></a></li>
       </ul>
 
       <!-- 简体中文 -->
@@ -67,11 +63,9 @@
         <li><a href="{$root}cn/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事业介绍</span></span></a></li>
         <li><a href="{$root}cn/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店铺网络</span></span></a></li>
         <li><a href="{$root}cn/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP授权</span></span></a></li>
-        <li><a href="{$root}cn/careers" data-keep-lang><span class="navItem"><span class="navItem__header">招聘信息</span></span></a></li>
-        <li class="nav-sep"></li>
-        <li class="navItem-brand"><a href="/about/business/" data-keep-lang class="navItem__header">品牌</a><span class="navItem__sub">时尚及生活方式品牌</span><ul class="brandList"><li><a href="https://www.instagram.com/snidelhk" target="_blank" rel="noopener" class="brandLink">SNIDEL</a></li><li><a href="https://www.instagram.com/gelatopiquehk" target="_blank" rel="noopener" class="brandLink">gelato pique</a></li><li><span>FRAY I.D</span></li><li><a href="https://www.instagram.com/maison.cielune/" target="_blank" rel="noopener" class="brandLink">Maison Cielune</a></li><li><span>Kana Lili</span></li><li><a href="https://www.instagram.com/lilybrownhk" target="_blank" rel="noopener" class="brandLink">Lily Brown</a></li><li><span>Niji Select</span></li><li><span>Celvoke</span></li><li><a href="https://www.instagram.com/cosmekitchenhk" target="_blank" rel="noopener" class="brandLink">Cosme Kitchen</a></li><li><span>Avantgardey</span></li></ul></li>
-        <li><a href="{$root}cn/news" data-keep-lang><span class="navItem"><span class="navItem__header">新闻</span><span class="navItem__sub">最新动态</span></a></li>
-        <li><a href="{$root}cn/contact" data-keep-lang><span class="navItem"><span class="navItem__header">联络</span><span class="navItem__sub">联系我们</span></a></li>
+        <li><a href="{$root}cn/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
+        <li><a href="{$root}cn/news" data-keep-lang><span class="navItem"><span class="navItem__header">新闻</span></span></a></li>
+        <li><a href="{$root}cn/contact" data-keep-lang><span class="navItem"><span class="navItem__header">联络</span></span></a></li>
       </ul>
 
       <!-- 繁體中文 (zh-HK) — DEFAULT -->
@@ -80,11 +74,9 @@
         <li><a href="{$root}hk/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事業介紹</span></span></a></li>
         <li><a href="{$root}hk/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店舖網絡</span></span></a></li>
         <li><a href="{$root}hk/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP授權</span></span></a></li>
-        <li><a href="{$root}hk/careers" data-keep-lang><span class="navItem"><span class="navItem__header">招聘</span></span></a></li>
-        <li class="nav-sep"></li>
-        <li class="navItem-brand"><a href="/about/business/" data-keep-lang class="navItem__header">品牌</a><span class="navItem__sub">旗下時尚及生活品牌</span><ul class="brandList"><li><a href="https://www.instagram.com/snidelhk" target="_blank" rel="noopener" class="brandLink">SNIDEL</a></li><li><a href="https://www.instagram.com/gelatopiquehk" target="_blank" rel="noopener" class="brandLink">gelato pique</a></li><li><span>FRAY I.D</span></li><li><a href="https://www.instagram.com/maison.cielune/" target="_blank" rel="noopener" class="brandLink">Maison Cielune</a></li><li><span>Kana Lili</span></li><li><a href="https://www.instagram.com/lilybrownhk" target="_blank" rel="noopener" class="brandLink">Lily Brown</a></li><li><span>Niji Select</span></li><li><span>Celvoke</span></li><li><a href="https://www.instagram.com/cosmekitchenhk" target="_blank" rel="noopener" class="brandLink">Cosme Kitchen</a></li><li><span>Avantgardey</span></li></ul></li>
-        <li><a href="{$root}hk/news" data-keep-lang><span class="navItem"><span class="navItem__header">新聞</span><span class="navItem__sub">最新消息</span></a></li>
-        <li><a href="{$root}hk/contact" data-keep-lang><span class="navItem"><span class="navItem__header">聯絡</span><span class="navItem__sub">聯絡我們</span></a></li>
+        <li><a href="{$root}hk/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
+        <li><a href="{$root}hk/news" data-keep-lang><span class="navItem"><span class="navItem__header">新聞</span></span></a></li>
+        <li><a href="{$root}hk/contact" data-keep-lang><span class="navItem"><span class="navItem__header">聯絡</span></span></a></li>
       </ul>
 
     </div>

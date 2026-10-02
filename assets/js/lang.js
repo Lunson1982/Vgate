@@ -136,7 +136,7 @@
     // Hide any drawer-nav language block EXCEPT the currently active one.
     // (lang.js only set data-active on footer; mirror it here on drawer nav.)
     // IMPORTANT: query the language-block <ul> only — .brandList is also a <ul>
-    // nested inside each language block, so '#g-nav-list ul' must NOT be used.
+    // nested inside each language block, so '#g-nav-list > .lang-block' must be used.
     document.querySelectorAll('#g-nav-list > .jpnCont, #g-nav-list > .engCont, #g-nav-list > .chnCont, #g-nav-list > .hkCont').forEach(function (ul) {
       var active = ul.hasAttribute('data-active') && ul.getAttribute('data-active') === 'true';
       if (active) {
