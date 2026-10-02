@@ -832,20 +832,34 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
 /* Hide duplicate title on HK pages (where vg-title-sub repeats the title) */
 .hkCont .vg-title-sub{display:none}
 
-/* ---- Mobile header: grid layout with logo | language | menu ---- */
+/* ---- Mobile header: flex layout with logo | language (centered) | menu (right) ---- */
 @media only screen and (max-width:768px){
   header .inner{
-    display:grid;
-    grid-template-columns:auto 1fr auto;
+    display:flex !important;
+    flex-direction:row;
+    justify-content:space-between;
     align-items:center;
-    gap:10px;
+    gap:8px;
     width:94%;
     margin:0 auto;
+    flex-wrap:nowrap;
+  }
+  header .inner .logo{
+    flex-shrink:0;
   }
   header .inner>dl{
-    display:contents;
+    flex:1 1 auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:6px;
+    margin:0;
+    padding:0;
+    width:100%;
+    flex-wrap:nowrap;
   }
   header .inner>dl>dd.language{
+    flex:1 1 auto;
     width:auto;
     text-align:center;
     justify-content:center;
@@ -853,13 +867,18 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     padding-right:0;
   }
   header .inner>dl>dd:nth-of-type(2){
-    width:auto;
+    flex-shrink:0;
+    width:50px;
     margin:0;
     justify-content:flex-end;
+    display:flex;
+    align-items:center;
+    flex-wrap:nowrap;
   }
   header .inner>dl>dd:nth-of-type(2) .openbtn{
     justify-content:flex-end;
     width:auto;
+    flex:0 1 auto;
   }
   /* Abbreviate language text on mobile — show only code */
   .lang-current-label{display:none}
