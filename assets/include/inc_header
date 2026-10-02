@@ -41,7 +41,7 @@
         <li><a href="{$root}about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事業紹介</span></span></a></li>
         <li><a href="{$root}about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店舗ネットワーク</span></span></a></li>
         <li><a href="{$root}about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IPライセンス</span></span></a></li>
-        <li><a href="{$root}about/business" data-keep-lang><span class="navItem"><span class="navItem__header">ブランド</span></span></a></li>
+        <li><a href="{$root}about/business#featured-brands" data-keep-lang><span class="navItem"><span class="navItem__header">ブランド</span></span></a></li>
         <li><a href="{$root}news" data-keep-lang><span class="navItem"><span class="navItem__header">ニュース</span></span></a></li>
         <li><a href="{$root}contact" data-keep-lang><span class="navItem"><span class="navItem__header">お問い合わせ</span></span></a></li>
       </ul>
@@ -52,7 +52,7 @@
         <li><a href="{$root}en/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">Our Businesses</span></span></a></li>
         <li><a href="{$root}en/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">Our Stores</span></span></a></li>
         <li><a href="{$root}en/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP &amp; Licensing</span></span></a></li>
-        <li><a href="{$root}en/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">Brands</span></span></a></li>
+        <li><a href="{$root}en/about/business#featured-brands" data-keep-lang><span class="navItem"><span class="navItem__header">Brands</span></span></a></li>
         <li><a href="{$root}en/news" data-keep-lang><span class="navItem"><span class="navItem__header">News</span></span></a></li>
         <li><a href="{$root}en/contact" data-keep-lang><span class="navItem"><span class="navItem__header">Contact</span></span></a></li>
       </ul>
@@ -63,7 +63,7 @@
         <li><a href="{$root}cn/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事业介绍</span></span></a></li>
         <li><a href="{$root}cn/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店铺网络</span></span></a></li>
         <li><a href="{$root}cn/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP授权</span></span></a></li>
-        <li><a href="{$root}cn/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
+        <li><a href="{$root}cn/about/business#featured-brands" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
         <li><a href="{$root}cn/news" data-keep-lang><span class="navItem"><span class="navItem__header">新闻</span></span></a></li>
         <li><a href="{$root}cn/contact" data-keep-lang><span class="navItem"><span class="navItem__header">联络</span></span></a></li>
       </ul>
@@ -74,7 +74,7 @@
         <li><a href="{$root}hk/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">事業介紹</span></span></a></li>
         <li><a href="{$root}hk/about/network" data-keep-lang><span class="navItem"><span class="navItem__header">店舖網絡</span></span></a></li>
         <li><a href="{$root}hk/about/ip" data-keep-lang><span class="navItem"><span class="navItem__header">IP授權</span></span></a></li>
-        <li><a href="{$root}hk/about/business" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
+        <li><a href="{$root}hk/about/business#featured-brands" data-keep-lang><span class="navItem"><span class="navItem__header">品牌</span></span></a></li>
         <li><a href="{$root}hk/news" data-keep-lang><span class="navItem"><span class="navItem__header">新聞</span></span></a></li>
         <li><a href="{$root}hk/contact" data-keep-lang><span class="navItem"><span class="navItem__header">聯絡</span></span></a></li>
       </ul>
