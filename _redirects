@@ -12,7 +12,6 @@
 # the .html 301 rules below, breaking them once the flat files were deleted.
 
 # 404 fallback
-/__redirects_probe / 301
 /* /404.html 404
 
 # Flat .html files → folder equivalents (Cloudflare Pages auto-strips .html)
