@@ -53,3 +53,13 @@
 /hk/about/network.html /hk/about/network 301
 /hk/about/marketing.html /hk/about/marketing 301
 /hk/about/ip.html /hk/about/ip 301
+
+# Stores page moved out from under About (2026-10-03)
+/about/network /network 301
+/en/about/network /en/network 301
+/cn/about/network /cn/network 301
+/hk/about/network /hk/network 301
+/about/network.html /network 301
+/en/about/network.html /en/network 301
+/cn/about/network.html /cn/network 301
+/hk/about/network.html /hk/network 301

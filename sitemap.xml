@@ -19,14 +19,14 @@
   <url><loc>https://www.highs.ltd/about/business/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/about/ip/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/about/marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.highs.ltd/about/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.highs.ltd/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/about/philosophy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/access/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/business/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/ip/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.highs.ltd/cn/about/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.highs.ltd/cn/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/about/philosophy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/cn/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/en/about/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -34,7 +34,7 @@
   <url><loc>https://www.highs.ltd/en/about/business/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/en/about/ip/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/en/about/marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.highs.ltd/en/about/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.highs.ltd/en/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/en/about/philosophy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/en/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/hk/about/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
@@ -42,7 +42,7 @@
   <url><loc>https://www.highs.ltd/hk/about/business/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/hk/about/ip/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/hk/about/marketing/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.highs.ltd/hk/about/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.highs.ltd/hk/network/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/hk/about/philosophy/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.highs.ltd/hk/contact/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
