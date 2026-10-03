@@ -9,25 +9,25 @@
           <h3>Vgateについて</h3>
           <ul>
             <li><a href="{$root}about" data-keep-lang>Vgateについて</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>事業紹介</a></li>
+            <li><a href="{$root}business" data-keep-lang>事業紹介</a></li>
             <li><a href="{$root}network" data-keep-lang>店舗</a></li>
-            <li><a href="{$root}about/ip" data-keep-lang>IPライセンス</a></li>
+            <li><a href="{$root}ip" data-keep-lang>IPライセンス</a></li>
             <li><a href="{$root}careers" data-keep-lang>採用情報</a></li>
           </ul>
         </div>
         <div class="f-col col-brands">
           <h3>ブランド一覧</h3>
           <ul>
-            <li><a href="{$root}about/business" data-keep-lang>SNIDEL</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>gelato pique</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>FRAY I.D</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Maison Cielune</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Kana Lili</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Lily Brown</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Niji Select</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Celvoke</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Cosme Kitchen</a></li>
-            <li><a href="{$root}about/business" data-keep-lang>Avantgardey</a></li>
+            <li><a href="{$root}business" data-keep-lang>SNIDEL</a></li>
+            <li><a href="{$root}business" data-keep-lang>gelato pique</a></li>
+            <li><a href="{$root}business" data-keep-lang>FRAY I.D</a></li>
+            <li><a href="{$root}business" data-keep-lang>Maison Cielune</a></li>
+            <li><a href="{$root}business" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}business" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}business" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}business" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}business" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}business" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -48,25 +48,25 @@
           <h3>About Vgate</h3>
           <ul>
             <li><a href="{$root}en/about" data-keep-lang>About Vgate</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Our Businesses</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Our Businesses</a></li>
             <li><a href="{$root}en/network" data-keep-lang>Locations</a></li>
-            <li><a href="{$root}en/about/ip" data-keep-lang>IP & Licensing</a></li>
+            <li><a href="{$root}en/ip" data-keep-lang>IP & Licensing</a></li>
             <li><a href="{$root}en/careers" data-keep-lang>Work with Us</a></li>
           </ul>
         </div>
         <div class="f-col col-brands">
           <h3>Brands</h3>
           <ul>
-            <li><a href="{$root}en/about/business" data-keep-lang>SNIDEL</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>gelato pique</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>FRAY I.D</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Maison Cielune</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Kana Lili</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Lily Brown</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Niji Select</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Celvoke</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Cosme Kitchen</a></li>
-            <li><a href="{$root}en/about/business" data-keep-lang>Avantgardey</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>SNIDEL</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>gelato pique</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>FRAY I.D</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Maison Cielune</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}en/business" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -87,25 +87,25 @@
           <h3>关于Vgate</h3>
           <ul>
             <li><a href="{$root}cn/about" data-keep-lang>关于Vgate</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>事业介绍</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>事业介绍</a></li>
             <li><a href="{$root}cn/network" data-keep-lang>门店</a></li>
-            <li><a href="{$root}cn/about/ip" data-keep-lang>IP授权</a></li>
+            <li><a href="{$root}cn/ip" data-keep-lang>IP授权</a></li>
             <li><a href="{$root}cn/careers" data-keep-lang>招聘信息</a></li>
           </ul>
         </div>
         <div class="f-col col-brands">
           <h3>品牌一览</h3>
           <ul>
-            <li><a href="{$root}cn/about/business" data-keep-lang>SNIDEL</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>gelato pique</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>FRAY I.D</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Maison Cielune</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Kana Lili</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Lily Brown</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Niji Select</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Celvoke</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Cosme Kitchen</a></li>
-            <li><a href="{$root}cn/about/business" data-keep-lang>Avantgardey</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>SNIDEL</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>gelato pique</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>FRAY I.D</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Maison Cielune</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}cn/business" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">
@@ -126,25 +126,25 @@
           <h3>關於Vgate</h3>
           <ul>
             <li><a href="{$root}hk/about" data-keep-lang>關於Vgate</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>事業介紹</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>事業介紹</a></li>
             <li><a href="{$root}hk/network" data-keep-lang>分店位置</a></li>
-            <li><a href="{$root}hk/about/ip" data-keep-lang>IP授權</a></li>
+            <li><a href="{$root}hk/ip" data-keep-lang>IP授權</a></li>
             <li><a href="{$root}hk/careers" data-keep-lang>招聘</a></li>
           </ul>
         </div>
         <div class="f-col col-brands">
           <h3>品牌一覽</h3>
           <ul>
-            <li><a href="{$root}hk/about/business" data-keep-lang>SNIDEL</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>gelato pique</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>FRAY I.D</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Maison Cielune</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Kana Lili</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Lily Brown</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Niji Select</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Celvoke</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Cosme Kitchen</a></li>
-            <li><a href="{$root}hk/about/business" data-keep-lang>Avantgardey</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>SNIDEL</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>gelato pique</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>FRAY I.D</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Maison Cielune</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Kana Lili</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Lily Brown</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Niji Select</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Celvoke</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Cosme Kitchen</a></li>
+            <li><a href="{$root}hk/business" data-keep-lang>Avantgardey</a></li>
           </ul>
         </div>
         <div class="f-col col-more">

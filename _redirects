@@ -1,32 +1,66 @@
 # Cloudflare Pages redirects
 # Format: <source> <destination> [status]
+# NOTE: no trailing-slash normalization rules here. Cloudflare Pages serves
+# /path/ and /path/index.html natively, and _redirects does NOT support
+# status-200 rewrites (only 301/302/303/307/308). A blanket /path/* 200 rule
+# also shadowed the specific 301s. Rules are in file order; specific before general.
 
-
-# Old URLs that might still get traffic
+# Index
 /index.html / 301
 
+# Subpages moved out from under About (2026-10-03): /about/<sub> -> /<sub>
+/about/business /business 301
+/about/business.html /business 301
+/about/ip /ip 301
+/about/ip.html /ip 301
+/about/marketing /marketing 301
+/about/marketing.html /marketing 301
+/about/philosophy /philosophy 301
+/about/philosophy.html /philosophy 301
+/about/access /access 301
+/about/access.html /access 301
+/en/about/business /en/business 301
+/en/about/business.html /en/business 301
+/en/about/ip /en/ip 301
+/en/about/ip.html /en/ip 301
+/en/about/marketing /en/marketing 301
+/en/about/marketing.html /en/marketing 301
+/en/about/philosophy /en/philosophy 301
+/en/about/philosophy.html /en/philosophy 301
+/en/about/access /en/access 301
+/en/about/access.html /en/access 301
+/cn/about/business /cn/business 301
+/cn/about/business.html /cn/business 301
+/cn/about/ip /cn/ip 301
+/cn/about/ip.html /cn/ip 301
+/cn/about/marketing /cn/marketing 301
+/cn/about/marketing.html /cn/marketing 301
+/cn/about/philosophy /cn/philosophy 301
+/cn/about/philosophy.html /cn/philosophy 301
+/cn/about/access /cn/access 301
+/cn/about/access.html /cn/access 301
+/hk/about/business /hk/business 301
+/hk/about/business.html /hk/business 301
+/hk/about/ip /hk/ip 301
+/hk/about/ip.html /hk/ip 301
+/hk/about/marketing /hk/marketing 301
+/hk/about/marketing.html /hk/marketing 301
+/hk/about/philosophy /hk/philosophy 301
+/hk/about/philosophy.html /hk/philosophy 301
+/hk/about/access /hk/access 301
+/hk/about/access.html /hk/access 301
 
-# NOTE: no trailing-slash normalization rules here. Cloudflare Pages serves
-# /path/ and /path/index.html natively, and _redirects does NOT support status-200
-# rewrites (only 301/302/303/307/308). A blanket `/about/* ... 200` also shadowed
-# the .html 301 rules below, breaking them once the flat files were deleted.
+# Stores page moved out from under About (2026-10-03): /about/network -> /network
+/about/network /network 301
+/about/network.html /network 301
+/en/about/network /en/network 301
+/en/about/network.html /en/network 301
+/cn/about/network /cn/network 301
+/cn/about/network.html /cn/network 301
+/hk/about/network /hk/network 301
+/hk/about/network.html /hk/network 301
 
-# 404 fallback
-/* /404.html 404
-
-# Flat .html files → folder equivalents (Cloudflare Pages auto-strips .html)
-/about/access.html /about/access 301
-/about/business.html /about/business 301
-/about/philosophy.html /about/philosophy 301
-/en/about/access.html /en/about/access 301
-/en/about/business.html /en/about/business 301
-/en/about/philosophy.html /en/about/philosophy 301
-/cn/about/access.html /cn/about/access 301
-/cn/about/business.html /cn/about/business 301
-/cn/about/philosophy.html /cn/about/philosophy 301
-/hk/about/access.html /hk/about/access 301
-/hk/about/business.html /hk/about/business 301
-/hk/about/philosophy.html /hk/about/philosophy 301
+# Utility pages (flat .html variants; Cloudflare auto-strips .html, kept for clarity)
 /privacypolicy.html /privacypolicy 301
 /sitepolicy.html /sitepolicy 301
 /sitemap.html /sitemap 301
@@ -40,22 +74,5 @@
 /hk/sitepolicy.html /hk/sitepolicy 301
 /hk/sitemap.html /hk/sitemap 301
 
-# New pages from 2026-06 PPTX content
-/about/network.html /network 301
-/about/marketing.html /about/marketing 301
-/about/ip.html /about/ip 301
-/en/about/network.html /en/network 301
-/en/about/marketing.html /en/about/marketing 301
-/en/about/ip.html /en/about/ip 301
-/cn/about/network.html /cn/network 301
-/cn/about/marketing.html /cn/about/marketing 301
-/cn/about/ip.html /cn/about/ip 301
-/hk/about/network.html /hk/network 301
-/hk/about/marketing.html /hk/about/marketing 301
-/hk/about/ip.html /hk/about/ip 301
-
-# Stores page moved out from under About (2026-10-03)
-/about/network /network 301
-/en/about/network /en/network 301
-/cn/about/network /cn/network 301
-/hk/about/network /hk/network 301
+# 404 fallback
+/* /404.html 404
