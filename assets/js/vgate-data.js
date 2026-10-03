@@ -78,7 +78,7 @@
         { f: 'f-organics.png', n: 'F ORGANICS', u: 'https://f-organics.jp/', d: 'A brand that specializes in skincare products based on international organic certification standards. Its skincare line features four common ingredients — large-leaved thistle, Damask rose, pomegranate, and frankincense.' },
         { f: 'o-by-f.png', n: 'O by F', u: 'https://f-organics.jp/obyf.aspx', d: 'A beauty brand focused on organic and natural skincare with a minimalist approach to beauty.' },
         { f: 'femmue.png', n: 'FUMMUE', u: 'https://femmue.jp/', d: 'A beauty brand offering skincare and cosmetic products with a focus on natural ingredients and efficacy.' },
-        { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.online/', d: 'A cross-border e-commerce platform connecting Japanese and Korean brands with the North American market.' }
+        { f: 'highs-canada.svg', n: 'HIGHS CANADA', u: 'https://highs.online/', d: 'A coffee-essence focused spa-care brand from Canada.' }
       ]
     },
     {
