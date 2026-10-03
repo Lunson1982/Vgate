@@ -858,10 +858,10 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     flex-wrap:nowrap;
   }
   header .inner>dl>dd.language{
-    flex:1 1 auto;
+    flex:0 0 auto;
     width:auto;
-    text-align:center;
-    justify-content:center;
+    text-align:right;
+    justify-content:flex-end;
     margin:0;
     padding-right:0;
   }
@@ -879,11 +879,16 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     width:auto;
     flex:0 1 auto;
   }
-  /* Abbreviate language text on mobile — show only code */
+  /* Mobile: show only "Lang" label, hide code + full label + icon */
   .lang-current-label{display:none}
-  .lang-text{display:none}
-  .lang-current-code{font-size:.86rem;min-width:18px}
-  header .language .accordion dt img{height:14px}
+  .lang-current-code{display:none}
+  .lang-text{display:inline-flex;font-size:.86rem;letter-spacing:.04em;font-weight:500;color:#1A1A1A;line-height:1;padding:0 2px 0 0}
+  header .language .accordion dt img.switch{display:none}
+  /* Align language to right (between logo and MENU) — use margin-left:auto to push right within space-between parent */
+  header .inner>dl>dd.language{justify-content:flex-end;text-align:right;flex:0 0 auto;margin-left:auto}
+  /* Keep language pill stable on scroll - no animation, no shrink */
+  header.active .inner>dl>dd.language{transform:none !important;transition:none !important}
+  header.active .inner>dl>dd.language .switch{transform:none !important}
 }
 
 /* ---- Staff cards — professional redesign ---- */
