@@ -6,8 +6,10 @@
     <dl>
       <dd class="language">
         <dl class="accordion dd">
-          <dt class="lang-selected" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0">
-            <img src="{$root}assets/img/common/language_menu_pc.svg" width="" height="" alt="Languages" class="switch"><span class="lang-text">Lang</span>
+          <dt class="lang-selected" aria-haspopup="true" aria-expanded="false" role="button" tabindex="0" aria-label="Choose language">
+            <img src="{$root}assets/img/common/language_menu_pc.svg" width="" height="" alt="Languages" class="switch">
+            <svg class="lang-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18" fill="none" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span class="lang-text">Lang</span>
             <span class="lang-current-code">HK</span>
             <span class="lang-current-label">繁體中文</span>
             <svg class="lang-chevron" viewBox="0 0 10 6"><path d="M1 1.5 L5 5.5 L9 1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>

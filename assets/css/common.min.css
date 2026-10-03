@@ -232,6 +232,7 @@ header .language .accordion dt .lang-chevron{
   width:11px;height:7px;transition:transform .25s ease;display:block;
   margin-left:1px;color:#1A1A1A;stroke:#1A1A1A;
 }
+  header .language .accordion dt .lang-globe{width:16px;height:16px;color:#1A1A1A;display:inline-block;margin-right:4px;transition:transform .25s ease}
 header .language .accordion dt .lang-text{display:none}
 header .language .accordion dd{color:#1A1A1A}
 header .language .accordion dt,
