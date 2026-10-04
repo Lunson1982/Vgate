@@ -548,9 +548,9 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header .inner .logo{width:120px;height:48px}
   header .inner .logo img{width:120px;height:auto;transform:translate(0,4px)}   /* 120×48.6 */
   header.active .inner .logo img{transform:translate(-10px, 2px) scale(0.5)}
-  header .inner>dl{width:calc(100% - 132px)}
-  header .inner>dl>dd.language{width:100%;padding-right:0;margin-bottom:14px}
-  header .inner>dl>dd:nth-of-type(2){margin-bottom:14px}
+  header .inner>dl{width:calc(100% - 132px);gap:14px}
+  header .inner>dl>dd.language{width:auto;padding-right:0;margin-bottom:14px;flex:0 0 auto;margin-left:auto}
+  header .inner>dl>dd:nth-of-type(2){margin-bottom:14px;flex:0 0 48px}
   .accordion.dt{padding:4px 11px 4px 8px;gap:5px}
   header .language .accordion dt img{height:13px}
   header .language .accordion dt .lang-current-code{font-size:.86rem;min-width:18px}
@@ -558,7 +558,7 @@ section.trackingWrap{display:block !important;flex-wrap:wrap;flex-direction:colu
   header .language .accordion dt .lang-chevron{width:9px;height:6px}
   header.active{height:58px}
   header.active .inner{gap:12px}
-  header.active .inner>dl{margin-bottom:13px}
+  header.active .inner>dl{margin-bottom:13px;gap:14px}
   header.active .inner>dl>dd.language{margin-bottom:13px}
   header.active .inner>dl>dd:nth-of-type(2){margin-bottom:13px}
 }
