@@ -876,9 +876,11 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     flex-wrap:nowrap;
   }
   header .inner>dl>dd:nth-of-type(2) .openbtn{
-    justify-content:flex-end;
-    width:auto;
-    flex:0 1 auto;
+    justify-content:flex-start;
+    width:100%;
+    flex:0 0 auto;
+    padding:10px 0 10px 4px;
+    letter-spacing:.08em;
   }
   /* Mobile: show only "Lang" label, hide code + full label + icon */
   .lang-current-label{display:none}
