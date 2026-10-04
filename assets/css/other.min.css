@@ -44,14 +44,15 @@
 
 /* ---------- Section heading (h2 with EN + JP line) ---------- */
 .contWrap section.trackingWrap.inner h2{
-  font-size:2rem; line-height:1.4; margin-bottom:36px; font-weight:700;
-  text-align:left;
+  font-size:2.2rem; line-height:1.2; margin-bottom:18px; font-weight:500;
+  text-align:left; letter-spacing:-.01em; font-family:var(--font-serif);
 }
 .contWrap section.trackingWrap.inner h2 span{
   display:block; font-size:1rem; margin-top:6px; color:#717071; font-weight:400;
 }
 .contWrap section.trackingWrap.inner h3{
-  font-size:1.2rem; font-weight:700; margin:36px 0 12px; letter-spacing:.05em;
+  font-size:1.45rem; font-weight:500; margin:32px 0 10px; letter-spacing:.005em;
+  font-family:var(--font-serif);
 }
 .contWrap section.trackingWrap.inner h3:first-of-type{margin-top:0}
 @media only screen and (max-width: 768px){
@@ -163,7 +164,7 @@
 .txtWrap .timeline{margin:18px 0 0;display:flex;flex-direction:column;gap:0}
 .txtWrap .timeline .tl-item{position:relative;display:flex;flex-direction:column;gap:6px;padding:12px 0 12px 18px;border-left:1px solid #1A1A1A}
 .txtWrap .timeline .tl-item::before{content:"";position:absolute;left:-5px;top:18px;width:9px;height:9px;background:#1A1A1A;border-radius:50%}
-.txtWrap .timeline .tl-item .tl-year{font-weight:700;font-size:.9rem;letter-spacing:0.05em;color:#1A1A1A}
+.txtWrap .timeline .tl-item .tl-year{font-weight:600;font-size:.92rem;letter-spacing:.08em;color:#1A1A1A;font-family:var(--font-sans)}
 .txtWrap .timeline .tl-item .tl-text{font-size:1rem;line-height:1.6}
 @media only screen and (max-width:480px){
   .txtWrap .timeline .tl-item{padding:10px 0 10px 14px}

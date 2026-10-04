@@ -2,13 +2,13 @@
 #vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:144px 0 54px}
 @media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:80px 0 40px}}
 
-.vg-title{display:block;font-size:1.9rem;font-weight:400;letter-spacing:.02em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A}
-.vg-title-sub{display:block;font-size:1.15rem;margin-top:12px;color:#1A1A1A;font-weight:400;letter-spacing:.08em;text-transform:uppercase}
+.vg-title{display:flex;flex-direction:column-reverse;font-size:3.4rem;font-weight:400;letter-spacing:-.02em;line-height:1.06;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;margin-bottom:14px}
+.vg-title-sub{display:block;font-size:.72rem;margin-top:0;margin-bottom:10px;color:#888;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-family:"Noto Sans","Noto Sans JP",sans-serif}
 .vg-h3{font-size:1.22rem;font-weight:500;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;letter-spacing:.05em;color:#1A1A1A;margin:0 0 20px 0;padding-bottom:12px;border-bottom:1px solid #e8e8e8}
 .vg-body{font-size:.92rem;line-height:1.95;color:#4a4a4a;max-width:720px}
 .vg-body p{margin:0 0 16px 0}
 .vg-body p:last-child{margin-bottom:0}
-@media only screen and (max-width:768px){.vg-title{font-size:1.3rem;text-align:center}.vg-title-sub{font-size:1.1rem;text-align:center}.vg-h3{text-align:center}}
+@media only screen and (max-width:768px){.vg-title{font-size:2.2rem;text-align:center;line-height:1.1;letter-spacing:-.01em}.vg-title-sub{font-size:.7rem;text-align:center;letter-spacing:.18em}.vg-h3{text-align:center}}
 
 /* 2-col image+text (mashgroup pattern) */
 .vg-split{display:flex;gap:36px;align-items:flex-start;margin-top:34px}
