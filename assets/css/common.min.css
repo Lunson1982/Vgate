@@ -239,7 +239,7 @@ header .inner>dl>dd:nth-of-type(2) .
 
 /* Hamburger layout: column flex for lines, justify from right */
 .openbtn--hamburger{
-  display:flex; flex-direction:column; align-items:flex-end; justify-content:center;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
   gap:5px; padding:0; width:26px; height:20px;
   overflow:visible; min-height:20px;
   text-indent:0;
@@ -941,8 +941,9 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     width:auto;
     text-align:right;
     justify-content:flex-end;
-    margin:0;
+    margin:0 0 0 auto !important;
     padding-right:0;
+    transition:none !important;
   }
   header .inner>dl>dd:nth-of-type(2){
     flex-shrink:0;
