@@ -347,13 +347,13 @@
 }
 
 /* ---- Pillars section (homepage "What we do") ---- */
-#pillars{padding:80px 0;border-top:1px solid #e8e8e8;background:#fff}
+#pillars{padding:48px 0 56px;border-top:1px solid #e8e8e8;background:#fff}
 #pillars .inner.txtWrap{text-align:left;margin-bottom:0}
-#pillars h2{margin:0 0 16px 0;display:flex;flex-direction:column;gap:6px}
+#pillars h2{margin:0 0 10px 0;display:flex;flex-direction:column;gap:6px}
 #pillars h2 .section-title-en{font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#999;margin-bottom:6px;font-family:"Noto Sans","Noto Sans JP",sans-serif}
 #pillars h2 .section-title-ja{font-size:3.2rem;font-weight:500;letter-spacing:-.005em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;line-height:1.1}
 #pillars p{font-size:.98rem;color:#4a4a4a;margin:0;max-width:680px;line-height:1.7}
-.pillars-list{display:flex;flex-direction:column;gap:48px;margin-top:24px;padding:0 0 60px}
+.pillars-list{display:flex;flex-direction:column;gap:36px;margin-top:12px;padding:0 0 60px}
 .pillar{display:grid;grid-template-columns:1.6fr 1fr;align-items:stretch;text-decoration:none;color:#1A1A1A;background:transparent;border:none;cursor:pointer;position:relative;height:280px;overflow:hidden;width:130%;transition:background-color .4s ease}
 .pillar:hover{background:#fafafa}
 .pillar--text-left{justify-self:start;margin-left:-15%}

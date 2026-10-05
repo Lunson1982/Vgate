@@ -23,7 +23,12 @@
         </dl>
       </dd>
       <dd>
-        <div class="openbtn" role="button" aria-label="Open menu" tabindex="0">MENU</div>
+        <div class="openbtn openbtn--hamburger" role="button" aria-label="Open menu" tabindex="0">
+          <span class="openbtn-line"></span>
+          <span class="openbtn-line"></span>
+          <span class="openbtn-line"></span>
+          <span class="openbtn-label">Menu</span>
+        </div>
         <div class="closebtn" role="button" aria-label="Close menu" tabindex="0">✕</div>
       </dd>
     </dl>
