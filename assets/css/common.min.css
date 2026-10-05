@@ -443,7 +443,7 @@ img[src$=".svg"]{width:100%;height:auto}
 @media only screen and (max-width: 768px){.contWrap .inner{padding:80px 0}}
 
 .contWrap section.inner{display:flex;flex-direction:column;align-items:flex-start;max-width:750px;padding-top:56px}
-.contWrap section.inner h2{font-size:1.7rem;margin-bottom:36px}
+.contWrap section.inner h2:not(.vg-title){font-size:1.7rem;font-weight:500;letter-spacing:.01em}
 .contWrap section.inner h2.h2Only{margin-bottom:0}
 .contWrap section.inner h2 span{display:block;font-size:1.2rem;margin-top:18px}
 .contWrap section.inner h2+p{margin-bottom:36px}
@@ -832,25 +832,10 @@ header.show #g-nav{transform:translateX(0)}
 #g-nav-list li:last-child>a{border-bottom:0}
 
 #g-nav-list .navItem{display:block}
-#g-nav-list .navItem__header{
-  display:inline-block;font-size:1.18rem;font-weight:500;letter-spacing:0.015em;
-}
-  display:block;font-size:.78rem;font-weight:500;
-  letter-spacing:0.16em;text-transform:uppercase;
-  color:rgba(237,236,234,0.5);margin-top:7px;
-}
-  height:16px;padding:0;margin:6px 0;
-  border-top:1px solid rgba(255,255,255,0.12);
-  list-style:none;
-}
-#g-nav-list .brandList a,
-  display:block;padding:9px 0 9px 14px;
-  color:rgba(237,236,234,0.78);font-size:.92rem;
-  text-decoration:none;letter-spacing:0.04em;
-  border-bottom:1px solid rgba(255,255,255,0.04);
-  cursor:pointer;
-  transition:color .2s ease,padding-left .2s ease;
-}
+#g-nav-list .navItem__header{display:inline-block;font-size:1.18rem;font-weight:500;letter-spacing:0.015em}
+#g-nav-list .navItem__sub{display:block;font-size:.78rem;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:rgba(237,236,234,0.5);margin-top:7px}
+#g-nav-list .navItem__divider{height:16px;padding:0;margin:6px 0;border-top:1px solid rgba(255,255,255,0.12);list-style:none}
+#g-nav-list .brandList a{display:block;padding:9px 0 9px 14px;color:rgba(237,236,234,0.78);font-size:.92rem;text-decoration:none;letter-spacing:0.04em;border-bottom:1px solid rgba(255,255,255,0.04);cursor:pointer;transition:color .2s ease,padding-left .2s ease}
 
 /* MENU button — inline in header; swap to CLOSE when drawer opens.
    Close button uses position:fixed with very high z-index so it floats above
