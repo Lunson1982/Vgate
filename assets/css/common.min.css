@@ -936,14 +936,24 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     width:100%;
     flex-wrap:nowrap;
   }
-  header .inner>dl>dd.language{
+  header .inner>dl>ddheader .inner>dl>dd.language{
     flex:0 0 auto;
     width:auto;
     text-align:right;
     justify-content:flex-end;
-    margin:0 0 0 auto !important;
+    margin-left:auto !important;
+    margin-right:0 !important;
     padding-right:0;
     transition:none !important;
+  }
+  /* Same with .active class to override header.active overrides */
+  header.active .inner>dl>dd.language{
+    margin-left:auto !important;
+    margin-right:0 !important;
+    margin-top:0 !important;
+    margin-bottom:0 !important;
+    transition:none !important;
+    transform:none !important;
   }
   header .inner>dl>dd:nth-of-type(2){
     flex-shrink:0;
