@@ -132,7 +132,7 @@
 }
 
 /* ---------- News list page ---------- */
-.contWrap #newsList{width:90%;max-width:750px;margin:0 auto;padding:144px 0}
+#newsList{width:90%;max-width:750px;margin:0 auto;padding:64px 0 36px}
 .contWrap #newsList .year{font-size:1.4rem;font-weight:700;margin:36px 0 12px;letter-spacing:.05em}
 .contWrap #newsList .year:first-of-type{margin-top:0}
 .contWrap #newsList ul li{

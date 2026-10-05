@@ -1,6 +1,6 @@
 #vg-about,#vg-contact{padding:0}
-#vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:144px 0 54px}
-@media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:80px 0 40px}}
+#vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:64px 0 36px}
+@media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:48px 0 28px}}
 
 .vg-title{display:flex;flex-direction:column-reverse;font-size:3.4rem;font-weight:400;letter-spacing:-.02em;line-height:1.06;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;margin-bottom:14px}
 .vg-title-sub{display:block;font-size:.72rem;margin-top:0;margin-bottom:10px;color:#888;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-family:"Noto Sans","Noto Sans JP",sans-serif}
@@ -47,7 +47,7 @@
 @media only screen and (max-width:768px){.vg-gallery{grid-template-columns:repeat(2,1fr)}}
 
 /* Explore Our Businesses CTA */
-.vg-cta{margin-top:54px;text-align:center}
+.vg-cta{margin-top:28px;text-align:center}
 .vg-cta a{display:inline-flex;align-items:center;gap:14px;padding:18px 38px;border:1px solid #1A1A1A;color:#1A1A1A;text-decoration:none;font-size:.86rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;background:#fff;transition:background-color .6s cubic-bezier(0,0.7,0,1),color .6s cubic-bezier(0,0.7,0,1)}
 .vg-cta a:hover{background:#1A1A1A;color:#fff}
 .vg-cta a .arrow{font-size:1rem}
