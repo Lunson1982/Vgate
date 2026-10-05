@@ -1,6 +1,6 @@
 #vg-about,#vg-contact{padding:0}
-#vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:64px 0 36px}
-@media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:48px 0 28px}}
+#vg-about .inner,#vg-contact .inner{width:90%;max-width:980px;margin:0 auto;padding:124px 0 36px}
+@media only screen and (max-width:768px){#vg-about .inner,#vg-contact .inner{width:88%;padding:80px 0 28px}}
 
 .vg-title{display:flex;flex-direction:column-reverse;font-size:3.4rem;font-weight:400;letter-spacing:-.02em;line-height:1.06;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;margin-bottom:14px}
 .vg-title-sub{display:block;font-size:.72rem;margin-top:0;margin-bottom:10px;color:#888;font-weight:600;letter-spacing:.22em;text-transform:uppercase;font-family:"Noto Sans","Noto Sans JP",sans-serif}

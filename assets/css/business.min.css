@@ -6,17 +6,12 @@
   padding: 0;
 }
 
-#vg-business .inner {
-  width: 90%;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 64px 0 36px;
-}
+#vg-business .inner{width:90%;max-width:980px;margin:0 auto;padding:124px 0 36px}
 
 @media only screen and (max-width: 768px) {
   #vg-business .inner {
     width: 88%;
-    padding: 80px 0 40px;
+    padding: 80px 0 28px;
   }
 }
 

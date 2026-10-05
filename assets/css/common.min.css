@@ -123,7 +123,7 @@ html a.externalLink:before,body a.externalLink:before{
 html h3,body h3{letter-spacing:.05em}
 html h4,body h4{letter-spacing:.05em}
 html p,body p{letter-spacing:.05em}
-@media only screen and (max-width: 480px){html{font-size:15px}html,body{font-size:1rem}}
+@media only screen and (max-width: 480px){html{font-size:15px;-webkit-text-size-adjust:100%;scroll-padding-top:130px}html,body{font-size:1rem}}
 .font-eng{font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Arial","Yu Gothic","Meiryo",sans-serif}
 .colorW{fill:#fff}
 img{backface-visibility:hidden;-webkit-backface-visibility:hidden}
@@ -432,7 +432,7 @@ html a.externalLink:before,body a.externalLink:before{
 html h3,body h3{letter-spacing:.05em}
 html h4,body h4{letter-spacing:.05em}
 html p,body p{letter-spacing:.05em}
-@media only screen and (max-width: 480px){html{font-size:15px}html,body{font-size:1rem}}
+@media only screen and (max-width: 480px){html{font-size:15px;-webkit-text-size-adjust:100%;scroll-padding-top:130px}html,body{font-size:1rem}}
 .font-eng{font-family:"Noto Sans","Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Arial","Yu Gothic","Meiryo",sans-serif}
 .colorW{fill:#fff}
 img{backface-visibility:hidden;-webkit-backface-visibility:hidden}
@@ -442,7 +442,7 @@ img[src$=".svg"]{width:100%;height:auto}
 .contWrap .inner{max-width:750px;width:90%;margin:0 auto;padding:56px 0 36px;text-align:justify}
 @media only screen and (max-width: 768px){.contWrap .inner{padding:80px 0}}
 
-.contWrap section.inner{display:flex;flex-direction:column;align-items:flex-start;max-width:750px;padding-top:56px}
+.contWrap section.inner{display:flex;flex-direction:column;align-items:flex-start;max-width:750px;padding-top:124px}
 .contWrap section.inner h2:not(.vg-title){font-size:1.7rem;font-weight:500;letter-spacing:.01em}
 .contWrap section.inner h2.h2Only{margin-bottom:0}
 .contWrap section.inner h2 span{display:block;font-size:1.2rem;margin-top:18px}
