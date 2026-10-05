@@ -244,6 +244,8 @@ header .inner>dl>dd:nth-of-type(2) .
   overflow:visible; min-height:20px;
   text-indent:0;
   cursor:pointer;
+  transition:none !important;
+  transform:none !important;
 }
 .openbtn--hamburger .openbtn-line{
   display:block !important;
@@ -936,7 +938,7 @@ footer #snsArea ol li a.sns-handle::before{content:"";margin:0}
     width:100%;
     flex-wrap:nowrap;
   }
-  header .inner>dl>ddheader .inner>dl>dd.language{
+  header .inner>dl>dd.language{
     flex:0 0 auto;
     width:auto;
     text-align:right;
