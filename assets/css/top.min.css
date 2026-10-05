@@ -347,7 +347,7 @@
 }
 
 /* ---- Pillars section (homepage "What we do") ---- */
-#pillars{padding:48px 0 56px;border-top:1px solid #e8e8e8;background:#fff}
+#pillars{padding:32px 0 48px;border-top:1px solid #e8e8e8;background:#fff}
 #pillars .inner.txtWrap{text-align:left;margin-bottom:0}
 #pillars h2{margin:0 0 10px 0;display:flex;flex-direction:column;gap:6px}
 #pillars h2 .section-title-en{font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#999;margin-bottom:6px;font-family:"Noto Sans","Noto Sans JP",sans-serif}
