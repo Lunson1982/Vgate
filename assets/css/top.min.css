@@ -354,7 +354,7 @@
 #pillars h2 .section-title-ja{font-size:3.2rem;font-weight:500;letter-spacing:-.005em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;line-height:1.1}
 #pillars p{font-size:.98rem;color:#4a4a4a;margin:0;max-width:680px;line-height:1.7}
 .pillars-list.pillars-list.pillars-list.pillars-list.pillars-list{display:flex;flex-direction:column;gap:36px;margin-top:12px;padding:0 0 36px}
-.pillar{display:grid;grid-template-columns:1.6fr 1fr;align-items:stretch;text-decoration:none;color:#1A1A1A;background:transparent;border:none;cursor:pointer;position:relative;height:280px;overflow:hidden;width:130%;transition:background-color .4s ease}
+.pillar{display:grid;grid-template-columns:1.6fr 1fr;align-items:stretch;text-decoration:none;color:#1A1A1A;background:transparent;border:none;cursor:pointer;position:relative;height:200px;overflow:hidden;width:130%;transition:background-color .4s ease}
 .pillar:hover{background:#fafafa}
 .pillar--text-left{justify-self:start;margin-left:-15%}
 .pillar--text-right{justify-self:end;margin-right:-15%}
@@ -362,13 +362,13 @@
 .pillar--text-left .pillar-image{order:2}
 .pillar--text-right .pillar-text{order:2}
 .pillar--text-right .pillar-image{order:1}
-.pillar-text{padding:36px 40px;display:flex;flex-direction:column;justify-content:center;gap:14px;min-width:0}
-.pillar-num{font-size:.74rem;letter-spacing:.22em;color:#717071;font-weight:600;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif}
+.pillar-text{padding:24px 36px;display:flex;flex-direction:column;justify-content:center;gap:8px;min-width:0}
+.pillar-num{display:none}
 .pillar-title{font-size:1.9rem;font-weight:500;letter-spacing:.005em;font-family:"Cormorant Garamond","Noto Serif",Georgia,serif;color:#1A1A1A;line-height:1.15}
 .pillar-desc{font-size:.88rem;line-height:1.65;color:#4a4a4a;max-width:420px;margin:0}
-.pillar-arrow{font-size:1.2rem;line-height:1;margin-top:auto;transition:transform .35s cubic-bezier(0.165,0.84,0.44,1)}
+.pillar-arrow{display:none}
 .pillar:hover .pillar-arrow{transform:translateX(8px)}
-.pillar-image{background:#fafafa;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;height:100%;min-height:240px}
+.pillar-image{background:#fafafa;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;height:100%;min-height:180px}
 .pillar-image img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover;transition:transform .8s cubic-bezier(0.165,0.84,0.44,1)}
 .pillar:hover .pillar-image img{transform:scale(1.04)}
 .pillar-image--abstract{background:linear-gradient(135deg,#1a1a1a 0%,#3a3a3a 100%);display:flex;align-items:center;justify-content:center}

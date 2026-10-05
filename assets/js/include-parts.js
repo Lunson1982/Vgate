@@ -46,5 +46,5 @@ function footer() {
   if (!el) return;
   var depth = window.location.pathname.split('/').filter(Boolean).length;
   var rootDir = depth === 0 ? './' : '../'.repeat(depth);
-  loadInclude(el, rootDir + 'assets/include/inc_footer?v=2026093055');
+  loadInclude(el, rootDir + 'assets/include/inc_footer?v=2026093056');
 }
