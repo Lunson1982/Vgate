@@ -43,7 +43,7 @@
       },
       brands: [
         { f: 'usagi-online-store.png', n: 'USAGI ONLINE STORE', u: '', d: "VGate's flagship e-commerce and physical retail store, offering curated Japanese and Korean fashion brands under one roof in premium shopping malls." },
-        { f: 'niji-select.png', n: 'NIJI SELECT', u: '', d: 'A leading Japanese curated boutique specializing in natural and organic beauty products, featuring internationally certified sustainable skincare products that prioritize eco-friendly, natural, and organic concepts.' },
+        { f: 'niji-select.png', n: 'NIJI SELECT', u: '', d: 'A leading Japanese curated boutique specializing in natural and organic beauty, featuring internationally certified sustainable skincare.' },
         { f: 'snidel.png', n: 'SNIDEL', u: 'https://snidel.com/', d: 'A Japanese fashion brand established in 2005, known for its versatile contemporary womenswear that blends sophistication with everyday style. Currently has stores in Japan, China, Hong Kong, Taiwan, Singapore, and Thailand.' },
         { f: 'snidel-home.png', n: 'SNIDEL HOME', u: 'https://snidel.com/snidel_home/', d: "Home goods extension of SNIDEL, bringing the brand's refined aesthetic to interior living with lifestyle products and homeware." },
         { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://gelatopique.com/', d: "A room wear brand launched in Autumn 2008. With the core concept of 'Desserts for Adults', the brand is dedicated to providing supreme comfort and touch. gelato pique offers stylish room wear for men and women of all ages." },

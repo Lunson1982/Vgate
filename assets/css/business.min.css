@@ -76,22 +76,10 @@
 }
 
 /* Brand card grid */
-.vg-brand-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  margin-top: 32px;
-  width: 100%;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+.vg-brand-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:32px;width:100%;max-width:1200px;margin-left:auto;margin-right:auto}
 
 @media only screen and (max-width: 768px) {
-  .vg-brand-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 14px;
-  }
+  .vg-brand-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
   .vg-brand-grid .vg-brand-card .vg-brand-desc{display:none}
   .vg-brand-grid .vg-brand-card .vg-brand-name{margin:0;padding:0}
 }
@@ -219,9 +207,9 @@
 }
 #vg-featured-grid .vg-brand-desc{display:none}
 /* Per-category "all brands" grid — compact 2-col bar w/ one-liner descriptions */
-.vg-cat-grid{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;max-width:720px!important;margin-left:auto;margin-right:auto}
-.vg-cat-grid .vg-brand-card{min-width:0!important;max-width:100%!important;padding:18px 14px 14px!important;gap:10px!important;width:auto!important;box-sizing:border-box!important}
-.vg-cat-grid .vg-brand-card-inner{min-width:0!important;max-width:100%!important;min-height:64px!important;padding:4px!important;width:auto!important;box-sizing:border-box!important;flex:0 0 auto!important}
+.vg-cat-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important;max-width:900px!important;margin-left:auto;margin-right:auto}
+.vg-cat-grid .vg-brand-card{min-width:0!important;max-width:100%!important;padding:22px 18px 18px!important;gap:12px!important;width:auto!important;box-sizing:border-box!important}
+.vg-cat-grid .vg-brand-card-inner{min-width:0!important;max-width:100%!important;min-height:64px!important;padding:4px!important;width:100%!important;box-sizing:border-box!important;flex:0 0 100%!important}
 .vg-cat-grid .vg-brand-card-inner img{max-height:48px!important;max-width:100%!important;width:auto!important}
 .vg-cat-grid .vg-brand-name{font-size:.92rem!important;word-break:break-word!important}
 .vg-cat-grid .vg-brand-desc{display:block!important;font-size:.88rem!important;line-height:1.5!important;color:#5a5a5a!important;text-align:center!important;letter-spacing:.01em!important;margin:6px 0 0!important;padding-top:10px;white-space:normal!important;word-break:break-word!important;overflow-wrap:break-word!important;hyphens:auto!important;max-width:100%!important;border-top:1px solid #f0f0f0!important}
