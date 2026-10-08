@@ -130,7 +130,7 @@
     { f: 'snidel.png', n: 'SNIDEL', u: 'https://www.instagram.com/snidelhk/', d: 'A leading Japanese fashion brand known for its versatile contemporary womenswear that blends sophistication with everyday style.' },
     { f: 'gelato-pique.png', n: 'gelato pique', u: 'https://www.instagram.com/gelatopiquehk/', d: "A room wear brand launched in 2008 with the core concept of 'Desserts for Adults', dedicated to supreme comfort and touch." },
     { f: 'lily-brown.png', n: 'LILY BROWN', u: 'https://www.instagram.com/lilybrownhk/', d: 'A Japanese fashion brand inspired by vintage fashion, offering classic and preppy styles with a modern sensibility.' },
-    { f: 'maison-cielune-logo.png', n: 'Maison Cielune', u: 'https://www.instagram.com/maison.cielune/', d: 'A Hong Kong fashion brand inspired by the beauty of the sky, embodying a soft, dreamy, and playful aesthetic.' },
+    { f: 'maison-cielune-logo.png', n: 'Maison Cielune', u: 'https://maisoncielune.com/', d: 'A Hong Kong fashion brand inspired by the beauty of the sky, embodying a soft, dreamy, and playful aesthetic.' },
     { f: 'kanalili.png', n: 'KanaLili', u: 'https://www.instagram.com/kanalili/', d: 'Founded in 2013 by designer Lilian Kan, celebrating beauty, delicacy, art and fantasies through a contemporary approach.' },
     { f: 'rojita.png', n: 'ROJITA', u: '', d: 'A Japanese brand known for its distinctive design philosophy and creative approach to fashion and lifestyle.' },
     { f: 'gelato-pique-cafe.png', n: 'gelato pique cafe', u: 'https://www.instagram.com/gelato_pique_cafe_hk/', d: "A popular cafe in collaboration with gelato pique, featuring the brand's signature Pique Blue and French crêpes." },
