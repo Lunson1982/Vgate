@@ -215,15 +215,18 @@
 .vg-cat-grid .vg-brand-desc{display:block!important;font-size:.88rem!important;line-height:1.5!important;color:#5a5a5a!important;text-align:center!important;letter-spacing:.01em!important;margin:6px 0 0!important;padding-top:10px;white-space:normal!important;word-break:break-word!important;overflow-wrap:break-word!important;hyphens:auto!important;max-width:100%!important;border-top:1px solid #f0f0f0!important}
 @media (max-width:768px){.vg-cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;max-width:100%!important;gap:10px!important}.vg-cat-grid .vg-brand-desc{font-size:.78rem!important;line-height:1.45!important;margin:6px 0 0!important;padding-top:8px!important}}
 
-/* Instagram link — small glyph pinned to the card's top-right corner.
-   Absolute so it never perturbs the card's flex-column layout. */
+/* Social link bar — visible row of circular icon buttons at the
+   bottom of each brand card. Each is a distinct, separate click
+   target with its own hover state. Website (🌐), Instagram, Facebook. */
 .vg-brand-card{position:relative}
-.vg-brand-card--has-ig{padding-top:36px}
-.vg-brand-ig{position:absolute;top:12px;right:12px;width:16px;height:16px;display:flex;align-items:center;justify-content:center;color:#9a9a9a;line-height:0;transition:color .5s cubic-bezier(0.215,0.61,0.355,1)}
-.vg-brand-ig svg{width:16px;height:16px;display:block}
-.vg-brand-ig:hover{color:#1A1A1A}
-.vg-brand-card:hover .vg-brand-ig{color:#1A1A1A}
-.vg-cat-grid .vg-brand-card--has-ig{padding-top:30px}
-.vg-cat-grid .vg-brand-ig{top:10px;right:10px;width:14px;height:14px}
-.vg-cat-grid .vg-brand-ig svg{width:14px;height:14px}
-@media (max-width:480px){.vg-brand-ig,.vg-cat-grid .vg-brand-ig{width:14px;height:14px;top:10px;right:10px}.vg-brand-ig svg,.vg-cat-grid .vg-brand-ig svg{width:14px;height:14px}}
+.vg-brand-social{display:flex;gap:8px;justify-content:center;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid #f0f0f0}
+.vg-brand-social a{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#f5f5f5;color:#8a8a8a;line-height:0;transition:all .35s cubic-bezier(0.215,0.61,0.355,1);text-decoration:none}
+.vg-brand-social a svg{width:17px;height:17px;display:block}
+.vg-brand-social a:hover{background:#1A1A1A;color:#fff;transform:translateY(-2px)}
+.vg-brand-social a.vg-brand-web:hover{background:#1A1A1A}
+.vg-brand-social a.vg-brand-ig:hover{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.vg-brand-social a.vg-brand-fb:hover{background:#1877F2}
+.vg-cat-grid .vg-brand-social{margin-top:8px;padding-top:8px}
+.vg-cat-grid .vg-brand-social a{width:30px;height:30px}
+.vg-cat-grid .vg-brand-social a svg{width:15px;height:15px}
+@media (max-width:480px){.vg-brand-social a{width:30px;height:30px}.vg-brand-social a svg{width:14px;height:14px}.vg-brand-social{gap:6px}}
